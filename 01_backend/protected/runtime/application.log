@@ -1,0 +1,139 @@
+2015/06/02 06:04:43 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "Administrator" is not defined in active record class "AdministratorModuleAccess".' in C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'Administrator')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(AdministratorModuleAccess), Array)
+#3 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1426): CActiveRecord->query(Object(CDbCriteria))
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(30): CActiveRecord->findByPk(1)
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#11 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php
+---
+2015/06/29 02:00:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/06/29 02:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/02 09:24:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/02 09:24:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/02 09:35:46 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\wamp\www\multiplatform\01_backend\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\wamp\www\multiplatform\03_framework\web\CAssetManager.php:128
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CAssetManager.php(113): CAssetManager->setBasePath('C:\wamp\www\mul...')
+#1 C:\wamp\www\multiplatform\03_framework\web\CAssetManager.php(235): CAssetManager->getBasePath()
+#2 C:\wamp\www\multiplatform\03_framework\gii\GiiModule.php(143): CAssetManager->publish('C:\wamp\www\mul...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CComponent.php(112): GiiModule->getAssetsUrl()
+#4 C:\wamp\www\multiplatform\03_framework\base\CModule.php(106): CComponent->__get('assetsUrl')
+#5 C:\wamp\www\multiplatform\03_framework\gii\views\layouts\main.php(5): CModule->__get('assetsUrl')
+#6 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(127): require('C:\wamp\www\mul...')
+#7 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mul...', Array, true)
+#8 C:\wamp\www\multiplatform\03_framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#9 C:\wamp\www\multiplatform\03_framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="con...')
+#10 C:\wamp\www\multiplatform\03_framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="con...')
+#11 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(207): COutputProcessor->run()
+#12 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#13 C:\wamp\www\multiplatform\03_framework\gii\views\layouts\column1.php(7): CBaseController->endContent()
+#14 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(127): require('C:\wamp\www\mul...')
+#15 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mul...', Array, true)
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#17 C:\wamp\www\multiplatform\03_framework\gii\controllers\DefaultController.php(47): CController->render('login', Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionLogin()
+#19 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#23 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('gii/default/log...')
+#24 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/gii/default/login
+---
+2015/07/02 09:37:27 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "administrator_custom_fileds" is not defined in active record class "Administrator".' in C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'administrator_c...')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(Administrator), Array)
+#3 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1426): CActiveRecord->query(Object(CDbCriteria))
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(30): CActiveRecord->findByPk(1)
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#11 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/07/02 10:24:43 [error] [php] include(Expression.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\multiplatform\03_framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(112): spl_autoload_call()
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1059): Administrator->beforeSave()
+#2 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(796): Administrator->update()
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->save()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (112)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/02 10:56:36 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`administrator_id`, `t`.`module_id`, `t`.`muodule_action_id`, `t`.`created`, `t`.`modified` FROM `administrator_module_access` `t` Array.
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (132)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/02 10:56:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Array' at line 1. The SQL statement executed was: SELECT `t`.`id`, `t`.`administrator_id`, `t`.`module_id`, `t`.`muodule_action_id`, `t`.`created`, `t`.`modified` FROM `administrator_module_access` `t` Array' in C:\wamp\www\multiplatform\03_framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(132): CActiveRecord->findAll(Object(CDbCriteria))
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#11 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
