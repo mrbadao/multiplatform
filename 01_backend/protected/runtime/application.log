@@ -785,3 +785,264 @@ REQUEST_URI=/
 in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (128)
 in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
 in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 07:11:18 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'SiteController object doesn't have method/property named 'title'' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\main.html:9
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(408): PHPTAL_Context::pathError(Object(SiteController), 'title', 'title')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(26): PHPTAL_Context::path(Object(SiteController), 'title')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_5590f077_main__YsZb5ipXJUsAj0f52qCRJA(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#4 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\03_framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 C:\wamp\www\multiplatform\03_framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(207): COutputProcessor->run()
+#9 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 C:\wamp\www\multiplatform\01_backend\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(127): require('C:\wamp\www\mul...')
+#12 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\mul...', Array, true)
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->render('index')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:18:38 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'CAttributeCollection object doesn't have method/property named 'appName'' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\main.html:10
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(408): PHPTAL_Context::pathError(Object(CAttributeCollection), 'appName', 'appName')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(28): PHPTAL_Context::path(Object(CAttributeCollection), 'appName')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_5596374b_main__YsZb5ipXJUsAj0f52qCRJA(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#4 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->render('index')
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#13 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:18:50 [error] [exception.CException] exception 'CException' with message 'Alias "application.widgets.Menu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\multiplatform\03_framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWidgetFactory.php(147): YiiBase::import('application.wid...', true)
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.wid...', Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(167): CBaseController->createWidget('application.wid...', Array)
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(104): CBaseController->widget('application.wid...', Array, true)
+#4 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_55963759_main__YsZb5ipXJUsAj0f52qCRJA(Object(PHPTAL), Object(PHPTAL_Context))
+#5 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#6 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:27:17 [error] [exception.CException] exception 'CException' with message 'Alias "application.widgets.Menu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\multiplatform\03_framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWidgetFactory.php(147): YiiBase::import('application.wid...', true)
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'application.wid...', Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(167): CBaseController->createWidget('application.wid...', Array)
+#3 C:\Windows\Temp\tpl_55963759_main__YsZb5ipXJUsAj0f52qCRJA.php(103): CBaseController->widget('application.wid...', Array, true)
+#4 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_55963759_main__YsZb5ipXJUsAj0f52qCRJA(Object(PHPTAL), Object(PHPTAL_Context))
+#5 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#6 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->render('index')
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:35:59 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('menu', NULL, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(28): CController->render('menu')
+#2 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(24): Controller->_getHTMLMenu(Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:38:03 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(28): CController->renderPartial('menu')
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(24): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:40:42 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic\menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(29): CController->renderPartial('C:\wamp\www\mul...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(24): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:42:26 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'menu' in current scope' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\menu.html:1
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(8): PHPTAL_Context->__get('menu')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_558bb746_menu__qmqWZ7Mr4FNOQ04w_Pa4aw(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#3 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', NULL, true)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', NULL, true)
+#5 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(29): CController->renderPartial('menu')
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(24): Controller->_getHTMLMenu(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:43:03 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'menu' in current scope' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\menu.html:1
+Stack trace:
+#0 C:\Windows\Temp\tpl_558bb746_menu__qmqWZ7Mr4FNOQ04w_Pa4aw.php(7): PHPTAL_Context->__get('menu')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_558bb746_menu__qmqWZ7Mr4FNOQ04w_Pa4aw(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#3 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', NULL, true)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', NULL, true)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('menu', NULL, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(29): CController->render('menu')
+#7 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(24): Controller->_getHTMLMenu(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 07:48:22 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(29): CController->renderPartial('menu', NULL, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(24): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+---
+2015/07/03 08:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contents".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('contents')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('contents')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/contents')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/contents
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:03:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contents".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('contents')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('contents')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/contents')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/contents
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:04:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contents".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('contents')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('contents')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/contents')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/contents
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contents".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('contents')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('contents')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/contents')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/contents
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:04:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contents".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('contents')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('contents')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/contents')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/contents
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:14:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 08:14:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 08:15:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 08:15:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---

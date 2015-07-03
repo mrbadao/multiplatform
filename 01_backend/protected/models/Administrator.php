@@ -125,7 +125,7 @@ class Administrator extends CActiveRecord
     /**
      * Get menu that admin have permission to access.
      */
-    public function getMenu($site_domain){
+    public function getMenuData($site_domain){
         $section ='';
         $menuData = array();
 
@@ -138,17 +138,7 @@ class Administrator extends CActiveRecord
                 'link'  => 'http://' .$site_domain .$module->module_abbr_cd .'/' .$action->action_abbr_cd,
             );
         }
-
-        foreach($menuData as $key => $val){
-            $menu='';
-            foreach($val as $v){
-                $menu .= CHtml::tag('li',array(), CHtml::link($v['title'], $v['link']));
-            }
-            $section .= CHtml::tag("section", array(),CHtml::tag('h1', array(),$key).CHtml::tag('ul',array(), $menu));
-
-        }
-
-        return $section;
+        return $menuData;
     }
 
 }

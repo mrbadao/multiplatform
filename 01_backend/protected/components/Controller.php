@@ -6,11 +6,6 @@
 class Controller extends CController
 {
 	/**
-	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',
-	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
-	 */
-	public $layout='//layouts/column1';
-	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */
 	public $menu=array();
@@ -20,4 +15,16 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+
+    public $title='CMS';
+
+    public function init()
+    {
+        $administrator = Administrator::model()->findByPk(1);
+        $this->menu = self::_getHTMLMenu($administrator->getMenuData(Yii::app()->params['site_domain'])) ;
+    }
+
+    private function _getHTMLMenu($data){
+        return $this->renderPartial('../components/menu', compact('data'), true);
+    }
 }

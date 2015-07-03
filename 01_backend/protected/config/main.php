@@ -8,7 +8,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'CMS Platform',
-    'theme'=>'',
+    'theme'=>'classic',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -94,7 +94,6 @@ return array(
 	),
 
 	// application-level parameters that can be accessed
-	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
 		'site_domain'=>'cms.platform.dev/',

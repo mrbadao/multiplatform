@@ -27,8 +27,10 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+        Yii::app()->u
 		$administrator = Administrator::model()->findByPk(1);
-        echo($administrator->getMenu(Yii::app()->params['site_domain']));
+//        echo($administrator->getMenu(Yii::app()->params['site_domain']));
+        $this->render('index');
 	}
 
 	/**

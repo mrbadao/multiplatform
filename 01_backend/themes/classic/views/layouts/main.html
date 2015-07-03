@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <meta name="robots" content="noindex,nofollow,noarchive"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>${this/title}</title>
+    <link rel="stylesheet" href="${makeUpPath}/css/style.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="${makeUpPath}/js/jquery-ui/jquery-ui-1.9.2.custom.min.css"/>
+    <link rel="stylesheet" type="text/css" href="${makeUpPath}/js/tagify/tagify-style.css"/>
+    <script type="text/javascript" src="${makeUpPath}/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="${makeUpPath}/js/jquery-ui/jquery-ui-1.9.0.js"></script>
+    <script type="text/javascript" src="${makeUpPath}/js/public.js"></script>
+    <script type="text/javascript" src="${makeUpPath}/js/jsTree/jquery.jstree.js"></script>
+    <script type="text/javascript" src="${makeUpPath}/js/seltab.js"></script>
+    <script type="text/javascript" src="${makeUpPath}/js/common.js"></script>
+    <script type="text/javascript" src="${makeUpPath}/js/fixHeight.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <script src="/js/ie9.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <nav>
+            <!--<ul style="margin-bottom: 5px">-->
+                <!--<li><strong>${this/userName|''}さんログイン中</strong></li>-->
+                <!--<li><a href="/site/logout" class="btnSmall themeSub">ログアウト</a></li>-->
+                <!--&lt;!&ndash;<li><a href="/site/adminlogin" class="btnSmall themeSub">管理者設定</a></li>&ndash;&gt;-->
+            <!--</ul>-->
+            <!--<ul tal:condition="php: Helpers::getSessionSiteId()" style="margin-bottom: 10px">-->
+                <!--<li><strong>現在選択しているサイト名は${this/siteName}です。</strong></li>-->
+                <!--<li><a target="_blank" tal:attributes="href php:Helpers::getSiteUrl(true);" href="#"-->
+                       <!--style="width: 103px; text-align: center;" class="btnSmall themeSub">サイトを確認する</a></li>-->
+            <!--</ul>-->
+
+            <!--<ul tal:condition="exists: this/siteName">-->
+                <!--<li><a href="/site/choosesite" class="btnSmall themeSub">サイトを選択し直す</a></li>-->
+            <!--</ul>-->
+        </nav>
+        <!--<h1><a href="/"><img src="${makeUpPath}/img/logo.png" alt="Sports Standards"/></a></h1>-->
+    </header>
+    <!--<nav id="topicPath" metal:use-macro="${this/viewPath}/${this/id}/breadcrumb.html/${this/action/id}">-->
+        <!--<ul>-->
+            <!--<li class="top"><a href="#">トップ</a></li>-->
+            <!--<li><a href="article-list.html">記事一覧</a></li>-->
+            <!--<li><a href="article-detail.html">記事詳細</a></li>-->
+            <!--<li>記事編集</li>-->
+        <!--</ul>-->
+    <!--</nav>-->
+    <div id="contents" class="fixHeight">
+        <nav id="side" tal:condition="this/menu" tal:content="structure this/menu">
+            <section>
+                <h2>Title</h2>
+                <ul>
+                    <li><a href="#" class="stay">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                </ul>
+            </section>
+
+        </nav>
+        <div id="main" tal:content="structure content"/>
+    </div>
+    <footer></footer>
+    <p id="page-top"><a href="#wrap">▲PAGE TOP</a></p>
+</div>
+<!--[if IE 9]>
+<script src="${makeUpPath}/js/PIE_IE9.js"></script><![endif]-->
+<!--[if lt IE 9]>
+<script src="${makeUpPath}/js/PIE_IE678.js"></script><![endif]-->
+</body>
+</html>
