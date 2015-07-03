@@ -1,0 +1,34 @@
+<form id="login-form" action="" method="post">
+    <div id="loginBox">
+        <h1>Login</h1>
+        <p>
+            <tal:block tal:content="structure php:CHtml::error(model, 'username', array('class' => 'txtWarning'))"/>
+            <tal:block tal:content="structure php:CHtml::error(model, 'password', array('class' => 'txtWarning'))"/>
+            <tal:block tal:content="structure php:CHtml::error(model, 'verifyCode', array('class' => 'txtWarning'))"/>
+        </p>
+        <fieldset>
+            <label>ID</label>
+            <input type="text" maxlength="32" name="LoginForm[username]" class="txtbox" onblur="toggleColor(this)"
+                   onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;"
+                   value="${model/username|''}"/>
+        </fieldset>
+
+        <fieldset>
+            <label>Password</label>
+            <input type="password" maxlength="20" name="LoginForm[password]" class="txtbox" onblur="toggleColor(this)"
+                   onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;"/>
+        </fieldset>
+
+        <fieldset>
+            <label>VerifyCode</label>
+            <input type="verifyCode" maxlength="20" name="LoginForm[verifyCode]" class="txtbox" onblur="toggleColor(this)"
+                   onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:120px; margin-top: -5px"/>
+            <tal:block tal:define="cc php:this.widget('CCaptcha', array('showRefreshButton' =>false, 'clickableImage' => true))"/>
+
+        </fieldset>
+
+        <div class="loginTable_btn">
+            <input type="submit" value="Login" class="btnSmall themeNormal"/>
+        </div>
+    </div>
+</form>

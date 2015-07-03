@@ -7,13 +7,13 @@
 <meta name="robots" content="noindex,nofollow,noarchive"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
-<title>ログイン｜SPOSTA BLOG 管理サイト</title>
-<link rel="stylesheet" href="/css/style.css" type="text/css"/>
-<script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="/js/public.js"></script>
+<title>${this/title}</title>
+<link rel="stylesheet" href="${makeUpPath}/css/style.css" type="text/css"/>
+<script type="text/javascript" src="${makeUpPath}/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${makeUpPath}/js/public.js"></script>
 <!--[if lt IE 9]>
-<script src="/js/html5shiv.js"></script>
-<script src="/js/ie9.js"></script>
+<script src="${makeUpPath}/js/html5shiv.js"></script>
+<script src="${makeUpPath}/js/ie9.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -24,7 +24,7 @@
    <!--<li><a href="/site/adminlogin" class="btnSmall themeSub">管理者設定</a></li>-->
   </ul>
  </nav>
- <h1><a href="#"><img src="/img/logo.png" alt="Sports Standards"/></a></h1>
+ <!--<h1><a href="#"><img src="/img/logo.png" alt=""/></a></h1>-->
 </header>
  <div id="contents_login">
   <div id="main_login" tal:content="structure content">
@@ -32,7 +32,7 @@
  </div>
  <footer>COPYRIGHT &copy; 2015 MPlatform Inc. All Rights Reserved.</footer>
 <p id="page-top"><a href="#wrap">▲PAGE TOP</a></p></div>
-<!--[if IE 9]><script src="/js/PIE_IE9.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="/js/PIE_IE678.js"></script><![endif]-->
+<!--[if IE 9]><script src="${makeUpPath}/js/PIE_IE9.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="${makeUpPath}/js/PIE_IE678.js"></script><![endif]-->
 </body>
 </html>

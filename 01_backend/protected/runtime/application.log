@@ -1046,3 +1046,1833 @@ Stack trace:
 REQUEST_URI=/themes/classic/assets//img/bg_texture.png
 HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
 ---
+2015/07/03 08:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('css/style.css')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-1.8.3.min.js".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery-1.8.3...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.8.3.min.js
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/public.js".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('js/public.js')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/public.js
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('img/logo.png')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/public.js".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('js/public.js')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/public.js
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('img/logo.png')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/style.css".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('css/style.css')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/style.css
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-1.8.3.min.js".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('js/jquery-1.8.3...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.8.3.min.js
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/public.js".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('js/public.js')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/public.js
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('img/logo.png')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/public.js".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('js/public.js')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/public.js
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('img/logo.png')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('img/logo.png')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 08:59:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:00:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:27:01 [error] [exception.PHPTAL_TemplateException] From C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' with message '<br />
+<font size='1'><table class='xdebug-error' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Parse error: syntax error, unexpected '>', expecting T_STRING or T_VARIABLE or '{' or '$' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : C:\Windows\TEMP\tpl_55965564_login__gQUz0sd73d_IHogjovnB8A.php on line <i>44</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0008</td><td bgcolor='#eeeeec' align='right'>369728</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0144</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CApplication->run(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>13</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0145</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CWebApplication->processRequest(  )</td><td title='C:\wamp\www\multiplatform\03_framework\base\CApplication.php' bgcolor='#eeeeec'>..\CApplication.php<b>:</b>162</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0183</td><td bgcolor='#eeeeec' align='right'>2208624</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>142</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.1081</td><td bgcolor='#eeeeec' align='right'>6243216</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.1086</td><td bgcolor='#eeeeec' align='right'>6284968</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.1086</td><td bgcolor='#eeeeec' align='right'>6284968</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.1087</td><td bgcolor='#eeeeec' align='right'>6284968</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.1087</td><td bgcolor='#eeeeec' align='right'>6285576</td><td bgcolor='#eeeeec'>SiteController->actionIndex(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.1119</td><td bgcolor='#eeeeec' align='right'>6612640</td><td bgcolor='#eeeeec'>CController->forward(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>31</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.1119</td><td bgcolor='#eeeeec' align='right'>6612704</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>753</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>12</td><td bgcolor='#eeeeec' align='center'>0.1615</td><td bgcolor='#eeeeec' align='right'>6634320</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>13</td><td bgcolor='#eeeeec' align='center'>0.1616</td><td bgcolor='#eeeeec' align='right'>6634864</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>14</td><td bgcolor='#eeeeec' align='center'>0.1616</td><td bgcolor='#eeeeec' align='right'>6634864</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>15</td><td bgcolor='#eeeeec' align='center'>0.1616</td><td bgcolor='#eeeeec' align='right'>6634864</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>16</td><td bgcolor='#eeeeec' align='center'>0.1617</td><td bgcolor='#eeeeec' align='right'>6635296</td><td bgcolor='#eeeeec'>SiteController->actionLogin(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>17</td><td bgcolor='#eeeeec' align='center'>0.1650</td><td bgcolor='#eeeeec' align='right'>6698992</td><td bgcolor='#eeeeec'>CController->render(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>74</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>18</td><td bgcolor='#eeeeec' align='center'>0.1651</td><td bgcolor='#eeeeec' align='right'>6699056</td><td bgcolor='#eeeeec'>CController->renderPartial(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>783</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>19</td><td bgcolor='#eeeeec' align='center'>0.1653</td><td bgcolor='#eeeeec' align='right'>6699248</td><td bgcolor='#eeeeec'>CBaseController->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>870</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>20</td><td bgcolor='#eeeeec' align='center'>0.1654</td><td bgcolor='#eeeeec' align='right'>6699280</td><td bgcolor='#eeeeec'>PHPTALViewRenderer->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CBaseController.php' bgcolor='#eeeeec'>..\CBaseController.php<b>:</b>94</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>21</td><td bgcolor='#eeeeec' align='center'>0.1659</td><td bgcolor='#eeeeec' align='right'>6703528</td><td bgcolor='#eeeeec'>PHPTAL->execute(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php' bgcolor='#eeeeec'>..\PHPTALViewRenderer.php<b>:</b>52</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>22</td><td bgcolor='#eeeeec' align='center'>0.1659</td><td bgcolor='#eeeeec' align='right'>6703528</td><td bgcolor='#eeeeec'>PHPTAL->prepare(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php' bgcolor='#eeeeec'>..\PHPTAL.php<b>:</b>667</td></tr>
+</table></font>' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php:857
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#1 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#5 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(74): CController->render('login', Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#12 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#13 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#19 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2015/07/03 09:27:29 [error] [php] Undefined variable: form (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code:41)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(74): SiteController->render()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#10 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): SiteController->forward()
+#11 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (41)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (52)
+2015/07/03 09:29:02 [error] [php] Undefined variable: form (C:\Windows\Temp\tpl_55965580_login__gQUz0sd73d_IHogjovnB8A.php:40)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(74): SiteController->render()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#10 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): SiteController->forward()
+#11 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#15 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#17 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\Windows\Temp\tpl_55965580_login__gQUz0sd73d_IHogjovnB8A.php (40)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (52)
+2015/07/03 09:29:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:29:45 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /div > (opened in line 2) but found < /form >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\login.html:33
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('form')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<form id="login...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(74): CController->render('login', Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#15 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#16 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#21 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#22 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2015/07/03 09:29:55 [error] [exception.PHPTAL_TemplateException] From C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' with message '<br />
+<font size='1'><table class='xdebug-error' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Parse error: syntax error, unexpected '>', expecting T_STRING or T_VARIABLE or '{' or '$' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : C:\Windows\TEMP\tpl_55965612_login__gQUz0sd73d_IHogjovnB8A.php on line <i>41</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0006</td><td bgcolor='#eeeeec' align='right'>369728</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0126</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CApplication->run(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>13</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0126</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CWebApplication->processRequest(  )</td><td title='C:\wamp\www\multiplatform\03_framework\base\CApplication.php' bgcolor='#eeeeec'>..\CApplication.php<b>:</b>162</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0158</td><td bgcolor='#eeeeec' align='right'>2208624</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>142</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0997</td><td bgcolor='#eeeeec' align='right'>6243216</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.1003</td><td bgcolor='#eeeeec' align='right'>6284968</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.1003</td><td bgcolor='#eeeeec' align='right'>6284968</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.1003</td><td bgcolor='#eeeeec' align='right'>6284968</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.1003</td><td bgcolor='#eeeeec' align='right'>6285576</td><td bgcolor='#eeeeec'>SiteController->actionIndex(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.1034</td><td bgcolor='#eeeeec' align='right'>6612640</td><td bgcolor='#eeeeec'>CController->forward(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>31</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.1034</td><td bgcolor='#eeeeec' align='right'>6612704</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>753</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>12</td><td bgcolor='#eeeeec' align='center'>0.1379</td><td bgcolor='#eeeeec' align='right'>6634320</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>13</td><td bgcolor='#eeeeec' align='center'>0.1380</td><td bgcolor='#eeeeec' align='right'>6634864</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>14</td><td bgcolor='#eeeeec' align='center'>0.1380</td><td bgcolor='#eeeeec' align='right'>6634864</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>15</td><td bgcolor='#eeeeec' align='center'>0.1380</td><td bgcolor='#eeeeec' align='right'>6634864</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>16</td><td bgcolor='#eeeeec' align='center'>0.1380</td><td bgcolor='#eeeeec' align='right'>6635296</td><td bgcolor='#eeeeec'>SiteController->actionLogin(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>17</td><td bgcolor='#eeeeec' align='center'>0.1391</td><td bgcolor='#eeeeec' align='right'>6698992</td><td bgcolor='#eeeeec'>CController->render(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>74</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>18</td><td bgcolor='#eeeeec' align='center'>0.1391</td><td bgcolor='#eeeeec' align='right'>6699056</td><td bgcolor='#eeeeec'>CController->renderPartial(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>783</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>19</td><td bgcolor='#eeeeec' align='center'>0.1394</td><td bgcolor='#eeeeec' align='right'>6699248</td><td bgcolor='#eeeeec'>CBaseController->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>870</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>20</td><td bgcolor='#eeeeec' align='center'>0.1395</td><td bgcolor='#eeeeec' align='right'>6699280</td><td bgcolor='#eeeeec'>PHPTALViewRenderer->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CBaseController.php' bgcolor='#eeeeec'>..\CBaseController.php<b>:</b>94</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>21</td><td bgcolor='#eeeeec' align='center'>0.1399</td><td bgcolor='#eeeeec' align='right'>6703528</td><td bgcolor='#eeeeec'>PHPTAL->execute(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php' bgcolor='#eeeeec'>..\PHPTALViewRenderer.php<b>:</b>52</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>22</td><td bgcolor='#eeeeec' align='center'>0.1399</td><td bgcolor='#eeeeec' align='right'>6703528</td><td bgcolor='#eeeeec'>PHPTAL->prepare(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php' bgcolor='#eeeeec'>..\PHPTAL.php<b>:</b>667</td></tr>
+</table></font>' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php:857
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#1 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#5 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(74): CController->render('login', Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#12 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#13 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#19 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2015/07/03 09:30:35 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:490)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(74): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (490)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (41)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:31:30 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:523)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(74): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (523)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (41)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:34:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:34:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:34:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:35:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:36:17 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: 'img php:this.widget('CCaptcha')', expected variable name. Complex expressions need php: modifier.' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\login.html:21
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('img php:this.wi...', false)
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(480): call_user_func(Array, 'img php:this.wi...', false)
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', 'img php:this.wi...', false)
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('img php:this.wi...', false)
+#4 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('img php:this.wi...')
+#5 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\Attribute\TAL\Content.php(40): PHPTAL_Php_CodeWriter->evaluateExpression('img php:this.wi...')
+#6 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(399): PHPTAL_Php_Attribute_TAL_Content->before(Object(PHPTAL_Php_CodeWriter))
+#7 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#8 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#9 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#10 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#11 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_5596578d_lo...', Object(PHPTAL_Dom_Element))
+#18 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#19 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#20 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#21 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#22 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#23 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#24 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): CController->render('login', Array)
+#25 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#26 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#27 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#28 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#30 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#31 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->forward('site/login')
+#32 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#33 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#34 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#35 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#36 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#37 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#38 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#39 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#40 {main}
+REQUEST_URI=/
+---
+2015/07/03 09:36:25 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:490)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (490)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (42)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:36:56 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:490)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (490)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (44)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:36:59 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:490)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (490)
+in C:\Windows\Temp\tpl_559657b7_login__gQUz0sd73d_IHogjovnB8A.php (43)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:37:15 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:490)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (490)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (44)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:37:42 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:523)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (523)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (45)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:39:45 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:523)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (523)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (45)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:41:25 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:523)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (523)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (45)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:41:26 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:523)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (523)
+in C:\Windows\Temp\tpl_559658c3_login__gQUz0sd73d_IHogjovnB8A.php (44)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:42:07 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:490)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (490)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (45)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:42:28 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: 'this.widget('CCaptcha')', expected variable name. Complex expressions need php: modifier.' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\login.html:20
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('this.widget('CC...', false)
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(480): call_user_func(Array, 'this.widget('CC...', false)
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', 'this.widget('CC...', false)
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(396): PHPTAL_Php_TalesInternal::compileToPHPExpressions('this.widget('CC...', false)
+#4 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\State.php(129): PHPTAL_Php_TalesInternal::compileToPHPExpression('this.widget('CC...', false)
+#5 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\State.php(204): PHPTAL_Php_State->compileTalesToPHPExpression('this.widget('CC...')
+#6 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\State.php(167): PHPTAL_Php_State->_interpolateTalesVarsCallback(Array, 'html')
+#7 [internal function]: PHPTAL_Php_State->_interpolateTalesVarsInHTMLCallback(Array)
+#8 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\State.php(159): preg_replace_callback('/((?:\$\$)*)\$\...', Array, '??             ...')
+#9 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(363): PHPTAL_Php_State->interpolateTalesVarsInHTML('??             ...')
+#10 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Text.php(28): PHPTAL_Php_CodeWriter->interpolateHTML('??             ...')
+#11 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Text->generateCode(Object(PHPTAL_Php_CodeWriter))
+#12 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#13 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#14 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#15 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#16 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#17 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#18 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#19 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#20 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_55965903_lo...', Object(PHPTAL_Dom_Element))
+#21 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#22 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#23 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#24 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#25 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#26 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#27 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): CController->render('login', Array)
+#28 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#29 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#30 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#31 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#32 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#33 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#34 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->forward('site/login')
+#35 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#36 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#37 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#38 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#39 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#40 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#41 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#42 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#43 {main}
+REQUEST_URI=/
+---
+2015/07/03 09:42:38 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:523)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (523)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (45)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:43:42 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php:30)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (30)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 09:47:09 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php:30)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (30)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 09:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:50:14 [error] [php] Object of class CCaptcha could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:523)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#1 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): SiteController->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): SiteController->renderPartial()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(75): SiteController->render()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (523)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (45)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/03 09:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:51:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:51:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:51:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:52:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:52:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:52:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:52:56 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.verifyCode" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\validators\CRequiredValidator.php(52): CComponent->__get('verifyCode')
+#1 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(LoginForm), 'verifyCode')
+#2 C:\wamp\www\multiplatform\03_framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(70): CModel->validate()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#10 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->forward('site/login')
+#11 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#17 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 09:53:48 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.verifyCode" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\validators\CRequiredValidator.php(52): CComponent->__get('verifyCode')
+#1 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(LoginForm), 'verifyCode')
+#2 C:\wamp\www\multiplatform\03_framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(70): CModel->validate()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#10 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->forward('site/login')
+#11 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#17 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 09:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:53:53 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.verifyCode" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\base\CModel.php(470): CComponent->__set('verifyCode', '')
+#1 C:\wamp\www\multiplatform\03_framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(68): CComponent->__set('attributes', Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#9 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->forward('site/login')
+#10 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#15 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#16 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 09:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:54:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:54:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:55:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:56:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:56:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:56:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:56:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:57:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:57:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:57:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:58:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:59:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 09:59:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:01:45 [error] [exception.CException] exception 'CException' with message 'Property "CCaptchaAction.clickableImage" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\YiiBase.php(222): CComponent->__set('clickableImage', true)
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(441): YiiBase::createComponent(Array, Object(SiteController), 'captcha')
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(418): CController->createActionFromMap(Array, 'captcha', 'captcha')
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(260): CController->createAction('captcha')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('captcha')
+#5 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/captcha')
+#6 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/captcha?v=55965d8887897
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:01:50 [error] [exception.CException] exception 'CException' with message 'Property "CCaptchaAction.clickableImage" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\YiiBase.php(222): CComponent->__set('clickableImage', true)
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(441): YiiBase::createComponent(Array, Object(SiteController), 'captcha')
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(418): CController->createActionFromMap(Array, 'captcha', 'captcha')
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(260): CController->createAction('captcha')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('captcha')
+#5 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/captcha')
+#6 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/captcha?refresh=1&_=1435917710645
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:01:54 [error] [exception.CException] exception 'CException' with message 'Property "CCaptchaAction.clickableImage" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\YiiBase.php(222): CComponent->__set('clickableImage', true)
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(441): YiiBase::createComponent(Array, Object(SiteController), 'captcha')
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(418): CController->createActionFromMap(Array, 'captcha', 'captcha')
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(260): CController->createAction('captcha')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('captcha')
+#5 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/captcha')
+#6 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/captcha?v=55965d8887897
+---
+2015/07/03 10:02:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:02:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:03:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:03:46 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.verifyCode" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\base\CModel.php(470): CComponent->__set('verifyCode', '')
+#1 C:\wamp\www\multiplatform\03_framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(68): CComponent->__set('attributes', Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#9 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(32): CController->forward('site/login')
+#10 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#15 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#16 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:06:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:13:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:13:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:14:27 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.captchaRequired" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\LoginForm.php(40): CComponent->__get('captchaRequired')
+#1 C:\wamp\www\multiplatform\03_framework\validators\CInlineValidator.php(43): LoginForm->captcha('verifyCode', Array)
+#2 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'verifyCode')
+#3 C:\wamp\www\multiplatform\03_framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(72): CModel->validate()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:14:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:15:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:15:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:15:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:17:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:19:20 [error] [php] Missing argument 1 for CValidator::validate(), called in C:\wamp\www\multiplatform\01_backend\protected\models\LoginForm.php on line 43 and defined (C:\wamp\www\multiplatform\03_framework\validators\CValidator.php:205)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\multiplatform\03_framework\base\CModel.php(158): CInlineValidator->validate()
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(72): LoginForm->validate()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#9 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): SiteController->forward()
+#10 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#15 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\LoginForm.php (43)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (72)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+2015/07/03 10:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:19:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:21:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:22:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:22:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:23:00 [error] [exception.CException] exception 'CException' with message 'Property "CCaptchaValidator.0" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(190): CComponent->__set('0', 'captchaRequired')
+#1 C:\wamp\www\multiplatform\03_framework\base\CModel.php(285): CValidator::createValidator('captcha', Object(LoginForm), 'verifyCode', Array)
+#2 C:\wamp\www\multiplatform\03_framework\base\CModel.php(259): CModel->createValidators()
+#3 C:\wamp\www\multiplatform\03_framework\base\CModel.php(544): CModel->getValidators()
+#4 C:\wamp\www\multiplatform\03_framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 C:\wamp\www\multiplatform\03_framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(68): CComponent->__set('attributes', Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#13 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#14 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#20 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:23:12 [error] [exception.CException] exception 'CException' with message 'Property "CCaptchaValidator.0" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(190): CComponent->__set('0', 'captchaRequired')
+#1 C:\wamp\www\multiplatform\03_framework\base\CModel.php(285): CValidator::createValidator('captcha', Object(LoginForm), 'verifyCode', Array)
+#2 C:\wamp\www\multiplatform\03_framework\base\CModel.php(259): CModel->createValidators()
+#3 C:\wamp\www\multiplatform\03_framework\base\CModel.php(544): CModel->getValidators()
+#4 C:\wamp\www\multiplatform\03_framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 C:\wamp\www\multiplatform\03_framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(70): CComponent->__set('attributes', Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#13 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#14 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#20 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:25:03 [error] [exception.CException] exception 'CException' with message 'LoginForm has an invalid validation rule. The rule must specify attributes to be validated and the validator name.' in C:\wamp\www\multiplatform\03_framework\base\CModel.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\base\CModel.php(259): CModel->createValidators()
+#1 C:\wamp\www\multiplatform\03_framework\base\CModel.php(544): CModel->getValidators()
+#2 C:\wamp\www\multiplatform\03_framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#3 C:\wamp\www\multiplatform\03_framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(70): CComponent->__set('attributes', Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:25:12 [error] [exception.CException] exception 'CException' with message 'Property "CCaptchaValidator.0" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(190): CComponent->__set('0', 'captchaRequired')
+#1 C:\wamp\www\multiplatform\03_framework\base\CModel.php(285): CValidator::createValidator('captcha', Object(LoginForm), 'verifyCode', Array)
+#2 C:\wamp\www\multiplatform\03_framework\base\CModel.php(259): CModel->createValidators()
+#3 C:\wamp\www\multiplatform\03_framework\base\CModel.php(544): CModel->getValidators()
+#4 C:\wamp\www\multiplatform\03_framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 C:\wamp\www\multiplatform\03_framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(70): CComponent->__set('attributes', Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#13 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#14 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#20 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/03 10:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:25:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:26:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:26:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:28:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:28:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:28:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:28:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:28:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:32:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:33:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:34:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:35:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:36:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:36:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:37:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:38:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:39:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/03 10:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
