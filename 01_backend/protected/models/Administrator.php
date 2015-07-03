@@ -125,12 +125,30 @@ class Administrator extends CActiveRecord
     /**
      * Get menu that admin have permission to access.
      */
-    public function getMenu(){
-        $criteria = new CDbCriteria();
-        $criteria->together = true;
-        $criteria->join = 'JOIN administrator_modules AS m ON t.module_id = m.id';
-        return AdministratorModuleAccess::model()->findAll($criteria);
+    public function getMenu($site_domain){
+        $section ='';
+        $menuData = array();
 
+        foreach($this->administratorModuleAccesses as $moduleAccess){
+            $module = $moduleAccess->module;
+            $action = $moduleAccess->muoduleAction;
+
+            $menuData[$module->module_name][] = array(
+                'title' => $action->action_name,
+                'link'  => 'http://' .$site_domain .$module->module_abbr_cd .'/' .$action->action_abbr_cd,
+            );
+        }
+
+        foreach($menuData as $key => $val){
+            $menu='';
+            foreach($val as $v){
+                $menu .= CHtml::tag('li',array(), CHtml::link($v['title'], $v['link']));
+            }
+            $section .= CHtml::tag("section", array(),CHtml::tag('h1', array(),$key).CHtml::tag('ul',array(), $menu));
+
+        }
+
+        return $section;
     }
 
 }

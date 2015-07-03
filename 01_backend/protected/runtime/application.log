@@ -137,3 +137,651 @@ Stack trace:
 #13 {main}
 REQUEST_URI=/
 ---
+2015/07/03 03:48:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/03 03:48:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/03 03:55:35 [error] [exception.CException] exception 'CException' with message 'Property "AdministratorModuleAccess.module_name" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(144): CComponent->__get('module_name')
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CActiveRecord->__get('module_name')
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/03 03:55:57 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 03:56:36 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 03:56:38 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 03:56:40 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 03:56:41 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 03:56:54 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module.module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 04:02:00 [error] [exception.CException] exception 'CException' with message 'Property "AdministratorModuleAccess.module_name" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(144): CComponent->__get('module_name')
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CActiveRecord->__get('module_name')
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/03 04:02:12 [error] [exception.CException] exception 'CException' with message 'Property "AdministratorModuleAccess.module_name" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(144): CComponent->__get('module_name')
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CActiveRecord->__get('module_name')
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/03 04:03:30 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 04:03:41 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator_module_access" does not have a column named "module.module_name".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(133): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 04:05:29 [error] [exception.CException] exception 'CException' with message 'Property "AdministratorModuleAccess.administratorModuleAccesses" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(144): CComponent->__get('administratorMo...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CActiveRecord->__get('administratorMo...')
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/03 04:15:04 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\multiplatform\03_framework\web\helpers\CHtml.php:2208)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#1 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (129)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 04:27:55 [error] [php] Trying to get property of non-object (C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php:133)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (133)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 04:31:33 [error] [php] Trying to get property of non-object (C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php:133)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (133)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 04:31:51 [error] [php] Trying to get property of non-object (C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php:133)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (133)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:17:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'action.muodule_action_id' in 'where clause'. The SQL statement executed was: SELECT `action`.`id` AS `t1_c0`, `action`.`module_id` AS `t1_c1`, `action`.`action_name` AS `t1_c2`, `action`.`action_abbr_cd` AS `t1_c3`, `action`.`is_menu` AS `t1_c4`, `action`.`created` AS `t1_c5`, `action`.`modified` AS `t1_c6` FROM `administrator_module_actions` `action`  WHERE (`action`.`muodule_action_id`=:ypl0).
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (134)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:17:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'action.muodule_action_id' in 'where clause'. The SQL statement executed was: SELECT `action`.`id` AS `t1_c0`, `action`.`module_id` AS `t1_c1`, `action`.`action_name` AS `t1_c2`, `action`.`action_abbr_cd` AS `t1_c3`, `action`.`is_menu` AS `t1_c4`, `action`.`created` AS `t1_c5`, `action`.`modified` AS `t1_c6` FROM `administrator_module_actions` `action`  WHERE (`action`.`muodule_action_id`=:ypl0)' in C:\wamp\www\multiplatform\03_framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php(784): CDbCommand->queryAll()
+#2 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php(499): CJoinElement->runQuery(Object(CJoinQuery))
+#3 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveFinder.php(167): CJoinElement->lazyFind(Object(AdministratorModuleAccess))
+#4 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(273): CActiveFinder->lazyFind(Object(AdministratorModuleAccess))
+#5 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(142): CActiveRecord->getRelated('action')
+#6 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->__get('action')
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#14 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:21:24 [error] [exception.CException] exception 'CException' with message 'Property "AdministratorModuleAccess.moduleaction" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(144): CComponent->__get('moduleaction')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->__get('moduleaction')
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:26:01 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:693)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): AdministratorModuleActions->findByPk()
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (134)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:26:37 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:693)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): AdministratorModuleActions->findByPk()
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (134)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:27:16 [error] [exception.CException] exception 'CException' with message 'Property "AdministratorModuleAccess.module_action_id" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(144): CComponent->__get('module_action_i...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->__get('module_action_i...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:27:43 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:693)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): AdministratorModuleActions->findByPk()
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (134)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:28:29 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:32:23 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:34:11 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:34:35 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:34:36 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:35:18 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:41:18 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:693)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(135): AdministratorModuleActions->findByPk()
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (135)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:41:50 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(135): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:43:21 [error] [php] include(administratorModuleAccesses.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\multiplatform\03_framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(135): spl_autoload_call()
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (135)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:43:34 [error] [php] include(AdministratorModuleAccesses.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\multiplatform\03_framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(135): spl_autoload_call()
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (135)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:43:35 [error] [php] include(AdministratorModuleAccesses.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\multiplatform\03_framework\YiiBase.php:423)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(135): spl_autoload_call()
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#8 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (135)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 05:44:10 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(135): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:46:24 [error] [exception.CDbException] exception 'CDbException' with message 'The value for the column "id" is not supplied when querying the table "administrator_module_actions".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:686
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php(498): CDbCommandBuilder->createInCondition(Object(CMysqlTableSchema), Array, Array, '`t`.')
+#1 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1425): CDbCommandBuilder->createPkCriteria(Object(CMysqlTableSchema), 1, '', Array, '`t`.')
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(135): CActiveRecord->findByPk(1)
+#3 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#4 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:49:28 [error] [exception.CException] exception 'CException' with message 'Property "AdministratorModuleAccess.moduleAction" is not defined.' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(144): CComponent->__get('moduleAction')
+#1 C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php(134): CActiveRecord->__get('moduleAction')
+#2 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): Administrator->getMenu()
+#3 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#9 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/07/03 05:52:14 [error] [php] Trying to get property of non-object (C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php:135)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (135)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 06:18:19 [error] [php] Trying to get property of non-object (C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php:134)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (134)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 06:18:42 [error] [php] Trying to get property of non-object (C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php:134)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (134)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (33)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/03 06:57:04 [error] [php] Missing argument 1 for Administrator::getMenu(), called in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php on line 31 and defined (C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php:128)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\models\Administrator.php (128)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)

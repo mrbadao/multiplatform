@@ -13,6 +13,7 @@
  * @property string $modified
  *
  * The followings are the available model relations:
+ * @property AdministratorModuleAccess[] $administratorModuleAccesses
  * @property AdministratorModules $module
  */
 class AdministratorModuleActions extends CActiveRecord
@@ -61,6 +62,7 @@ class AdministratorModuleActions extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'administratorModuleAccesses' => array(self::HAS_MANY, 'AdministratorModuleAccess', 'muodule_action_id'),
 			'module' => array(self::BELONGS_TO, 'AdministratorModules', 'module_id'),
 		);
 	}
@@ -104,4 +106,18 @@ class AdministratorModuleActions extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    /**
+     * Before save to database action.
+     */
+    public function beforeSave(){
+        $curentDate =  new CDbExpression('NOW()');
+
+        if($this->isNewRecord){
+            $this->created = $curentDate;
+        }
+        $this->modified = $curentDate;
+
+        return true;
+    }
 }

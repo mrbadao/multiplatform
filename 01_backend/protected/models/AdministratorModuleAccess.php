@@ -12,6 +12,7 @@
  * @property string $modified
  *
  * The followings are the available model relations:
+ * @property AdministratorModuleActions $muoduleAction
  * @property Administrator $administrator
  * @property AdministratorModules $module
  */
@@ -60,6 +61,7 @@ class AdministratorModuleAccess extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'muoduleAction' => array(self::BELONGS_TO, 'AdministratorModuleActions', 'muodule_action_id'),
 			'administrator' => array(self::BELONGS_TO, 'Administrator', 'administrator_id'),
 			'module' => array(self::BELONGS_TO, 'AdministratorModules', 'module_id'),
 		);

@@ -27,10 +27,8 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$c = Administrator::model()->with('administratorCustomFileds')->findByPk(1);
-        $c->getMenu();
-//        $c= new CDbCriteria()
-        var_dump($c->getMenu());
+		$administrator = Administrator::model()->findByPk(1);
+        echo($administrator->getMenu(Yii::app()->params['site_domain']));
 	}
 
 	/**
