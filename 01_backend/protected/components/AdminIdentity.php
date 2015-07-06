@@ -7,6 +7,7 @@
  */
 class AdminIdentity extends CUserIdentity
 {
+    private $_id='';
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -25,7 +26,13 @@ class AdminIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
 		else{
 			$this->errorCode=self::ERROR_NONE;
+            $this->_id = $adminUser->id;
+            $this->setState("role", 1);
         }
 		return !$this->errorCode;
 	}
+
+    public function getId(){
+        return $this->_id;
+    }
 }

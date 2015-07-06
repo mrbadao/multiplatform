@@ -55,7 +55,7 @@ class ArchiveSite extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('site_name, staff_id, site_abbr_cd, site_domain', 'required'),
+			array('site_name, staff_id, site_abbr_cd', 'required'),
 			array('staff_id, use_single_domain', 'numerical', 'integerOnly'=>true),
 			array('site_name, site_abbr_cd, site_domain', 'length', 'max'=>128),
 			array('created, modified', 'safe'),
@@ -122,6 +122,19 @@ class ArchiveSite extends CActiveRecord
 	}
 
     public function afterFind(){
+        return true;
+    }
+
+    /**
+     * Before save to database action.
+     */
+    public function beforeSave(){
+        $curentDate =  new CDbExpression('NOW()');
+
+        if($this->isNewRecord){
+            $this->created = $curentDate;
+        }
+        $this->modified = $curentDate;
         return true;
     }
 }

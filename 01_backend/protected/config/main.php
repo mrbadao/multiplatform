@@ -84,6 +84,15 @@ return array(
             'class' => 'CDbConnection',
         ),
 
+        'db_staff'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=sup_staff',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'class' => 'CDbConnection',
+        ),
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

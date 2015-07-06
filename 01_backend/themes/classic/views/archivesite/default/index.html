@@ -1,16 +1,12 @@
-<nav id="topicPath">
-    <ol class="breadcrumb">
-        <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-        <li><a href="#">Library</a></li>
-        <li class="active">Data</li>
-    </ol>
-</nav>
-<h1>Quản lí đơn hàng</h1>
-<article>
-    <p>Để tìm đơn hàng. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút Search.</p>
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
 
-    <p class="text-danger">Để tìm đơn hàng. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút
-        Search.</p>
+<h1>Site manage</h1>
+<article>
+    <p>Input info to search.</p>
+
+    <!--<p class="text-danger">Để tìm đơn hàng. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút-->
+        <!--Search.</p>-->
 </article>
 
 <div class="table-responsive">
@@ -59,7 +55,7 @@
                 <td><tal:block tal:condition="site/created" tal:content="dateformat:site/created" /></td>
                 <td><tal:block tal:condition="site/modified" tal:content="dateformat:site/modified" /></td>
                 <td>
-                    <a href="">
+                    <a tal:attributes="href php:this.createUrl('/archivesite/default/view',array('id'=>site['id']))">
                         <span class="glyphicon glyphicon-share-alt"></span>
                     </a>
                     <a href="">

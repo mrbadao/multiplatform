@@ -21,8 +21,29 @@ class Controller extends CController
 
     public function init()
     {
-        $administrator = Administrator::model()->findByPk(1);
-        $this->menu = self::_getHTMLMenu($administrator->getMenuData(Yii::app()->params['site_domain']));
+        if(!Yii::app()->user->isGuest){
+            $userId = Yii::app()->user->getId();
+            $role = Yii::app()->user->role;
+
+            if(!$userId) Yii::app()->end();
+
+            switch($role){
+                case '1':
+                    $administrator = Administrator::model()->findByPk($userId);
+                    $this->menu = self::_getHTMLMenu($administrator->getMenuData(Yii::app()->params['site_domain']));
+            }
+        }
+
+        $breadcrumbsData = array();
+        $currentModule = $this->getModule();
+        if($currentModule){
+            $breadcrumbsData['Home'] = Yii::app()->params['site_domain'];
+            $module = AdministratorModules::model()->findByAttributes(array('module_abbr_cd'=>$currentModule->getId()));
+            $breadcrumbsData[$module->module_name] = $this->createUrl("/".$currentModule->getId()."/default/index");
+        }
+
+        $this->breadcrumbs = self::_getBreadcrumbs($breadcrumbsData);
+
         $this->nav = self::_getNav();
     }
 
@@ -32,6 +53,10 @@ class Controller extends CController
 
     private function _getNav(){
         return $this->renderFile(Yii::app()->getTheme()->getBasePath().DIRECTORY_SEPARATOR.'views/components/nav.html', compact('data'), true);
+    }
+
+    private function _getBreadcrumbs($data){
+        return $this->renderFile(Yii::app()->getTheme()->getBasePath().DIRECTORY_SEPARATOR.'views/components/breadcrumbs.html', compact('data'), true);
     }
 
     public function setTitle($subTitle){

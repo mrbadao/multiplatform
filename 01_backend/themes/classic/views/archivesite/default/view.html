@@ -1,0 +1,35 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1>Site Detail</h1>
+<article>
+    <p>Input info to search.</p>
+
+    <!--<p class="text-danger">Để tìm đơn hàng. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút-->
+        <!--Search.</p>-->
+</article>
+
+<div class="table-responsive">
+    <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <th style="width: 15%">Site name</th>
+            <td>
+                <tal:block tal:content="archiveSite/site_name"/>
+            </td>
+        </tr>
+        <tr>
+            <th style="width: 15%">Site domain</th>
+            <td>
+                <tal:block tal:content="archiveSite/site_domain"/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="BtnArea" style="text-align: center !important;">
+    <a class="btn btn-default" tal:attributes="href php:this.createUrl('/archivesite/default/edit',array('id'=>archiveSite['id']))">Edit</a>
+</div>
+
+
