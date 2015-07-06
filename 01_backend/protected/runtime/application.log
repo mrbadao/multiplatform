@@ -4127,3 +4127,536 @@ Stack trace:
 #6 {main}
 REQUEST_URI=/archivesite/index
 ---
+2015/07/06 05:42:35 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "../components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CController->renderPartial('../components/m...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite/index
+---
+2015/07/06 05:43:06 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CController->renderPartial('/components/men...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite/index
+---
+2015/07/06 05:44:37 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic/components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite/index
+---
+2015/07/06 05:45:19 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic/components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite/index
+---
+2015/07/06 05:45:55 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic/components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite/index
+---
+2015/07/06 05:47:54 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic/components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/
+---
+2015/07/06 05:48:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "archivesite".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('archivesite')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('archivesite')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/archivesit...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 05:49:11 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "../components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('../components/m...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 05:53:48 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "../components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('../components/m...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:00:36 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/themes/classic/views/components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(32): CController->renderPartial('/themes/classic...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:01:15 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "/01_backend/themes/classic/views/components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(32): CController->renderPartial('/01_backend/the...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout/default/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('logout/default/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+---
+2015/07/06 06:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout/default/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('logout/default/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+---
+2015/07/06 06:03:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout/default/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('logout/default/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+---
+2015/07/06 06:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout/default/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('logout/default/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+---
+2015/07/06 06:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/site')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/07/06 06:05:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/site')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/07/06 06:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/site')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/07/06 06:06:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/site')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/07/06 06:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/site')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/
+---
+2015/07/06 06:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller:\w+>/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('<controller:\w+...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/
+---
+2015/07/06 06:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller:\w+>/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('<controller:\w+...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/
+---
+2015/07/06 06:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<controller:\w+>/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('<controller:\w+...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site/
+---
+2015/07/06 06:11:44 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "viewPath".' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(63): CComponent->__call('viewPath', Array)
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(63): SiteController->viewPath()
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559a1c1f_main__YsZb5ipXJUsAj0f52qCRJA(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#4 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CController->render('index')
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#13 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:13:04 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\protected\views\components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:13:24 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\protected\views/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:13:40 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\protected\views/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:13:43 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\protected\views/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:13:47 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\protected\views/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:14:09 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\protected\views\menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:14:16 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\protected\views\menu.html".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:14:46 [error] [php] require(C:\wamp\www\multiplatform\01_backend\protected\views\menu) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory (C:\wamp\www\multiplatform\03_framework\web\CBaseController.php:127)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(31): SiteController->renderFile()
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): SiteController->_getHTMLMenu()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): SiteController->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/index
+in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php (31)
+in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php (25)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/06 06:17:40 [error] [exception.PHPTAL_IOException] exception 'PHPTAL_IOException' with message 'Unable to find real path of file 'menu.html' (in C:\wamp\www\multiplatform\01_backend)' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\FileSource.php:28
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1147): PHPTAL_FileSource->__construct('menu.html')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(801): PHPTAL->findTemplate()
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(821): PHPTAL->setCodeFile()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'menu.html', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CBaseController->renderFile('menu.html', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:20:47 [error] [exception.PHPTAL_IOException] exception 'PHPTAL_IOException' with message 'Unable to find real path of file 'C:\wamp\www\multiplatform\01_backend\themes\classic\components/menu.html' (in C:\wamp\www\multiplatform\01_backend)' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\FileSource.php:28
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1147): PHPTAL_FileSource->__construct('C:\wamp\www\mul...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(801): PHPTAL->findTemplate()
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(821): PHPTAL->setCodeFile()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:21:08 [error] [exception.PHPTAL_IOException] exception 'PHPTAL_IOException' with message 'Unable to find real path of file 'C:\wamp\www\multiplatform\01_backend\themes\classic\components\menu.html' (in C:\wamp\www\multiplatform\01_backend)' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\FileSource.php:28
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1147): PHPTAL_FileSource->__construct('C:\wamp\www\mul...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(801): PHPTAL->findTemplate()
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(821): PHPTAL->setCodeFile()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:21:10 [error] [exception.PHPTAL_IOException] exception 'PHPTAL_IOException' with message 'Unable to find real path of file 'C:\wamp\www\multiplatform\01_backend\themes\classic\components\menu.html' (in C:\wamp\www\multiplatform\01_backend)' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\FileSource.php:28
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1147): PHPTAL_FileSource->__construct('C:\wamp\www\mul...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(801): PHPTAL->findTemplate()
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(821): PHPTAL->setCodeFile()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/index')
+#10 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/site/index
+---
+2015/07/06 06:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/ind...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:23:01 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "../components/nav".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(34): CController->renderPartial('../components/n...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(26): Controller->_getNav()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:23:19 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic\views/components/nav".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(34): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(26): Controller->_getNav()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:23:26 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic\views/components/nav.html".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(34): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(26): Controller->_getNav()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:23:48 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "C:\wamp\www\multiplatform\01_backend\themes\classic\views/components/menu.html".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(34): CController->renderPartial('C:\wamp\www\mul...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(26): Controller->_getNav()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:24:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/ind...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:24:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/ind...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:25:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('logout')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+---
+2015/07/06 06:25:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logout".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('logout')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+---
+2015/07/06 06:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "archivesite".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('archivesite')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('archivesite')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/archivesit...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "archivesite".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('archivesite')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('archivesite')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/archivesit...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "archivesite".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('archivesite')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('archivesite')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/archivesit...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 06:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/assets/images/favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/ass...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite/assets/images/favicon.ico
+---
+2015/07/06 06:27:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/assets/images/favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/ass...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite/assets/images/favicon.ico
+---

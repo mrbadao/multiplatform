@@ -27,10 +27,10 @@ class Controller extends CController
     }
 
     private function _getHTMLMenu($data){
-        return $this->renderPartial('../components/menu', compact('data'), true);
+        return $this->renderFile(Yii::app()->getTheme()->getBasePath().DIRECTORY_SEPARATOR.'views/components/menu.html', compact('data'), true);
     }
 
     private function _getNav(){
-        return $this->renderPartial('../components/nav', compact('data'), true);
+        return $this->renderFile(Yii::app()->getTheme()->getBasePath().DIRECTORY_SEPARATOR.'views/components/nav.html', compact('data'), true);
     }
 }

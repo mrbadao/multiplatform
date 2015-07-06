@@ -54,11 +54,12 @@ return array(
                     'gii'=>'gii',
                     'gii/<controller:\w+>'=>'gii/<controller>',
                     'gii/<controller:\w+>/<action:\w+>'=>'gii/<controller>/<action>',
+
+                    '<action:\w+>'=> 'site/<action>',
+                    '<module:\w+>/<action:\w+>'=>'<module>/default/<action>',
                     '<module:\w+>/<action:\w+>'=>'<module>/default/<action>',
                     '<module:\w+>/<controller:\w+>/<action:\w+>'=>'<module>/<controller>/<action>',
-                    '<action:\w+>'=>'site/<action>',
-                    '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-                    '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+
                 )
         ),
 
