@@ -33,4 +33,8 @@ class Controller extends CController
     private function _getNav(){
         return $this->renderFile(Yii::app()->getTheme()->getBasePath().DIRECTORY_SEPARATOR.'views/components/nav.html', compact('data'), true);
     }
+
+    public function setTitle($subTitle){
+        $this->title .= " | $subTitle";
+    }
 }

@@ -55,10 +55,12 @@ return array(
                     'gii/<controller:\w+>'=>'gii/<controller>',
                     'gii/<controller:\w+>/<action:\w+>'=>'gii/<controller>/<action>',
 
-                    '<action:\w+>'=> 'site/<action>',
-                    '<module:\w+>/<action:\w+>'=>'<module>/default/<action>',
-                    '<module:\w+>/<action:\w+>'=>'<module>/default/<action>',
-                    '<module:\w+>/<controller:\w+>/<action:\w+>'=>'<module>/<controller>/<action>',
+                    array(
+                        'class' => 'application.components.urlrule.SiteUrlRule',
+                    ),
+                    array(
+                        'class' => 'application.components.urlrule.ArchiveSiteUrlRule',
+                    ),
 
                 )
         ),
@@ -66,12 +68,21 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=sup_admin',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-		),
+            'connectionString' => 'mysql:host=localhost;dbname=sup_admin',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+        ),
+
+        'db_archive'=>array(
+            'connectionString' => 'mysql:host=localhost;dbname=sup_archive',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'class' => 'CDbConnection',
+        ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -98,5 +109,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'site_domain'=>'cms.platform.dev/',
+        'pageCountItems' => '10',
 	),
 );

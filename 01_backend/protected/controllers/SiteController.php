@@ -28,7 +28,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
         if (Yii::app()->user->IsGuest) {
-            $this->forward('site/login');
+            $this->forward('site/adminlogin');
         }
         $this->render('index');
     }
@@ -49,7 +49,7 @@ class SiteController extends Controller
     /**
      * Displays the login page
      */
-    public function actionLogin()
+    public function actionAdminLogin()
     {
         $model = new LoginModel;
         $model->scenario = 'captchaRequired';

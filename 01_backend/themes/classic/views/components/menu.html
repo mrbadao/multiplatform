@@ -2,7 +2,7 @@
     <section tal:condition="data" tal:repeat="item data">
         <h2 class="tittle">${repeat/item/key}</h2>
         <ul class="nav nav-sidebar">
-            <li tal:repeat="menu item"><a href="#">${menu/title}</a></li>
+            <li tal:repeat="menu item"><a tal:attributes="href php:this.createUrl(menu['link'])">${menu/title}</a></li>
         </ul>
     </section>
 </nav>

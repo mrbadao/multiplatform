@@ -135,7 +135,7 @@ class Administrator extends CActiveRecord
 
             $menuData[$module->module_name][] = array(
                 'title' => $action->action_name,
-                'link'  => 'http://' .$site_domain .$module->module_abbr_cd .'/' .$action->action_abbr_cd,
+                'link'  => "/" .$module->module_abbr_cd .'/' .$action->controller .'/' .$action->action_abbr_cd,
             );
         }
         return $menuData;
