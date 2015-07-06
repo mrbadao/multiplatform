@@ -1,38 +1,83 @@
-<!doctype html>
-<html class="login">
-<head>
-<meta charset="UTF-8"/>
-<meta http-equiv="Content-Style-Type" content="text/css"/>
-<meta http-equiv="Content-Script-Type" content="text/javascript"/>
-<meta name="robots" content="noindex,nofollow,noarchive"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
-<title>${this/title}</title>
-<link rel="stylesheet" href="${makeUpPath}/css/style.css" type="text/css"/>
-<script type="text/javascript" src="${makeUpPath}/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="${makeUpPath}/js/public.js"></script>
-<!--[if lt IE 9]>
-<script src="${makeUpPath}/js/html5shiv.js"></script>
-<script src="${makeUpPath}/js/ie9.js"></script>
-<![endif]-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""/>
+    <meta name="author" content="HieuNC"/>
+    <meta charset="UTF-8"/>
+
+    <!--favicon-->
+    <link rel="icon" href="${makeUpPath}/images/favicon.ico"/>
+
+    <title>${this/title}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="${makeUpPath}/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="${makeUpPath}/css/style.css" rel="stylesheet"/>
+    <link href="${makeUpPath}/css/signin.css" rel="stylesheet"/>
+    <link href="${makeUpPath}/css/responsive.css" rel="stylesheet"/>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="${makeUpPath}/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="${makeUpPath}/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="${makeUpPath}/js/html5shiv.min.js"></script>
+    <script src="${makeUpPath}/js/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-<div id="wrap" class="bgTexture">
- <header>
- <nav>
-  <ul>
-   <!--<li><a href="/site/adminlogin" class="btnSmall themeSub">管理者設定</a></li>-->
-  </ul>
- </nav>
- <!--<h1><a href="#"><img src="/img/logo.png" alt=""/></a></h1>-->
-</header>
- <div id="contents_login">
-  <div id="main_login" tal:content="structure content">
-  </div>
- </div>
- <footer>COPYRIGHT &copy; 2015 MPlatform Inc. All Rights Reserved.</footer>
-<p id="page-top"><a href="#wrap">▲PAGE TOP</a></p></div>
-<!--[if IE 9]><script src="${makeUpPath}/js/PIE_IE9.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="${makeUpPath}/js/PIE_IE678.js"></script><![endif]-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="${makeUpPath}/images/logo.png"/>
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Home page</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search..."/>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--nave header-->
+
+
+<div class="container">
+    <div class="row" tal:content="structure content">
+
+    </div>
+</div>
+
+<footer>COPYRIGHT © 2015 Hieu Inc. All Rights Reserved.</footer>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="${makeUpPath}/js/jquery.min.js"></script>
+<script src="${makeUpPath}/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+<script src="${makeUpPath}/js/holder.min.js"></script>
+<script src="${makeUpPath}/js/js.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="${makeUpPath}/js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
 </html>

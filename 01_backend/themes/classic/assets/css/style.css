@@ -1,0 +1,174 @@
+/*
+ * Base structure
+ */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    background: #eef4fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/*
+ * breadcrumb
+ */
+#topicPath {
+    border-bottom: 1px solid #C4C4C4;
+    width: 100%;
+    background: transparent linear-gradient(#E0E0E0, #F3F3F3 10%, #F3F3F3) repeat scroll 0% 0%;
+}
+
+#topicPath ol.breadcrumb {
+    padding: 6px 15px;
+    margin-bottom: 0;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    background: #273140;
+    padding: 0;
+}
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    background: #273140;
+    border-right: 1px solid #eee;
+}
+
+.sidebar section{
+    margin:-5px -15px 0 -15px;
+}
+
+.sidebar .tittle{
+    color: #49b1db;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 17px;
+    background: #1a222f;
+    height: 54px;
+    margin-bottom:0 ;
+    margin-top: 5px;
+}
+
+.sidebar .tittle:before{
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    content: "\e250";
+    padding-right: 25px;
+}
+
+/* Sidebar navigation */
+.nav-sidebar > li > a {
+    padding-left: 40px;
+    font-size: 16px;
+    color: #7f96a3;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > li > a:hover,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    background:none;
+}
+
+
+/*
+ * wrap content
+ */
+
+#main {
+    padding-top: 10px;
+    -moz-box-flex: 1;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1) inset;
+}
+
+#main .table-responsive {
+    margin: 20px 35px 0 35px;
+}
+
+#main h1 {
+    margin: 10px 20px 20px;
+    color: #454545;
+    font-size: 28px;
+}
+
+#main article, #main aside {
+    margin: 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #BBB;
+}
+
+#main article p{
+    margin-left: 10px;
+}
+
+#main .mBoxitem_listinfo {
+    margin: 0 20px;
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.pageList_data {
+    position: relative;
+    margin-left: 15px;
+}
+
+.pageList_link {
+    margin: 0 0 40px 15px;
+    padding: 0;
+    list-style: outside none none;
+}
+
+.pageList_link li {
+    display: inline-block;
+}
+
+.pageList_link strong {
+    background: transparent linear-gradient(#E0E0E0, #F6F6F6) repeat scroll 0% 0%;
+    font-weight: bold;
+}
+.pageList_link strong, .pageList_link a {
+    margin: 0 1px 0 0;
+    padding: 0 3px;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    min-width: 22px;
+    height: 22px;
+    line-height: 22px;
+    color: #3F3F3F;
+    background: transparent linear-gradient(#F6F6F6, #DCDCDC);
+    vertical-align: middle;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*
+*footer
+*/
+footer {
+    padding: 10px 0;
+    border-top: 1px solid #C4C4C4;
+    clear: both;
+    position: relative;
+    width: 100%;
+    background: transparent linear-gradient(#E3E3E1, #F3F3F3 10%, #F3F3F3);
+    text-align: center;
+}

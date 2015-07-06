@@ -1,34 +1,25 @@
-<form id="login-form" action="" method="post">
-    <div id="loginBox">
-        <h1>Login</h1>
-        <p>
-            <tal:block tal:content="structure php:CHtml::error(model, 'username', array('class' => 'txtWarning'))"/>
-            <tal:block tal:content="structure php:CHtml::error(model, 'password', array('class' => 'txtWarning'))"/>
-            <tal:block tal:content="structure php:CHtml::error(model, 'verifyCode', array('class' => 'txtWarning'))"/>
-        </p>
-        <fieldset>
-            <label>ID</label>
-            <input type="text" maxlength="32" name="LoginForm[username]" class="txtbox" onblur="toggleColor(this)"
-                   onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;"
-                   value="${model/username|''}"/>
-        </fieldset>
-
-        <fieldset>
-            <label>Password</label>
-            <input type="password" maxlength="20" name="LoginForm[password]" class="txtbox" onblur="toggleColor(this)"
-                   onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:250px;"/>
-        </fieldset>
-
-        <fieldset>
-            <label>VerifyCode</label>
-            <input type="verifyCode" maxlength="20" name="LoginForm[verifyCode]" class="txtbox" onblur="toggleColor(this)"
-                   onfocus="toggleColor(this)" onkeydown="ignoreESC(this,event.keyCode)" style="width:120px; margin-top: -5px"/>
-            <tal:block tal:define="cc php:this.widget('CCaptcha', array('showRefreshButton' =>false, 'clickableImage' => true))"/>
-
-        </fieldset>
-
-        <div class="loginTable_btn">
-            <input type="submit" value="Login" class="btnSmall themeNormal"/>
-        </div>
+<form class="form-signin" method="post">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <tal:block tal:content="structure php:CHtml::error(model, 'username', array('class' => 'text-danger'))"/>
+    <!--inpputUserId-->
+    <label for="inpputUserId" class="sr-only">User id</label>
+        <input value="${model/username|''}" type="text" id="inpputUserId" maxlength="20" name="LoginForm[username]" class="form-control" placeholder="User id"/>
+    <!--Password-->
+    <tal:block tal:content="structure php:CHtml::error(model, 'password', array('class' => 'text-danger'))"/>
+    <label for="inputPassword" maxlength="32" class="sr-only">Password</label>
+        <input name="LoginForm[password]" type="password" value="${model/password|''}" id="inputPassword" class="form-control" placeholder="Password"/>
+    <!--Verify code-->
+    <tal:block tal:content="structure php:CHtml::error(model, 'verifyCode', array('class' => 'text-danger'))"/>
+    <label for="inputVeryfiCode" class="sr-only">Verify code</label>
+        <input type="text" value="" maxlength="20" name="LoginForm[verifyCode]" id="inputVeryfiCode" class="form-control" placeholder="Verify code"/>
+    <!--button-->
+    <tal:block tal:define="cc php:this.widget('CCaptcha', array('showRefreshButton' =>false, 'clickableImage' => true, 'imageOptions' => array('class' => 'captcha pull-left')))"/>
+    <button class="btn btn-lg btn-primary btn-block pull-left" type="submit">Sign in</button>
+    <!--remember me-->
+    <div class="checkbox">
+        <label>
+            <input name="LoginForm[rememberMe]" type="checkbox" value="1" tal:attributes="checked php:isset(model['rememberMe']) && model['rememberMe']=='1' ? 'checked' : ''"/> Remember me
+        </label>
     </div>
+
 </form>

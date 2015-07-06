@@ -52,7 +52,6 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
-
         $model=new LoginForm;
         $model->scenario = 'captchaRequired';
 
