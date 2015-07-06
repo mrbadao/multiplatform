@@ -20,7 +20,8 @@
  */
 class ArchiveSite extends CActiveRecord
 {
-    public $staff='';
+    public $own='';
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -57,6 +58,7 @@ class ArchiveSite extends CActiveRecord
 		return array(
 			array('site_name, staff_id, site_abbr_cd', 'required'),
 			array('staff_id, use_single_domain', 'numerical', 'integerOnly'=>true),
+			array('site_domain', 'validateSiteDomain'),
 			array('site_name, site_abbr_cd, site_domain', 'length', 'max'=>128),
 			array('created, modified', 'safe'),
 			// The following rule is used by search().
@@ -64,7 +66,18 @@ class ArchiveSite extends CActiveRecord
 			array('id, site_name, staff_id, site_abbr_cd, use_single_domain, site_domain, created, modified', 'safe', 'on'=>'search'),
 		);
 	}
+	
+	public function validateSiteDomain()
+	{
 
+		if(!$this->use_single_domain){
+			$this->site_domain ='';
+			return true;
+		}
+		if(filter_var($this->site_domain, FILTER_VALIDATE_URL) && preg_match("~^(?:f|ht)tps?://~i", $this->site_domain)) return true;
+		$this->addError('site_domain', 'Incorrect site domain');
+		return false;
+	}
 	/**
 	 * @return array relational rules.
 	 */
@@ -75,7 +88,7 @@ class ArchiveSite extends CActiveRecord
 		return array(
 			'archiveMenus' => array(self::HAS_MANY, 'ArchiveMenu', 'site_id'),
 			'archivePages' => array(self::HAS_MANY, 'ArchivePages', 'site_id'),
-			'staff' => array(self::BELONGS_TO, 'SupStaff.staff', 'staff_id'),
+			'Staff' => array(self::BELONGS_TO, 'Staff', 'staff_id'),
 		);
 	}
 
@@ -88,7 +101,7 @@ class ArchiveSite extends CActiveRecord
 			'id' => 'ID',
 			'site_name' => 'Site Name',
 			'staff_id' => 'Staff',
-			'site_abbr_cd' => 'Site Abbr Cd',
+			'site_abbr_cd' => 'Site Derectory',
 			'use_single_domain' => 'Use Single Domain',
 			'site_domain' => 'Site Domain',
 			'created' => 'Created',
@@ -122,6 +135,7 @@ class ArchiveSite extends CActiveRecord
 	}
 
     public function afterFind(){
+		$this->own = $this->Staff;
         return true;
     }
 

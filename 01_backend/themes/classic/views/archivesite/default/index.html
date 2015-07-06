@@ -1,71 +1,106 @@
 <nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
 <!--breadcrumbs-->
 
-<h1>Site manage</h1>
+<h1 class="article-title">Site manage</h1>
 <article>
     <p>Input info to search.</p>
 
-    <!--<p class="text-danger">Để tìm đơn hàng. Nhập các tiêu chí tìm kiếm, vui lòng click vào nút-->
-        <!--Search.</p>-->
+    <p class="text-danger" tal:condition="php: message =='success' && action =='delete'">
+        You have deleted site
+        <tal:block tal:condition="name">[${name|''}]</tal:block>
+        success.
+    </p>
 </article>
 
-<div class="table-responsive">
-    <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
-        <tbody>
-        <tr>
-            <th style="width: 15%">Site name</th>
-            <td>
-                <input value="" name="search[site_name]" class="form-control" style="width: 250px;" type="text"/>
-            </td>
-        </tr>
-        <tr>
-            <th style="width: 15%">Site domain</th>
-            <td>
-                <input value="" name="search[site_domain]" class="form-control" style="width: 250px;" type="text"/>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+<form method="get" action="">
+    <div class="table-responsive">
+        <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <th>Site name</th>
+                <td>
+                    <input value="${search/site_name|''}" name="search[site_name]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Site domain</th>
+                <td>
+                    <input value="${search/site_domain|''}" name="search[site_domain]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Use single</th>
+                <td>
+                    <select name="search[use_single_domain]" class="form-control" style="width: 250px;">
+                        <option value="">Choose value...</option>
+                        <option tal:attributes="selected php: search['use_single_domain'] == '1' ? 'selected' :''"
+                                value="1">Yes
+                        </option>
+                        <option tal:attributes="selected php: search['use_single_domain'] == '0' ? 'selected' :''"
+                                value="0">No
+                        </option>
+                    </select>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
-<div class="BtnArea" style="text-align: center !important;">
-    <input class="btn btn-default" title="Search" value="Search" type="submit"/>
-</div>
+    <div class="BtnArea" style="text-align: center !important;">
+        <input class="btn btn-default" title="Search" value="Search" type="submit"/>
+    </div>
+</form>
 
 
 <div class="table-responsive" tal:condition="archiveSite">
     <table class="table table-striped">
         <thead>
         <tr>
-            <th style="width: 5%;">#</th>
-            <th style="width: 20%;">Site name</th>
+            <th style="width: 3%;">#</th>
+            <th style="width: 13%;">Site name</th>
             <th style="width: 10%;">Staff id</th>
             <th>Site domain</th>
-            <th style="width:10%">Created</th>
-            <th style="width:10%">Modified</th>
+            <th style="width: 10%;">Use single</th>
+            <th style="width:15%">Created</th>
+            <th style="width:15%">Modified</th>
             <th style="width: 7%;">Action</th>
         </tr>
         </thead>
         <tbody>
-            <tr tal:repeat="site archiveSite ">
-                <td>${repeat/site/number}</td>
-                <td>${site/site_name|''}</td>
-                <td>${site/site_domain|''}</td>
-                <td>${site/site_domain|''}</td>
-                <td><tal:block tal:condition="site/created" tal:content="dateformat:site/created" /></td>
-                <td><tal:block tal:condition="site/modified" tal:content="dateformat:site/modified" /></td>
-                <td>
-                    <a tal:attributes="href php:this.createUrl('/archivesite/default/view',array('id'=>site['id']))">
-                        <span class="glyphicon glyphicon-share-alt"></span>
-                    </a>
-                    <a href="">
-                        <span class="glyphicon glyphicon-remove"></span>
-                    </a>
-                    <a href="">
-                        <span class="glyphicon glyphicon-pencil"></span>
-                    </a>
-                </td>
-            </tr>
+        <tr tal:repeat="site archiveSite ">
+            <td>${site/id}</td>
+            <td>${site/site_name|''}</td>
+            <td>
+                <tal:block tal:condition="site/own" tal:content="site/own/login_id"/>
+            </td>
+            <td>
+                <a tal:condition="site/site_domain" href="${site/site_domain|''}">${site/site_domain|''}</a>
+                <a tal:condition="not:site/site_domain" href="${params/fe_domain|''}${site/site_abbr_cd|''}">${params/fe_domain|''}${site/site_abbr_cd|''}</a>
+            </td>
+            <td>
+                <strong tal:condition="site/use_single_domain">Yes</strong>
+                <strong tal:condition="not:site/use_single_domain">No</strong>
+            </td>
+            <td>
+                <tal:block tal:condition="site/created" tal:content="dateformat:site/created"/>
+            </td>
+            <td>
+                <tal:block tal:condition="site/modified" tal:content="dateformat:site/modified"/>
+            </td>
+            <td>
+                <a tal:attributes="href php:this.createUrl('/archivesite/default/view',array('id'=>site['id']))">
+                    <span class="glyphicon glyphicon-share-alt"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/archivesite/default/delete',array('id'=>site['id']))">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/archivesite/default/edit',array('id'=>site['id']))">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+            </td>
+        </tr>
         </tbody>
     </table>
 </div>
@@ -75,7 +110,7 @@
 </div>
 
 <div class="mBoxitem_listinfo">
-    <ul class="pageList_link">
+    <ul class="pageList_link" tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)">
         <li class="stay"><strong>1</strong></li>
         <li><a href="/admin/orders/search?page=2">2</a></li>
         <li><a href="/admin/orders/search?page=2">≫</a></li>

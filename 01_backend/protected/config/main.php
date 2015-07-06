@@ -118,6 +118,7 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'site_domain'=>'cms.platform.dev/',
+		'fe_domain'=>'http://front.platform.dev/',
         'pageCountItems' => '10',
 	),
 );

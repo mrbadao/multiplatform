@@ -31,7 +31,7 @@ class PHPTALViewRenderer extends CApplicationComponent implements IViewRenderer
     public function renderFile($context, $sourceFile, $data, $return)
     {
         $sourceFile = $this->theme == null ? 'protected'.substr($sourceFile, $this->_basePathLength) : $sourceFile;
-//        var_dump($sourceFile); die;
+
         $tal = new PHPTAL($sourceFile);
         $tal->setOutputMode(PHPTAL::HTML5);
         $tal->this = $context;

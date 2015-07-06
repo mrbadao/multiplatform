@@ -9,17 +9,54 @@ class ArchiveSiteUrlRule extends CBaseUrlRule {
 
         if(!isset($paths[0]) || $paths['0'] != "archivesite") return false;
 
-        if(isset($paths[1]) && $paths[1] == "default"){
+            if(isset($paths[1]) && $paths[1] == "default"){
             if(!isset($paths[2])) return false;
 
             switch($paths['2']){
-                case "index": return "archivesite/";
+                case "index":
+                    $url = "archivesite/";
+                    if(isset($params)){
+                        $url .= "index.php?";
+                        foreach($params as $k => $v){
+                            $url .= sprintf("%s=%s%s", $k, $v, $ampersand);
+                        }
+                        $url = substr($url, 0, strlen($url) - 1);
+                    }
+                    return $url;
+
                 case "view":
-                    if(isset($params['id'])) return "archivesite/view.php?id=".$params['id'];
+                    if(isset($params)){
+                        $url = "archivesite/view.php?";
+                        foreach($params as $k => $v){
+                            $url .= sprintf("%s=%s%s", $k, $v, $ampersand);
+                        }
+                        $url = substr($url, 0, strlen($url) - 1);
+                        return $url;
+                    }
                     break;
+
+                case "delete":
+                    if(isset($params)){
+                        $url = "archivesite/delete.php?";
+                        foreach($params as $k => $v){
+                            $url .= sprintf("%s=%s%s", $k, $v, $ampersand);
+                        }
+                        $url = substr($url, 0, strlen($url) - 1);
+                        return $url;
+                    }
+                    break;
+
                 case "edit":
-                    if(isset($params['id'])) return "archivesite/edit.php?id=".$params['id'];
-                    else return "archivesite/edit.php";
+                    $url = "archivesite/edit.php";
+                    if(isset($params)){
+                        $url .= "?";
+                        foreach($params as $k => $v){
+                            $url .= sprintf("%s=%s%s", $k, $v, $ampersand);
+                        }
+                        $url = substr($url, 0, strlen($url) - 1);
+                    }
+                    return $url;
+
                 default: return "archivesite/";
             }
         }
@@ -34,10 +71,14 @@ class ArchiveSiteUrlRule extends CBaseUrlRule {
             return FALSE;
         }
 
-        if(!isset($paths[1])) return '/archivesite/default/index';
+        if(!isset($paths[1]) || $paths[1]=='index.php') return '/archivesite/default/index';
 
         if($paths[1]=='view.php' && isset($_GET['id']) && is_numeric($_GET['id'])) {
             return '/archivesite/default/view';
+        }
+
+        if($paths[1]=='delete.php' && isset($_GET['id']) && is_numeric($_GET['id'])) {
+            return '/archivesite/default/delete';
         }
 
         if($paths[1]=='edit.php') {

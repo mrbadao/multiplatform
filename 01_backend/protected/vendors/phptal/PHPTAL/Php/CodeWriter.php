@@ -29,7 +29,7 @@ class PHPTAL_Php_CodeWriter
      * stack with free'd variables
      */
     private $temp_recycling=array();
-
+    private $_indentation;
     /**
      * keeps track of seen functions for function_exists
      */

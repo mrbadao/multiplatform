@@ -5715,3 +5715,719 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/themes/classic/assets//js/jquery.min.map
 ---
+2015/07/06 16:00:56 [error] [php] Undefined property: PHPTAL_Php_CodeWriter::$_indentation (C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php:143)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile()
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php(59): SiteController->renderFile()
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php(45): SiteController->_getBreadcrumbs()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(282): SiteController->init()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php (143)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php (252)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php (236)
+2015/07/06 16:02:05 [error] [php] Undefined property: PHPTAL_Php_CodeWriter::$_indentation (C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php:143)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile()
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php(59): SiteController->renderFile()
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php(45): SiteController->_getBreadcrumbs()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(282): SiteController->init()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php (143)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php (252)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php (236)
+2015/07/06 16:12:28 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:12:48 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:12:50 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:14:26 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:14:53 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:15:33 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:16:01 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:16:27 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:17:58 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:18:23 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:18:32 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:18:43 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 16:19:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php:31
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionEdit()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('edit')
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#6 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/archivesite/edit.php?id=20
+---
+2015/07/06 17:37:55 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:38:26 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:38:36 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:38:41 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:38:47 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:41:51 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:42:04 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:42:17 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:42:21 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:42:28 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:42:35 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:43:28 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:43:43 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:44:47 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:46:31 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:46:33 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:48:02 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:48:15 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:48:18 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:48:20 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:48:35 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:49:28 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:53:46 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 17:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archiveSite/default/view/id/2/message/success".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archiveSite/def...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archiveSite/default/view/id/2/message/success
+HTTP_REFERER=http://cms.platform.com/archivesite/edit.php?id=2
+---
+2015/07/06 17:59:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archiveSite/default/view".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archiveSite/def...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archiveSite/default/view
+---
+2015/07/06 18:00:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archiveSite/default/view".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archiveSite/def...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archiveSite/default/view
+---
+2015/07/06 18:00:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archiveSite/default/view".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archiveSite/def...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archiveSite/default/view
+---
+2015/07/06 18:01:09 [error] [php] substr() expects at least 2 parameters, 1 given (C:\xampp\htdocs\multiplatform\01_backend\protected\components\urlrule\ArchiveSiteUrlRule.php:23)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(524): CUrlManager->createUrl()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(968): CWebApplication->createUrl()
+#2 C:\Users\hieun_000\AppData\Local\Temp\tpl_559aa0c9_index__AKK6b6yFItN5stIPzpfy6g.php(136): DefaultController->createUrl()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559aa0c9_index__AKK6b6yFItN5stIPzpfy6g()
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(16): DefaultController->render()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#14 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archiveSite/
+in C:\xampp\htdocs\multiplatform\01_backend\protected\components\urlrule\ArchiveSiteUrlRule.php (23)
+in C:\Users\hieun_000\AppData\Local\Temp\tpl_559aa0c9_index__AKK6b6yFItN5stIPzpfy6g.php (136)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/06 18:01:47 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:01:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archiveSite/default/view/id/2/message/success".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archiveSite/def...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archiveSite/default/view/id/2/message/success
+HTTP_REFERER=http://cms.platform.com/archivesite/edit.php?id=2
+---
+2015/07/06 18:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archiveSite/default/view/id/2/message/success".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archiveSite/def...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archiveSite/default/view/id/2/message/success
+HTTP_REFERER=http://cms.platform.com/archivesite/edit.php?id=2
+---
+2015/07/06 18:02:54 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:03:12 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:03:35 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:03:43 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:04:03 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:05:14 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:16:34 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (42)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:16:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/view.php".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/vie...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite/view.php?id=
+---
+2015/07/06 18:25:38 [error] [exception.CException] exception 'CException' with message 'Class name "staff" does not match class file "C:\xampp\htdocs\multiplatform\01_backend\protected\models\staff.php".' in C:\xampp\htdocs\multiplatform\03_framework\YiiBase.php:414
+Stack trace:
+#0 [internal function]: YiiBase::autoload('staff')
+#1 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(387): spl_autoload_call('staff')
+#2 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveFinder.php(220): CActiveRecord::model('staff')
+#3 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), 'staff')
+#4 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(272): CActiveFinder->__construct(Object(ArchiveSite), 'staff')
+#5 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(142): CActiveRecord->getRelated('staff')
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\models\ArchiveSite.php(138): CActiveRecord->__get('staff')
+#7 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(1803): ArchiveSite->afterFind()
+#8 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(1291): CActiveRecord->populateRecord(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(1459): CActiveRecord->query(Object(CDbCriteria))
+#10 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(23): CActiveRecord->findByAttributes(Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionView()
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#16 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#17 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/archivesite/view.php?id=2
+HTTP_REFERER=http://cms.platform.com/archivesite/
+---
+2015/07/06 18:32:46 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'site' in current scope' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\view.html:54
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(132): PHPTAL_Context->__get('site')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559aadad_view__3MjesEAL99NqKsw3AY93NQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(25): CController->render('view', Array)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionView()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#13 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/archivesite/view.php?id=2
+HTTP_REFERER=http://cms.platform.com/archivesite/
+---
+2015/07/06 18:38:54 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (42)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:39:11 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (42)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:46:58 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (42)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:50:13 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'own'' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\index.html:53
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'own', 'own')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(110): PHPTAL_Context::path(Array, 'own')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559ab1c4_index__AKK6b6yFItN5stIPzpfy6g(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(16): CController->render('index', Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#14 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/archivesite/
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=2
+---
+2015/07/06 18:54:37 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'site_domain'' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\index.html:56
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'site_domain', 'site_domain')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(123): PHPTAL_Context::path(Array, 'site_domain')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559ab2cc_index__AKK6b6yFItN5stIPzpfy6g(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(16): CController->render('index', Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#14 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/archivesite/
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=2
+---
+2015/07/06 18:56:27 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (42)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 18:57:01 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (42)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 19:09:01 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (46)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 19:10:45 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (46)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 19:10:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/index.php".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/ind...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite/index.php?message=success&action=delete
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=2&message=success&action=edit
+---
+2015/07/06 19:21:35 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'ArchiveSite object doesn't have method/property named 'id'' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\edit.html:4
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(408): PHPTAL_Context::pathError(Object(ArchiveSite), 'id', 'id')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(17): PHPTAL_Context::path(Object(ArchiveSite), 'id')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559ab91d_edit__JvYQWsGUN7qaFSmv11f_jA(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('edit', Array, true)
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(57): CController->render('edit', Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionEdit()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('edit')
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#14 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/archivesite/edit.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=2
+---
+2015/07/06 19:26:41 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (47)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 19:27:42 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Unexpected character 'g' between attributes of < a >' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\index.html:70
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(223): PHPTAL_Dom_SaxXmlParser->raiseError('Unexpected char...')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<nav id="topicP...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(21): CController->render('index', Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#14 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#15 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/archivesite/index.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=5&message=success&action=edit
+---
+2015/07/06 19:27:50 [error] [exception.PHPTAL_TemplateException] From C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' with message '<br />
+<b>Parse error</b>:  syntax error, unexpected ':' in <b>C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : C:\Users\HIEUN_~1\AppData\Local\Temp\tpl_559aba94_index__AKK6b6yFItN5stIPzpfy6g.php</b> on line <b>203</b><br />' in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php:857
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(21): CController->render('index', Array)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#12 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/archivesite/index.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=5&message=success&action=edit
+---
+2015/07/06 19:28:26 [error] [exception.PHPTAL_TemplateException] From C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' with message '<br />
+<b>Parse error</b>:  syntax error, unexpected ':' in <b>C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : C:\Users\HIEUN_~1\AppData\Local\Temp\tpl_559abab8_index__AKK6b6yFItN5stIPzpfy6g.php</b> on line <b>203</b><br />' in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php:857
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(21): CController->render('index', Array)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#12 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/archivesite/index.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=5&message=success&action=edit
+---
+2015/07/06 19:40:33 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'search' in current scope' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\index.html:32
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(77): PHPTAL_Context->__get('search')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559abd8e_index__AKK6b6yFItN5stIPzpfy6g(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(26): CController->render('index', Array)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#13 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/archivesite/index.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=5&message=success&action=edit
+---
+2015/07/06 19:40:47 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'search' in current scope' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\index.html:32
+Stack trace:
+#0 C:\Users\hieun_000\AppData\Local\Temp\tpl_559abd8e_index__AKK6b6yFItN5stIPzpfy6g.php(76): PHPTAL_Context->__get('search')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559abd8e_index__AKK6b6yFItN5stIPzpfy6g(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(26): CController->render('index', Array)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#13 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/archivesite/index.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=5&message=success&action=edit
+---
+2015/07/06 19:42:17 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: 'checked php:search['use_single_domain'] == 0 ? 'checked' :''', expected variable name. Complex expressions need php: modifier.' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\index.html:33
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('checked php:sea...', false)
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(480): call_user_func(Array, 'checked php:sea...', false)
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', 'checked php:sea...', false)
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('checked php:sea...', false)
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('checked php:sea...')
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\Attribute\TAL\Condition.php(41): PHPTAL_Php_CodeWriter->evaluateExpression('checked php:sea...')
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(355): PHPTAL_Php_Attribute_TAL_Condition->before(Object(PHPTAL_Php_CodeWriter))
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(206): PHPTAL_Dom_Element->generateSurroundHead(Object(PHPTAL_Php_CodeWriter))
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#9 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#10 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#11 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#18 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#19 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#20 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#21 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#22 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#23 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_559abdf8_in...', Object(PHPTAL_Dom_Element))
+#24 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#25 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#26 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#27 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#28 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#29 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#30 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(26): CController->render('index', Array)
+#31 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#32 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#33 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#34 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#35 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#36 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#37 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#38 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#39 {main}
+REQUEST_URI=/archivesite/index.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=5&message=success&action=edit
+---
+2015/07/06 19:42:58 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Invalid TALES path: 'checked php: search['use_single_domain'] == '0' ? 'checked' :''', expected variable name. Complex expressions need php: modifier.' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\archivesite\default\index.html:33
+Stack trace:
+#0 [internal function]: PHPTAL_Php_TalesInternal::path('checked php: se...', false)
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(480): call_user_func(Array, 'checked php: se...', false)
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\TalesInternal.php(456): PHPTAL_Php_TalesInternal::getPHPExpressionsForModifier('path', 'checked php: se...', false)
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\State.php(117): PHPTAL_Php_TalesInternal::compileToPHPExpressions('checked php: se...', false)
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(138): PHPTAL_Php_State->evaluateExpression('checked php: se...')
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\Attribute\TAL\Condition.php(41): PHPTAL_Php_CodeWriter->evaluateExpression('checked php: se...')
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(355): PHPTAL_Php_Attribute_TAL_Condition->before(Object(PHPTAL_Php_CodeWriter))
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(206): PHPTAL_Dom_Element->generateSurroundHead(Object(PHPTAL_Php_CodeWriter))
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#9 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#10 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#11 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#12 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#13 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#14 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#15 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#16 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#17 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#18 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#19 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#20 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(395): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#21 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\Element.php(216): PHPTAL_Dom_Element->generateContent(Object(PHPTAL_Php_CodeWriter))
+#22 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Php\CodeWriter.php(240): PHPTAL_Dom_Element->generateCode(Object(PHPTAL_Php_CodeWriter))
+#23 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1126): PHPTAL_Php_CodeWriter->doTemplateFile('tpl_559abe21_in...', Object(PHPTAL_Dom_Element))
+#24 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#25 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#26 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#27 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#28 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#29 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#30 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(26): CController->render('index', Array)
+#31 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#32 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#33 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#34 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#35 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('index')
+#36 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#37 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#38 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#39 {main}
+REQUEST_URI=/archivesite/index.php
+HTTP_REFERER=http://cms.platform.com/archivesite/view.php?id=5&message=success&action=edit
+---
+2015/07/06 19:54:23 [error] [php] Use of undefined constant itemCount - assumed 'itemCount' (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php:50)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (50)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/06 19:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/orders/search".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('admin/orders/se...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/orders/search?page=2
+HTTP_REFERER=http://cms.platform.com/archivesite/index.php
+---
+2015/07/06 20:07:47 [error] [php] Undefined index: use_single_domain (C:\Users\hieun_000\AppData\Local\Temp\tpl_559ac116_index__AKK6b6yFItN5stIPzpfy6g.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(70): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php?search%5Bsite_name%5D=Songoku&search%5Bsite_domain%5D=&search%5Buse_single_domain%5D=
+in C:\Users\hieun_000\AppData\Local\Temp\tpl_559ac116_index__AKK6b6yFItN5stIPzpfy6g.php (81)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/06 20:09:19 [error] [php] Undefined index: use_single_domain (C:\Users\hieun_000\AppData\Local\Temp\tpl_559ac116_index__AKK6b6yFItN5stIPzpfy6g.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(62): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\Users\hieun_000\AppData\Local\Temp\tpl_559ac116_index__AKK6b6yFItN5stIPzpfy6g.php (81)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/06 20:15:15 [error] [php] Array to string conversion (C:\xampp\htdocs\multiplatform\01_backend\protected\components\urlrule\ArchiveSiteUrlRule.php:21)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(524): CUrlManager->createUrl()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(968): CWebApplication->createUrl()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CPagination.php(208): DefaultController->createUrl()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\widgets\pagers\CBasePager.php(133): CPagination->createPageUrl()
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php(188): PaginationWidget->createPageUrl()
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php(116): PaginationWidget->createPageButton()
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php(78): PaginationWidget->createPageButtons()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(168): PaginationWidget->run()
+#8 C:\Users\hieun_000\AppData\Local\Temp\tpl_559ac4a6_index__AKK6b6yFItN5stIPzpfy6g.php(298): DefaultController->widget()
+#9 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559ac4a6_index__AKK6b6yFItN5stIPzpfy6g()
+#10 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#14 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(62): DefaultController->render()
+#15 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#16 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#18 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#19 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#20 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php?search%5Bsite_name%5D=&search%5Bsite_domain%5D=&search%5Buse_single_domain%5D=1
+in C:\xampp\htdocs\multiplatform\01_backend\protected\components\urlrule\ArchiveSiteUrlRule.php (21)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php (188)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php (116)
+2015/07/06 20:15:54 [error] [php] Array to string conversion (C:\xampp\htdocs\multiplatform\01_backend\protected\components\urlrule\ArchiveSiteUrlRule.php:22)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(524): CUrlManager->createUrl()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(968): CWebApplication->createUrl()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CPagination.php(208): DefaultController->createUrl()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\widgets\pagers\CBasePager.php(133): CPagination->createPageUrl()
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php(188): PaginationWidget->createPageUrl()
+#5 C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php(116): PaginationWidget->createPageButton()
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php(78): PaginationWidget->createPageButtons()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(168): PaginationWidget->run()
+#8 C:\Users\hieun_000\AppData\Local\Temp\tpl_559ac4a6_index__AKK6b6yFItN5stIPzpfy6g.php(298): DefaultController->widget()
+#9 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559ac4a6_index__AKK6b6yFItN5stIPzpfy6g()
+#10 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#14 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(62): DefaultController->render()
+#15 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#16 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#18 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#19 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#20 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#21 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php?search%5Bsite_name%5D=&search%5Bsite_domain%5D=&search%5Buse_single_domain%5D=1
+in C:\xampp\htdocs\multiplatform\01_backend\protected\components\urlrule\ArchiveSiteUrlRule.php (22)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php (188)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php (116)
