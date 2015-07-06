@@ -8,7 +8,8 @@ class Controller extends CController
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */
-	public $menu=array();
+	public $menu = array();
+	public $nav = array();
 	/**
 	 * @var array the breadcrumbs of the current page. The value of this property will
 	 * be assigned to {@link CBreadcrumbs::links}. Please refer to {@link CBreadcrumbs::links}
@@ -21,10 +22,15 @@ class Controller extends CController
     public function init()
     {
         $administrator = Administrator::model()->findByPk(1);
-        $this->menu = self::_getHTMLMenu($administrator->getMenuData(Yii::app()->params['site_domain'])) ;
+        $this->menu = self::_getHTMLMenu($administrator->getMenuData(Yii::app()->params['site_domain']));
+        $this->nav = self::_getNav();
     }
 
     private function _getHTMLMenu($data){
         return $this->renderPartial('../components/menu', compact('data'), true);
+    }
+
+    private function _getNav(){
+        return $this->renderPartial('../components/nav', compact('data'), true);
     }
 }

@@ -5,7 +5,7 @@
  * LoginForm is the data structure for keeping
  * user login form data. It is used by the 'login' action of 'SiteController'.
  */
-class LoginForm extends CFormModel
+class LoginModel extends CFormModel
 {
 	public $username;
 	public $password;
@@ -51,25 +51,25 @@ class LoginForm extends CFormModel
 	{
 		if(!$this->hasErrors())
 		{
-			$this->_identity=new UserIdentity($this->username,$this->password);
+			$this->_identity=new AdminIdentity($this->username,$this->password);
 			if(!$this->_identity->authenticate())
-				$this->addError('password','Incorrect username or password.');
+				$this->addError('password','Incorrect password.');
 		}
 	}
 
 	/**
-	 * Logs in the user using the given username and password in the model.
+	 * Logs in the admin user group using the given username and password in the model.
 	 * @return boolean whether login is successful
 	 */
-	public function login()
+	public function adminLogin()
 	{
 		if($this->_identity===null)
 		{
-			$this->_identity=new UserIdentity($this->username,$this->password);
+			$this->_identity=new AdminIdentity($this->username,$this->password);
 			$this->_identity->authenticate();
 		}
 
-		if($this->_identity->errorCode===UserIdentity::ERROR_NONE)
+		if($this->_identity->errorCode===AdminIdentity::ERROR_NONE)
 		{
 			$duration=$this->rememberMe ? 3600*24*10 : 0; // 30 days
 			Yii::app()->user->login($this->_identity,$duration);
@@ -78,4 +78,5 @@ class LoginForm extends CFormModel
 		else
 			return false;
 	}
+
 }

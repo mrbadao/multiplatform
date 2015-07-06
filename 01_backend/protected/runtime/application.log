@@ -2876,3 +2876,1254 @@ Stack trace:
 REQUEST_URI=/themes/classic/assets//img/bg_texture.png
 HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
 ---
+2015/07/06 01:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//img/bg_texture.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//img/bg_texture.png
+HTTP_REFERER=http://cms.platform.dev/themes/classic/assets//css/style.css
+---
+2015/07/06 01:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/06 01:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/06 01:43:14 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /input > (opened in line 14) but found < /label >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\login.html:15
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('label')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<form class="fo...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#15 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#16 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#21 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#22 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:43:38 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /input > (opened in line 14) but found < /label >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\login.html:15
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('label')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<form class="fo...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#15 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#16 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#21 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#22 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:43:57 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Value of attribute href in < link > is not in quotes (found character '$' instead of quote)' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:20
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(316): PHPTAL_Dom_SaxXmlParser->raiseError('Value of attrib...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:44:14 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Value of attribute href in < link > is not in quotes (found character '$' instead of quote)' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:20
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(316): PHPTAL_Dom_SaxXmlParser->raiseError('Value of attrib...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:44:55 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Value of attribute href in < link > is not in quotes (found character '$' instead of quote)' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:20
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(316): PHPTAL_Dom_SaxXmlParser->raiseError('Value of attrib...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:44:56 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Value of attribute href in < link > is not in quotes (found character '$' instead of quote)' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:20
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(316): PHPTAL_Dom_SaxXmlParser->raiseError('Value of attrib...')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:45:20 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /meta > (opened in line 9) but found < /head >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:34
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('head')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:45:31 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /meta > (opened in line 7) but found < /head >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:34
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('head')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:45:47 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /input > (opened in line 57) but found < /form >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:58
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('form')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:46:01 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /body > (opened in line 35) but found < /div >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:71
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('div')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:46:46 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /body > (opened in line 35) but found < /div >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\login.html:70
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('div')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 01:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('assets/images/l...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/images/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 01:48:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('assets/images/l...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/images/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 01:49:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('assets/images/l...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/images/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 01:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('assets/images/l...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/images/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 01:49:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/logo.png".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('assets/images/l...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/images/logo.png
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 01:51:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:54:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:56:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:57:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:58:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:58:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:59:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 01:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:02:08 [error] [exception.PHPTAL_TemplateException] From C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' with message '<br />
+<font size='1'><table class='xdebug-error' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Parse error: syntax error, unexpected ';' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : C:\Windows\TEMP\tpl_5599e19f_login__gQUz0sd73d_IHogjovnB8A.php on line <i>44</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0094</td><td bgcolor='#eeeeec' align='right'>369728</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0238</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CApplication->run(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>13</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0238</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CWebApplication->processRequest(  )</td><td title='C:\wamp\www\multiplatform\03_framework\base\CApplication.php' bgcolor='#eeeeec'>..\CApplication.php<b>:</b>162</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0274</td><td bgcolor='#eeeeec' align='right'>2208624</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>142</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.1206</td><td bgcolor='#eeeeec' align='right'>6243536</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.1212</td><td bgcolor='#eeeeec' align='right'>6285288</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.1212</td><td bgcolor='#eeeeec' align='right'>6285288</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.1212</td><td bgcolor='#eeeeec' align='right'>6285288</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.1212</td><td bgcolor='#eeeeec' align='right'>6285896</td><td bgcolor='#eeeeec'>SiteController->actionIndex(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.1244</td><td bgcolor='#eeeeec' align='right'>6612728</td><td bgcolor='#eeeeec'>CController->forward(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>31</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.1244</td><td bgcolor='#eeeeec' align='right'>6612792</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>753</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>12</td><td bgcolor='#eeeeec' align='center'>0.1598</td><td bgcolor='#eeeeec' align='right'>6634408</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>13</td><td bgcolor='#eeeeec' align='center'>0.1599</td><td bgcolor='#eeeeec' align='right'>6634952</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>14</td><td bgcolor='#eeeeec' align='center'>0.1599</td><td bgcolor='#eeeeec' align='right'>6634952</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>15</td><td bgcolor='#eeeeec' align='center'>0.1599</td><td bgcolor='#eeeeec' align='right'>6634952</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>16</td><td bgcolor='#eeeeec' align='center'>0.1600</td><td bgcolor='#eeeeec' align='right'>6635384</td><td bgcolor='#eeeeec'>SiteController->actionLogin(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>17</td><td bgcolor='#eeeeec' align='center'>0.1610</td><td bgcolor='#eeeeec' align='right'>6696480</td><td bgcolor='#eeeeec'>CController->render(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>78</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>18</td><td bgcolor='#eeeeec' align='center'>0.1610</td><td bgcolor='#eeeeec' align='right'>6696544</td><td bgcolor='#eeeeec'>CController->renderPartial(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>783</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>19</td><td bgcolor='#eeeeec' align='center'>0.1613</td><td bgcolor='#eeeeec' align='right'>6696736</td><td bgcolor='#eeeeec'>CBaseController->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>870</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>20</td><td bgcolor='#eeeeec' align='center'>0.1613</td><td bgcolor='#eeeeec' align='right'>6696768</td><td bgcolor='#eeeeec'>PHPTALViewRenderer->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CBaseController.php' bgcolor='#eeeeec'>..\CBaseController.php<b>:</b>94</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>21</td><td bgcolor='#eeeeec' align='center'>0.1618</td><td bgcolor='#eeeeec' align='right'>6701016</td><td bgcolor='#eeeeec'>PHPTAL->execute(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php' bgcolor='#eeeeec'>..\PHPTALViewRenderer.php<b>:</b>52</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>22</td><td bgcolor='#eeeeec' align='center'>0.1618</td><td bgcolor='#eeeeec' align='right'>6701016</td><td bgcolor='#eeeeec'>PHPTAL->prepare(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php' bgcolor='#eeeeec'>..\PHPTAL.php<b>:</b>667</td></tr>
+</table></font>' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php:857
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#1 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#5 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#12 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#13 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#19 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2015/07/06 02:02:39 [error] [exception.PHPTAL_TemplateException] From C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php around line 857
+exception 'PHPTAL_TemplateException' with message '<br />
+<font size='1'><table class='xdebug-error' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Parse error: syntax error, unexpected ';' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : C:\Windows\TEMP\tpl_5599e1be_login__gQUz0sd73d_IHogjovnB8A.php on line <i>44</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0276</td><td bgcolor='#eeeeec' align='right'>369728</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0417</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CApplication->run(  )</td><td title='C:\wamp\www\multiplatform\01_backend\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>13</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0417</td><td bgcolor='#eeeeec' align='right'>1973888</td><td bgcolor='#eeeeec'>CWebApplication->processRequest(  )</td><td title='C:\wamp\www\multiplatform\03_framework\base\CApplication.php' bgcolor='#eeeeec'>..\CApplication.php<b>:</b>162</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0456</td><td bgcolor='#eeeeec' align='right'>2208624</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>142</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.1390</td><td bgcolor='#eeeeec' align='right'>6243536</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.1394</td><td bgcolor='#eeeeec' align='right'>6285288</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.1394</td><td bgcolor='#eeeeec' align='right'>6285288</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.1395</td><td bgcolor='#eeeeec' align='right'>6285288</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.1395</td><td bgcolor='#eeeeec' align='right'>6285896</td><td bgcolor='#eeeeec'>SiteController->actionIndex(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.1425</td><td bgcolor='#eeeeec' align='right'>6612728</td><td bgcolor='#eeeeec'>CController->forward(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>31</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.1425</td><td bgcolor='#eeeeec' align='right'>6612792</td><td bgcolor='#eeeeec'>CWebApplication->runController(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>753</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>12</td><td bgcolor='#eeeeec' align='center'>0.1777</td><td bgcolor='#eeeeec' align='right'>6634408</td><td bgcolor='#eeeeec'>CController->run(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php' bgcolor='#eeeeec'>..\CWebApplication.php<b>:</b>283</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>13</td><td bgcolor='#eeeeec' align='center'>0.1778</td><td bgcolor='#eeeeec' align='right'>6634952</td><td bgcolor='#eeeeec'>CController->runActionWithFilters(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>266</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>14</td><td bgcolor='#eeeeec' align='center'>0.1778</td><td bgcolor='#eeeeec' align='right'>6634952</td><td bgcolor='#eeeeec'>CController->runAction(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>287</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>15</td><td bgcolor='#eeeeec' align='center'>0.1778</td><td bgcolor='#eeeeec' align='right'>6634952</td><td bgcolor='#eeeeec'>CInlineAction->runWithParams(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>309</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>16</td><td bgcolor='#eeeeec' align='center'>0.1779</td><td bgcolor='#eeeeec' align='right'>6635384</td><td bgcolor='#eeeeec'>SiteController->actionLogin(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php' bgcolor='#eeeeec'>..\CInlineAction.php<b>:</b>50</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>17</td><td bgcolor='#eeeeec' align='center'>0.1788</td><td bgcolor='#eeeeec' align='right'>6696480</td><td bgcolor='#eeeeec'>CController->render(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php' bgcolor='#eeeeec'>..\SiteController.php<b>:</b>78</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>18</td><td bgcolor='#eeeeec' align='center'>0.1788</td><td bgcolor='#eeeeec' align='right'>6696544</td><td bgcolor='#eeeeec'>CController->renderPartial(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>783</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>19</td><td bgcolor='#eeeeec' align='center'>0.1791</td><td bgcolor='#eeeeec' align='right'>6696736</td><td bgcolor='#eeeeec'>CBaseController->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CController.php' bgcolor='#eeeeec'>..\CController.php<b>:</b>870</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>20</td><td bgcolor='#eeeeec' align='center'>0.1791</td><td bgcolor='#eeeeec' align='right'>6696768</td><td bgcolor='#eeeeec'>PHPTALViewRenderer->renderFile(  )</td><td title='C:\wamp\www\multiplatform\03_framework\web\CBaseController.php' bgcolor='#eeeeec'>..\CBaseController.php<b>:</b>94</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>21</td><td bgcolor='#eeeeec' align='center'>0.1796</td><td bgcolor='#eeeeec' align='right'>6701016</td><td bgcolor='#eeeeec'>PHPTAL->execute(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php' bgcolor='#eeeeec'>..\PHPTALViewRenderer.php<b>:</b>52</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>22</td><td bgcolor='#eeeeec' align='center'>0.1796</td><td bgcolor='#eeeeec' align='right'>6701016</td><td bgcolor='#eeeeec'>PHPTAL->prepare(  )</td><td title='C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php' bgcolor='#eeeeec'>..\PHPTAL.php<b>:</b>667</td></tr>
+</table></font>' in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php:857
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#1 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#5 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(78): CController->render('login', Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#12 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#13 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#19 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2015/07/06 02:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:03:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:03:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:05:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:06:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:06:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:07:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:07:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:07:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:08:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:08:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:09:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:09:46 [error] [php] Undefined index: LoginForm (C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php:58)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): SiteController->forward()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/?LoginForm%5Busername%5D=&LoginForm%5BverifyCode%5D=asd
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (58)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/06 02:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:10:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:10:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:10:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:10:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:13:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:14:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:14:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:15:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:18:08 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'LoginForm object doesn't have method/property named 'username'''' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\login.html:6
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(408): PHPTAL_Context::pathError(Object(LoginForm), 'username''', 'username''')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(21): PHPTAL_Context::path(Object(LoginForm), 'username''')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_5599e558_login__gQUz0sd73d_IHogjovnB8A(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#4 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('login', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(79): CController->render('login', Array)
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#14 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#15 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/
+---
+2015/07/06 02:18:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:18:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:18:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 02:24:46 [warning] [application] Failed to set unsafe attribute "aaa" of "LoginForm".
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (72)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/06 02:24:55 [warning] [application] Failed to set unsafe attribute "aaa" of "LoginForm".
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (72)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/06 02:25:16 [warning] [application] Failed to set unsafe attribute "aaa" of "LoginForm".
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (72)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/06 02:25:27 [warning] [application] Failed to set unsafe attribute "rememberme" of "LoginForm".
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (72)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/06 02:25:33 [warning] [application] Failed to set unsafe attribute "rememberme" of "LoginForm".
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (72)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (31)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/06 03:08:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 04:34:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 04:35:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 04:35:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 04:36:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/06 04:46:41 [error] [exception.CException] exception 'CException' with message 'LoginForm and its behaviors do not have a method or closure named "login".' in C:\wamp\www\multiplatform\03_framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(71): CComponent->__call('login', Array)
+#1 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(71): LoginForm->login()
+#2 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 05:04:16 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:546)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\models\LoginModel.php(55): AdminIdentity->authenticate()
+#1 C:\wamp\www\multiplatform\03_framework\validators\CInlineValidator.php(43): LoginModel->authenticate()
+#2 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#3 C:\wamp\www\multiplatform\03_framework\base\CModel.php(158): CInlineValidator->validate()
+#4 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(71): LoginModel->validate()
+#5 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#9 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController()
+#11 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): SiteController->forward()
+#12 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#13 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#14 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): SiteController->runAction()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): SiteController->runActionWithFilters()
+#16 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): SiteController->run()
+#17 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\wamp\www\multiplatform\01_backend\protected\components\AdminIdentity.php (20)
+in C:\wamp\www\multiplatform\01_backend\protected\models\LoginModel.php (55)
+in C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php (71)
+2015/07/06 05:04:50 [error] [exception.CDbException] exception 'CDbException' with message 'Table "administrator" does not have a column named "username".' in C:\wamp\www\multiplatform\03_framework\db\schema\CDbCommandBuilder.php:570
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\db\ar\CActiveRecord.php(1458): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\AdminIdentity.php(20): CActiveRecord->findByAttributes(Array)
+#2 C:\wamp\www\multiplatform\01_backend\protected\models\LoginModel.php(55): AdminIdentity->authenticate()
+#3 C:\wamp\www\multiplatform\03_framework\validators\CInlineValidator.php(43): LoginModel->authenticate('password', Array)
+#4 C:\wamp\www\multiplatform\03_framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginModel), 'password')
+#5 C:\wamp\www\multiplatform\03_framework\base\CModel.php(158): CValidator->validate(Object(LoginModel), NULL)
+#6 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(71): CModel->validate()
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('login')
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(753): CWebApplication->runController('site/login')
+#13 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(31): CController->forward('site/login')
+#14 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#19 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#20 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 05:23:06 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /input > (opened in line 23) but found < /td >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\index.html:24
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('td')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<nav id="topicP...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', NULL, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', NULL, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CController->render('index')
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2015/07/06 05:24:02 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /input > (opened in line 42) but found < /div >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\site\index.html:43
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('div')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<nav id="topicP...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', NULL, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', NULL, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CController->render('index')
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#15 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/
+---
+2015/07/06 05:24:13 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /input > (opened in line 57) but found < /form >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\main.html:58
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('form')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CController->render('index')
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#14 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/07/06 05:24:43 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /body > (opened in line 34) but found < /div >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\main.html:85
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('div')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<!DOCTYPE html>...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CController->render('index')
+#8 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#14 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/07/06 05:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('assets/images/f...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/images/favicon.ico
+---
+2015/07/06 05:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/images/favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('assets/images/f...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/images/favicon.ico
+---
+2015/07/06 05:30:37 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'SiteController object doesn't have method/property named 'nav'' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\layouts\main.html:36
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(408): PHPTAL_Context::pathError(Object(SiteController), 'nav', 'nav')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(65): PHPTAL_Context::path(Object(SiteController), 'nav')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559a127c_main__YsZb5ipXJUsAj0f52qCRJA(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(52): PHPTAL->execute()
+#4 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(SiteController), 'C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(785): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\controllers\SiteController.php(33): CController->render('index')
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('')
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#13 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/
+---
+2015/07/06 05:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "default".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('default')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('default')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/default/lo...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/logout
+HTTP_REFERER=http://cms.platform.dev/
+---
+2015/07/06 05:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('assets')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('assets')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/assets/ima...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/assets/images/favicon.ico
+---
+2015/07/06 05:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "assets".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('assets')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('assets')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/assets/ima...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/assets/images/favicon.ico
+---
+2015/07/06 05:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "default".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('default')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('default')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/default/lo...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/logout
+---
+2015/07/06 05:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "archivesite".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('archivesite')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('archivesite')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('site/archivesit...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/archivesite
+---
+2015/07/06 05:39:33 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "../components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CController->renderPartial('../components/m...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite/index
+---
+2015/07/06 05:41:14 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "../components/menu".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(30): CController->renderPartial('../components/m...', Array, true)
+#1 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(25): Controller->_getHTMLMenu(Array)
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/def...')
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#6 {main}
+REQUEST_URI=/archivesite/index
+---

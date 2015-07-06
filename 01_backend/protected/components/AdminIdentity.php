@@ -5,7 +5,7 @@
  * It contains the authentication method that checks if the provided
  * data can identity the user.
  */
-class UserIdentity extends CUserIdentity
+class AdminIdentity extends CUserIdentity
 {
 	/**
 	 * Authenticates a user.
@@ -17,17 +17,15 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{
-		$users=array(
-			// username => password
-			'demo'=>'demo',
-			'admin'=>'admin',
-		);
-		if(!isset($users[$this->username]))
+		$adminUser = Administrator::model()->findByAttributes(array('login_id' => $this->username));
+
+		if(!$adminUser)
 			$this->errorCode=self::ERROR_USERNAME_INVALID;
-		else if($users[$this->username]!==$this->password)
+		else if($adminUser->password !== md5($this->password))
 			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-		else
+		else{
 			$this->errorCode=self::ERROR_NONE;
+        }
 		return !$this->errorCode;
 	}
 }
