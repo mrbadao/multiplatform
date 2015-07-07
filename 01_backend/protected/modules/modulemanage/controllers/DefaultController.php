@@ -10,7 +10,7 @@ class DefaultController extends Controller
 
         $criteria = new CDbCriteria();
         $criteria->together = true;
-        $criteria->order = 't.id DESC';
+        $criteria->order = 't.idx ASC';
 
         foreach($search as $k => $v)
         {
@@ -65,16 +65,15 @@ class DefaultController extends Controller
         if(isset($_POST['Module'])){
             $module->object = isset($_FILES['Module']) ? $_FILES['Module'] : '';
             $module->attributes = $_POST['Module'];
-//            var_dump($module->validate());
             if($module->validate()){
-//                $module->save(false);
-//                $this->redirect($this->createUrl('/archivesite/default/view', array(
-//                    'id' => $archiveSite->id,
+                if(!isset($_FILES['Module'])) $module->save(false);
+                $this->redirect($this->createUrl('/modulemanage/default/index'
+//                    , array(
+//                    'id' => $module->id,
 //                    'message' => 'success',
-//                    'action' => $archiveSite->isNewRecord ? 'add' : 'edit',
-//                )));
+//                    'action' => $archiveSite->isNewRecord ? 'add' : 'edit',)
+                ));
             }
-            var_dump($module->getErrors());
         }
         $this->render('edit', compact('module'));
     }

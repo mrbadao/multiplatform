@@ -32,6 +32,7 @@ return array(
 		),
         'archivesite',
         'modulemanage',
+        'systemsetting',
 	),
 
 	// application components

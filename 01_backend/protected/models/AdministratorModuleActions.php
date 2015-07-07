@@ -115,7 +115,7 @@ class AdministratorModuleActions extends CActiveRecord
     public function beforeSave(){
         $curentDate =  new CDbExpression('NOW()');
 
-        if($this->isNewRecord){
+        if($this->isNewRecord || !$this->created){
             $this->created = $curentDate;
         }
         $this->modified = $curentDate;

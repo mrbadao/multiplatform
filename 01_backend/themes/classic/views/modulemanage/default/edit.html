@@ -15,7 +15,7 @@
             <tr>
                 <th style="width: 15%">Module name</th>
                 <td>
-                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_name', array('class' => 'text-danger'))"/>-->
+                    <tal:block tal:content="structure php:CHtml::error(module, 'module_name', array('class' => 'text-danger'))"/>
                     <input value="${module/module_name|''}" name="Module[module_name]" class="form-control"
                            style="width: 250px;" type="text"/>
                 </td>
@@ -23,7 +23,7 @@
             <tr>
                 <th style="width: 15%">Module domain</th>
                 <td>
-                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_abbr_cd', array('class' => 'text-danger'))"/>-->
+                    <tal:block tal:content="structure php:CHtml::error(module, 'module_abbr_cd', array('class' => 'text-danger'))"/>
                     <input value="${module/module_abbr_cd|''}" name="Module[module_abbr_cd]" class="form-control"
                            style="width: 250px;" type="text"/>
                 </td>
@@ -31,14 +31,22 @@
             <tr>
                 <th style="width: 15%">Module info</th>
                 <td>
-                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_info', array('class' => 'text-danger'))"/>-->
+                    <tal:block tal:content="structure php:CHtml::error(module, 'module_info', array('class' => 'text-danger'))"/>
                     <textarea class="form form-control" name="Module[module_info]" style="width: 400px;">${module/module_info|''}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">Module dsort index</th>
+                <td>
+                    <tal:block tal:content="structure php:CHtml::error(module, 'idx', array('class' => 'text-danger'))"/>
+                    <input value="${module/idx|''}" name="Module[idx]" class="form-control"
+                           style="width: 50px;" type="text"/>
                 </td>
             </tr>
             <tr>
                 <th style="width: 15%">File ipload</th>
                 <td>
-                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_info', array('class' => 'text-danger'))"/>-->
+                    <tal:block tal:content="structure php:CHtml::error(module, 'object', array('class' => 'text-danger'))"/>
                     <input type="file" name="Module[object]" />
                 </td>
             </tr>

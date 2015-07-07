@@ -2,7 +2,7 @@
 
 class DefaultController extends Controller
 {
-	public function actionIndex()
+	public function actioncmsmainconfig()
 	{
 		$this->render('index');
 	}

@@ -1,6 +1,6 @@
 <?php
 
-class StaffmanageModule extends CWebModule
+class SystemsettingModule extends CWebModule
 {
 	public function init()
 	{
@@ -9,8 +9,8 @@ class StaffmanageModule extends CWebModule
 
 		// import the module-level models and components
 		$this->setImport(array(
-			'staffmanage.models.*',
-			'staffmanage.components.*',
+			'systemsetting.models.*',
+			'systemsetting.components.*',
 		));
 	}
 
