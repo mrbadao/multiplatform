@@ -6,16 +6,7 @@ class DefaultController extends Controller
 	{
         $this->setTitle('Manage Site');
         $page = isset($_GET['page']) ? $_GET['page'] : '1';
-
-        $search = array(
-//            'site_name'=> isset($_GET['search']['site_name']) ? $_GET['search']['site_name'] : '',
-//            'site_domain'=> isset($_GET['search']['site_domain']) ? $_GET['search']['site_domain'] : '',
-//            'use_single_domain'=> isset($_GET['search']['use_single_domain']) ? $_GET['search']['use_single_domain'] : '',
-        );
-
         $search = isset($_GET['search']) ? $_GET['search'] : array('use_single_domain' => '');
-
-        var_dump($search);
 
         $criteria = new CDbCriteria();
         $criteria->together = true;
@@ -30,7 +21,6 @@ class DefaultController extends Controller
             switch($k)
             {
                 case 'site_name':
-                    var_dump($k);
                     $criteria->compare($k, $v, true,'AND');
                     break;
                 case 'use_single_domain':

@@ -1,7 +1,10 @@
 <nav id="topicPath">
     <ol class="breadcrumb">
-        <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home</a></li>
-        <li><a href="#">Library</a></li>
-        <li class="active">Data</li>
+        <li tal:repeat="breadcrumb breadcrumbs" tal:attributes="class php:!breadcrumb['link'] ? 'active' :''">
+            <a href="${breadcrumb/link|''}" tal:condition="breadcrumb/link">
+                <i tal:condition="php:breadcrumb['title']=='Home'" class="glyphicon glyphicon-home"></i> ${breadcrumb/title|''}
+            </a>
+            <tal:block tal:condition="not:breadcrumb/link">${breadcrumb/title|''}</tal:block>
+        </li>
     </ol>
 </nav>

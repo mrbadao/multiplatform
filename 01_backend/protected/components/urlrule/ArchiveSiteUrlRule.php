@@ -10,7 +10,7 @@ class ArchiveSiteUrlRule extends CBaseUrlRule {
         if(!isset($paths[0]) || $paths['0'] != "archivesite") return false;
 
             if(isset($paths[1]) && $paths[1] == "default"){
-            if(!isset($paths[2])) return false;
+            if(!isset($paths[2])) return "archivesite/";
 
             switch($paths['2']){
                 case "index":
@@ -59,6 +59,7 @@ class ArchiveSiteUrlRule extends CBaseUrlRule {
 
                 default: return "archivesite/";
             }
+
         }
 
         return false;

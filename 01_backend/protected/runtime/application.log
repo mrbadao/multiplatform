@@ -6431,3 +6431,422 @@ REQUEST_URI=/archivesite/index.php?search%5Bsite_name%5D=&search%5Bsite_domain%5
 in C:\xampp\htdocs\multiplatform\01_backend\protected\components\urlrule\ArchiveSiteUrlRule.php (22)
 in C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php (188)
 in C:\xampp\htdocs\multiplatform\01_backend\protected\widgets\PaginationWidget.php (116)
+2015/07/07 05:09:29 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\wamp\www\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (88)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 05:50:20 [error] [php] Object of class CInlineAction could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:77)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php (77)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 05:50:36 [error] [php] Object of class CInlineAction could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:77)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php (77)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 05:51:00 [error] [php] Object of class CInlineAction could not be converted to string (C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:77)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php (77)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 05:57:46 [error] [php] array_push() expects parameter 1 to be array, null given (C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:84)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php (84)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 05:58:12 [error] [php] array_push() expects parameter 1 to be array, string given (C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:84)
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php (84)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 05:58:53 [error] [php] Array to string conversion (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:511)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559b5adb_index__tk8ZE018pPoJRIocvUG1Ug()
+#1 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#5 C:\wamp\www\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(52): DefaultController->render()
+#6 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (511)
+in C:\Windows\Temp\tpl_559b5adb_index__tk8ZE018pPoJRIocvUG1Ug.php (9)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/07 05:59:30 [error] [php] Array to string conversion (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:511)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559b5adb_index__tk8ZE018pPoJRIocvUG1Ug()
+#1 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#5 C:\wamp\www\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(52): DefaultController->render()
+#6 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (511)
+in C:\Windows\Temp\tpl_559b5adb_index__tk8ZE018pPoJRIocvUG1Ug.php (9)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/07 05:59:36 [error] [php] Array to string conversion (C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php:511)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559b5adb_index__tk8ZE018pPoJRIocvUG1Ug()
+#1 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#2 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#5 C:\wamp\www\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php(52): DefaultController->render()
+#6 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/archivesite/index.php
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php (511)
+in C:\Windows\Temp\tpl_559b5adb_index__tk8ZE018pPoJRIocvUG1Ug.php (9)
+in C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+2015/07/07 06:10:05 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'link'' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\components\breadcrumbs.html:4
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'link', 'link')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(23): PHPTAL_Context::path(Array, 'link')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559b6d3c_breadcrumbs__U1QAQYV1QOefA4Myr3_0ig(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(63): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(88): Controller->_getBreadcrumbs(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('edit')
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#12 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/archivesite/edit.php?id=2
+---
+2015/07/07 06:10:30 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'link'' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\components\breadcrumbs.html:4
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'link', 'link')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(29): PHPTAL_Context::path(Array, 'link')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559b6d56_breadcrumbs__U1QAQYV1QOefA4Myr3_0ig(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(63): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php(88): Controller->_getBreadcrumbs(Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('edit')
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#12 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/archivesite/edit.php?id=2
+---
+2015/07/07 06:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 06:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 06:56:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 06:59:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 06:59:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "staffmanger/default/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('staffmanger/def...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/staffmanger/default/index
+HTTP_REFERER=http://cms.platform.dev/archivesite/
+---
+2015/07/07 07:00:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:00:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:85
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/archivesite/view.php?id=2
+HTTP_REFERER=http://cms.platform.dev/archivesite/index.php
+---
+2015/07/07 07:01:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:85
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/archivesite/view.php?id=2
+HTTP_REFERER=http://cms.platform.dev/archivesite/index.php
+---
+2015/07/07 07:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "archivesite/view.php".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('archivesite/vie...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/archivesite/view.php
+---
+2015/07/07 07:01:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:01:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:02:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:85
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/archivesite/view.php?id=2
+HTTP_REFERER=http://cms.platform.dev/archivesite/
+---
+2015/07/07 07:20:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:85
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/archivesite/view.php?id=2
+HTTP_REFERER=http://cms.platform.dev/archivesite/
+---
+2015/07/07 07:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\wamp\www\multiplatform\01_backend\protected\components\Controller.php:85
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#5 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/archivesite/view.php?id=2
+HTTP_REFERER=http://cms.platform.dev/archivesite/
+---
+2015/07/07 07:23:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:25:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:25:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:25:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:25:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
