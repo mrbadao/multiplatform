@@ -31,6 +31,7 @@ return array(
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
         'archivesite',
+        'modulemanage',
 	),
 
 	// application components
@@ -61,7 +62,9 @@ return array(
                     array(
                         'class' => 'application.components.urlrule.ArchiveSiteUrlRule',
                     ),
-
+                    array(
+                        'class' => 'application.components.urlrule.ModuleManageUrlRule',
+                    ),
                 )
         ),
 
@@ -119,6 +122,10 @@ return array(
 		// this is used in contact page
 		'site_domain'=>'cms.platform.dev/',
 		'fe_domain'=>'http://front.platform.dev/',
-        'pageCountItems' => '1',
+        'pageCountItems' => '10',
+        'module' =>array(
+            'zipPath' => "application.runtime.modules.zip",
+            'tempPath' => "application.runtime.modules.temp",
+        ),
 	),
 );

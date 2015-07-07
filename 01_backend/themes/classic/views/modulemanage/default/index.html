@@ -1,0 +1,106 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1 class="article-title">Modules manage</h1>
+<article>
+    <p>Input info to search.</p>
+
+    <p class="text-danger" tal:condition="php: message =='success' && action =='delete'">
+        You have deleted site
+        <tal:block tal:condition="name">[${name|''}]</tal:block>
+        success.
+    </p>
+</article>
+
+<form method="get" action="">
+    <!--<div class="table-responsive">-->
+        <!--<table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">-->
+            <!--<tbody>-->
+            <!--<tr>-->
+                <!--<th>Site name</th>-->
+                <!--<td>-->
+                    <!--<input value="${search/site_name|''}" name="search[site_name]" class="form-control"-->
+                           <!--style="width: 250px;" type="text"/>-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<th>Site domain</th>-->
+                <!--<td>-->
+                    <!--<input value="${search/site_domain|''}" name="search[site_domain]" class="form-control"-->
+                           <!--style="width: 250px;" type="text"/>-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--<tr>-->
+                <!--<th>Use single</th>-->
+                <!--<td>-->
+                    <!--<select name="search[use_single_domain]" class="form-control" style="width: 250px;">-->
+                        <!--<option value="">Choose value...</option>-->
+                        <!--<option tal:attributes="selected php: search['use_single_domain'] == '1' ? 'selected' :''"-->
+                                <!--value="1">Yes-->
+                        <!--</option>-->
+                        <!--<option tal:attributes="selected php: search['use_single_domain'] == '0' ? 'selected' :''"-->
+                                <!--value="0">No-->
+                        <!--</option>-->
+                    <!--</select>-->
+                <!--</td>-->
+            <!--</tr>-->
+            <!--</tbody>-->
+        <!--</table>-->
+    <!--</div>-->
+
+    <!--<div class="BtnArea" style="text-align: center !important;">-->
+        <!--<input class="btn btn-default" title="Search" value="Search" type="submit"/>-->
+    <!--</div>-->
+</form>
+
+
+<div class="table-responsive" tal:condition="moduleList">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 3%;">#</th>
+            <th style="width: 13%;">Module name name</th>
+            <th >domain</th>
+            <th style="width:15%">Created</th>
+            <th style="width:15%">Modified</th>
+            <th style="width: 7%;">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr tal:repeat="module moduleList">
+            <td>${module/id}</td>
+            <td>${module/module_name|''}</td>
+            <td>${module/module_abbr_cd|''}</td>
+            <td>
+                <tal:block tal:condition="module/created" tal:content="dateformat:module/created"/>
+            </td>
+            <td>
+                <tal:block tal:condition="module/modified" tal:content="dateformat:module/modified"/>
+            </td>
+            <td>
+                <a tal:attributes="href php:this.createUrl('/modulemanage/default/view',array('id'=>module['id']))">
+                    <span class="glyphicon glyphicon-share-alt"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/modulemanage/default/delete',array('id'=>module['id']))">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/modulemanage/default/edit',array('id'=>module['id']))">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="mBoxitem_listinfo">
+    <p class="pageList_data"><strong>Count：</strong>${itemCount|'0'}</p>
+</div>
+
+<div class="mBoxitem_listinfo">
+    <ul class="pageList_link" tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)">
+        <li class="stay"><strong>1</strong></li>
+        <li><a href="/admin/orders/search?page=2">2</a></li>
+        <li><a href="/admin/orders/search?page=2">≫</a></li>
+    </ul>
+</div>

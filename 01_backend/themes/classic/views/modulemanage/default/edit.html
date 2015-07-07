@@ -1,0 +1,54 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1 class="article-title" tal:condition= "php: !isset(module['id'])">Add new module.</h1>
+<h1 class="article-title" tal:condition= "php: isset(module['id']) && module['id']">Edit module.</h1>
+<article>
+    <p>Input info to complete action.</p>
+</article>
+<form method="post" action="" name="moduleEditForm" enctype="multipart/form-data">
+<div class="table-responsive">
+
+        <input value="${module/id|''}" name="Module[id]" type="hidden"/>
+        <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <th style="width: 15%">Module name</th>
+                <td>
+                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_name', array('class' => 'text-danger'))"/>-->
+                    <input value="${module/module_name|''}" name="Module[module_name]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">Module domain</th>
+                <td>
+                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_abbr_cd', array('class' => 'text-danger'))"/>-->
+                    <input value="${module/module_abbr_cd|''}" name="Module[module_abbr_cd]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">Module info</th>
+                <td>
+                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_info', array('class' => 'text-danger'))"/>-->
+                    <textarea class="form form-control" name="Module[module_info]" style="width: 400px;">${module/module_info|''}</textarea>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">File ipload</th>
+                <td>
+                    <!--<tal:block tal:content="structure php:CHtml::error(module, 'module_info', array('class' => 'text-danger'))"/>-->
+                    <input type="file" name="Module[object]" />
+                </td>
+            </tr>
+            </tbody>
+        </table>
+</div>
+
+<div class="BtnArea" style="text-align: center !important;">
+    <input class="btn btn-default" title="Cancel" value="Cancel" type="button"/>
+    <input class="btn btn-default" title="Save" value="Save" type="submit"/>
+</div>
+</form>
+

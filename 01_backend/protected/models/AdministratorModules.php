@@ -18,6 +18,12 @@
  */
 class AdministratorModules extends CActiveRecord
 {
+    public $object = '';
+
+    private $_allowExt =array(
+        'zip' => 'application/zip',
+    );
+
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -36,6 +42,59 @@ class AdministratorModules extends CActiveRecord
 		return 'administrator_modules';
 	}
 
+    protected function beforeValidate() {
+        if(!$this->object['name']['object']){
+            $this->addError('object', 'Object can not be blank.');
+            return false;
+        }
+
+        if (!isset($this->object['error']['object']) || is_array($this->object['error']['object'])) {
+            $this->addError('object', 'Object be damaged.');
+            return false;
+        }
+
+        return true;
+    }
+
+    protected function afterValidate() {
+        $errors =$this->getErrors();
+
+        if(empty($errors)){
+            $finfo = new finfo(FILEINFO_MIME_TYPE);
+            if(false == $ObjectExt = array_search($finfo->file($this->object['tmp_name']['object']), $this->_allowExt, true)){
+                $this->addError('object', 'Object extention not allow.');
+                return false;
+            }
+            $filename = sprintf('%s/%s.%s',  Yii::getPathOfAlias(Yii::app()->params['module']['zipPath']), $this->module_abbr_cd, $ObjectExt);
+            if (!move_uploaded_file($this->object['tmp_name']['object'], $filename)){
+                $this->addError('object', 'Object upload failed.');
+                return false;
+            }
+
+            $zip = new ZipArchive;
+            if (!$zip->open($filename)) {
+                $this->addError('object', 'Unable open object.');
+                return false;
+            }
+
+            $extractPath = Yii::getPathOfAlias(Yii::app()->params['module']['tempPath']);
+            $zip->extractTo($extractPath);
+            $zip->close();
+
+            $extractPath = sprintf('%s/%s', $extractPath, $this->module_abbr_cd);
+
+            $versionData = file_get_contents($extractPath."/version.json");
+            self::_moveFilesToModules($versionData);
+        }
+
+        return true;
+    }
+
+    private function _moveFilesToModules($data){
+        $data = json_decode($data, true);
+        var_dump($data);
+    }
+
 	/**
 	 * @return array validation rules for model attributes.
 	 */
@@ -44,7 +103,7 @@ class AdministratorModules extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('module_name, module_abbr_cd, module_info', 'required'),
+			array('object, module_name, module_abbr_cd, module_info', 'required'),
 			array('module_name, module_abbr_cd', 'length', 'max'=>128),
 			array('created, modified', 'safe'),
 			// The following rule is used by search().

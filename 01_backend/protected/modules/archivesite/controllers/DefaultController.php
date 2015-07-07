@@ -36,7 +36,7 @@ class DefaultController extends Controller
 
         $itemCount =  ArchiveSite::model()->count($criteria);
 
-        $criteria->limit = 1;
+        $criteria->limit = Yii::app()->params['pageCountItems'];
         $criteria->offset = $criteria->limit * ($page - 1);
 
         $archiveSite = ArchiveSite::model()->findAll($criteria);
