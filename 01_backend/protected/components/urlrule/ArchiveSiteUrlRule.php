@@ -18,7 +18,12 @@ class ArchiveSiteUrlRule extends CBaseUrlRule {
                     if(isset($params)){
                         $url .= "index.php?";
                         foreach($params as $k => $v){
-                            $url .= sprintf("%s=%s%s", $k, $v, $ampersand);
+                            if(is_array($v)){
+                                foreach($v as $key => $val){
+                                    $url.= sprintf("%s[%s]=%s%s", $k, $key, $val, $ampersand);
+                                }
+                            }else
+                                $url .= sprintf("%s=%s%s", $k, $v, $ampersand);
                         }
                         $url = substr($url, 0, strlen($url) - 1);
                     }

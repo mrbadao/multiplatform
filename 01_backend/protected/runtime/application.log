@@ -6850,3 +6850,225 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/themes/classic/assets//js/jquery.min.map
 ---
+2015/07/07 07:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:35:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:36:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:36:53 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\wamp\www\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (78)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 07:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:33 [warning] [application] Failed to set unsafe attribute "id" of "ArchiveSite".
+in C:\wamp\www\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php (78)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/07 07:37:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:38:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/07 07:46:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
