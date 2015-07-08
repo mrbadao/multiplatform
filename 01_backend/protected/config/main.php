@@ -1,5 +1,4 @@
 <?php
-
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 
@@ -40,6 +39,10 @@ return array(
         'viewRenderer' => array(
             'class' => 'ext.PHPTALViewRenderer',
             'fileExtension' => '.html',
+        ),
+
+        'CodeMirror' => array(
+            'class' => 'ext.CodeMirrorExtendsion',
         ),
 
 		'user'=>array(

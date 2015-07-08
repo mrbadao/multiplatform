@@ -13,6 +13,7 @@
  *
  * The followings are the available model relations:
  * @property AdministratorModuleActions $muoduleAction
+ * @property AdministratorModuleActions $muoduleActionMenu
  * @property Administrator $administrator
  * @property AdministratorModules $module
  */
@@ -62,7 +63,8 @@ class AdministratorModuleAccess extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'muoduleAction' => array(self::BELONGS_TO, 'AdministratorModuleActions', 'muodule_action_id'),
-			'administrator' => array(self::BELONGS_TO, 'Administrator', 'administrator_id'),
+			'muoduleActionMenu' => array(self::BELONGS_TO, 'AdministratorModuleActions', 'muodule_action_id', 'condition' =>'muoduleActionMenu.is_menu = 1'),
+			'administrator' => array(self::BELONGS_TO, 'Administrator', 'administrator_id', 'condition' => ''),
 			'module' => array(self::BELONGS_TO, 'AdministratorModules', 'module_id'),
 		);
 	}

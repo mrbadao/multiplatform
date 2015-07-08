@@ -13,44 +13,37 @@
 </article>
 
 <form method="get" action="">
-    <!--<div class="table-responsive">-->
-        <!--<table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">-->
-            <!--<tbody>-->
-            <!--<tr>-->
-                <!--<th>Site name</th>-->
-                <!--<td>-->
-                    <!--<input value="${search/site_name|''}" name="search[site_name]" class="form-control"-->
-                           <!--style="width: 250px;" type="text"/>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<th>Site domain</th>-->
-                <!--<td>-->
-                    <!--<input value="${search/site_domain|''}" name="search[site_domain]" class="form-control"-->
-                           <!--style="width: 250px;" type="text"/>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <!--<tr>-->
-                <!--<th>Use single</th>-->
-                <!--<td>-->
-                    <!--<select name="search[use_single_domain]" class="form-control" style="width: 250px;">-->
-                        <!--<option value="">Choose value...</option>-->
-                        <!--<option tal:attributes="selected php: search['use_single_domain'] == '1' ? 'selected' :''"-->
-                                <!--value="1">Yes-->
-                        <!--</option>-->
-                        <!--<option tal:attributes="selected php: search['use_single_domain'] == '0' ? 'selected' :''"-->
-                                <!--value="0">No-->
-                        <!--</option>-->
-                    <!--</select>-->
-                <!--</td>-->
-            <!--</tr>-->
-            <!--</tbody>-->
-        <!--</table>-->
-    <!--</div>-->
+    <div class="table-responsive">
+        <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <th>Module name</th>
+                <td>
+                    <input value="${search/module_name|''}" name="search[module_name]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th>domain</th>
+                <td>
+                    <input value="${search/module_abbr_cd|''}" name="search[module_abbr_cd]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Version</th>
+                <td>
+                    <input value="${search/version|''}" name="search[version]" class="form-control"
+                           style="width: 100px;" type="text"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <!--<div class="BtnArea" style="text-align: center !important;">-->
-        <!--<input class="btn btn-default" title="Search" value="Search" type="submit"/>-->
-    <!--</div>-->
+    <div class="BtnArea" style="text-align: center !important;">
+        <input class="btn btn-default" title="Search" value="Search" type="submit"/>
+    </div>
 </form>
 
 
@@ -61,6 +54,8 @@
             <th style="width: 3%;">#</th>
             <th style="width: 13%;">Module name</th>
             <th >domain</th>
+            <th style="width:7%">Version</th>
+            <th style="width:8%">Sort index</th>
             <th style="width:15%">Created</th>
             <th style="width:15%">Modified</th>
             <th style="width: 7%;">Action</th>
@@ -71,6 +66,8 @@
             <td>${module/id}</td>
             <td>${module/module_name|''}</td>
             <td>${module/module_abbr_cd|''}</td>
+            <td>${module/version|''}</td>
+            <td>${module/idx}</td>
             <td>
                 <tal:block tal:condition="module/created" tal:content="dateformat:module/created"/>
             </td>

@@ -8,6 +8,8 @@
  * @property string $module_name
  * @property string $module_abbr_cd
  * @property string $module_info
+ * @property string $version
+ * @property string $idx
  * @property string $created
  * @property string $modified
  *
@@ -108,7 +110,7 @@ class AdministratorModules extends CActiveRecord
         $criteria->compare('module_abbr_cd', $this->module_abbr_cd, true);
         $criteria->compare('module_info', $this->module_info, true);
         $criteria->compare('version', $this->version, true);
-        $criteria->compare('idx', $this->idx, false);
+        $criteria->compare('idx', $this->idx);
         $criteria->compare('created', $this->created, true);
         $criteria->compare('modified', $this->modified, true);
 
@@ -159,6 +161,11 @@ class AdministratorModules extends CActiveRecord
                 $this->addError('object', 'Object extention not allow.');
                 return false;
             }
+
+            if(!file_exists(Yii::getPathOfAlias(Yii::app()->params['module']['zipPath']))){
+                @mkdir(Yii::getPathOfAlias(Yii::app()->params['module']['zipPath']), 0755, true);
+            }
+
             $filename = sprintf('%s/%s.%s', Yii::getPathOfAlias(Yii::app()->params['module']['zipPath']), $this->module_abbr_cd, $ObjectExt);
             if (!move_uploaded_file($this->object['tmp_name']['object'], $filename)) {
                 $this->addError('object', 'Object upload failed.');
@@ -172,6 +179,10 @@ class AdministratorModules extends CActiveRecord
             }
 
             $extractPath = Yii::getPathOfAlias(Yii::app()->params['module']['tempPath']);
+            if(!file_exists($extractPath)){
+                @mkdir($extractPath,0755, true);
+            }
+
             $zip->extractTo($extractPath);
             $zip->close();
 

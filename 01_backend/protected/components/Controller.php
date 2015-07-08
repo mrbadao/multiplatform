@@ -66,6 +66,7 @@ class Controller extends CController
         $action = $this->getAction()->getId();
 
         if ($this->currentModule) {
+
             $this->currentModule = AdministratorModules::model()->findByAttributes(array('module_abbr_cd' => $this->currentModule->getId()));
             if ($this->currentModule) array_push($this->breadcrumbs, array('title' => $this->currentModule->module_name, 'link' => $action == 'index' ? '' : $this->createUrl("/" . $this->route)));
             else throw new CHttpException("404", "Page not found.");

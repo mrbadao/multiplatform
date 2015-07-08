@@ -128,17 +128,33 @@ class Administrator extends CActiveRecord
     public function getMenuData($site_domain){
         $section ='';
         $menuData = array();
-
-        foreach($this->administratorModuleAccesses as $moduleAccess){
+        foreach($this->administratorModuleAccesses as $moduleAccess) {
             $module = $moduleAccess->module;
-            $action = $moduleAccess->muoduleAction;
+            $moduleAction = $moduleAccess->muoduleActionMenu;
 
-            $menuData[$module->module_name][] = array(
-                'title' => $action->action_name,
-                'link'  => "/" .$module->module_abbr_cd .'/' .$action->controller .'/' .$action->action_abbr_cd,
-            );
+            $c = new CDbCriteria();
+            $c->addCondition('id=' . $moduleAccess->muodule_action_id, 'AND');
+            $c->addCondition("is_menu = '1'", 'AND');
+            $c->together = true;
+
+
+            if ($moduleAction) {
+                $menuData[$module->module_name][] = array(
+                    'title' => $moduleAction->action_name,
+                    'link' => "/" . $module->module_abbr_cd . '/' . $moduleAction->controller . '/' . $moduleAction->action_abbr_cd,
+                    'sort_idx' => $module->idx
+                );
+            }
         }
+        uasort($menuData, array('self', '_fnUasortASC'));
         return $menuData;
+    }
+
+    private function _fnUasortASC($a, $b) {
+        if ($a[0]['sort_idx'] == $b[0]['sort_idx']) {
+            return 0;
+        }
+        return ($a[0]['sort_idx'] < $b[0]['sort_idx']) ? -1 : 1;
     }
 
 }

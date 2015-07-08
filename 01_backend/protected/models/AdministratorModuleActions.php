@@ -45,9 +45,9 @@ class AdministratorModuleActions extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('module_id, action_name, action_abbr_cd', 'required'),
-			array('module_id, is_menu', 'numerical', 'integerOnly'=>true),
+			array('module_id', 'numerical', 'integerOnly'=>true),
 			array('action_name, action_abbr_cd', 'length', 'max'=>128),
-			array('controller, created, modified', 'safe'),
+			array('controller, is_menu, created, modified', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, module_id, controller, action_name, action_abbr_cd, is_menu, created, modified', 'safe', 'on'=>'search'),
@@ -100,7 +100,7 @@ class AdministratorModuleActions extends CActiveRecord
 		$criteria->compare('controller',$this->controller,true);
 		$criteria->compare('action_name',$this->action_name,true);
 		$criteria->compare('action_abbr_cd',$this->action_abbr_cd,true);
-		$criteria->compare('is_menu',$this->is_menu);
+		$criteria->compare('is_menu',$this->is_menu,true);
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('modified',$this->modified,true);
 
