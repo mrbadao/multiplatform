@@ -1,0 +1,15 @@
+{
+	"version":"0.0.2",
+	"dir":
+	{
+		"protected":"application",
+		"themes":"webroot.themes",
+		"plugin":"webroot.plugin"
+	},
+	"controller":
+	{
+		"default":[
+			{"action_name":"CMS config", "action_abbr_cd":"cmsmainconfig", "is_menu":"1"}
+		]
+	}
+}

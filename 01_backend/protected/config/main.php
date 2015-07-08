@@ -123,13 +123,21 @@ return array(
 
 	// application-level parameters that can be accessed
 	'params'=>array(
-		// this is used in contact page
+		'DbBackupPath' => "application.runtime.backups",
 		'site_domain'=>'cms.platform.dev/',
 		'fe_domain'=>'http://front.platform.dev/',
         'pageCountItems' => '10',
+		'super_id' => '1',
+
         'module' =>array(
             'zipPath' => "application.runtime.modules.zip",
             'tempPath' => "application.runtime.modules.temp",
+        ),
+
+        'DataBaseList' => array(
+            'db' => 'Admin',
+            'db_archive' => 'Archive',
+            'db_staff' => 'Staff',
         ),
 	),
 );

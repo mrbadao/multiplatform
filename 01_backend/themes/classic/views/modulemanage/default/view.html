@@ -4,51 +4,48 @@
 <h1 class="article-title">Site Detail</h1>
 <article>
     <p>This page includes infomation about site.</p>
-    <p class="text-danger" tal:condition="php: message =='success' && action =='add'">You have added new site success.</p>
-    <p class="text-danger" tal:condition="php: message =='success' && action =='edit'">You have edited site success.</p>
+
+    <p class="text-danger" tal:condition="php: message =='success' && action =='add'">You have added new module
+        success.</p>
+
+    <p class="text-danger" tal:condition="php: message =='success' && action =='edit'">You have edited module
+        success.</p>
+
+        <p class="text-danger" tal:condition="php: message =='success' && moduleaction =='edit'">You have edited module action
+            success.</p>
+
+        <p class="text-danger" tal:condition="php: message =='success' && moduleaction =='add'">You have added new module
+            action success.</p>
+
 </article>
 
 <div class="table-responsive">
     <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">
         <tbody>
-            <tr>
-                <th>Site id</th>
-                <td>
-                    <tal:block tal:content="archiveSite/id"/>
-                </td>
-            </tr>
-            <tr>
-                <th>Site name</th>
-                <td>
-                    <tal:block tal:content="archiveSite/site_name"/>
-                </td>
-            </tr>
-            <tr>
-                <th>Site directory</th>
-                <td>
-                    <tal:block tal:content="archiveSite/site_abbr_cd"/>
-                </td>
-            </tr>
-            <tr>
-                <th>Staff name</th>
-                <td>
-                    <tal:block tal:condition="archiveSite/own" tal:content="archiveSite/own/login_id"/>
-                </td>
-            </tr>
-            <tr>
-                <th>Site domain</th>
-                <td>
-                    <a tal:condition="archiveSite/site_domain" href="${archiveSite/site_domain|''}">${archiveSite/site_domain|''}</a>
-                    <a tal:condition="not:archiveSite/site_domain" href="${params/fe_domain|''}${archiveSite/site_abbr_cd|''}">${params/fe_domain|''}${archiveSite/site_abbr_cd|''}</a>
-                </td>
-            </tr>
-            <tr>
-                <th>Use single domain</th>
-                <td>
-                    <tal:block tal:condition="archiveSite/use_single_domain">Yes</tal:block>
-                    <tal:block tal:condition="not:archiveSite/use_single_domain">No</tal:block>
-                </td>
-            </tr>
+        <tr>
+            <th>Module id</th>
+            <td>
+                <strong tal:content="module/id"></strong>
+            </td>
+        </tr>
+        <tr>
+            <th>Module name</th>
+            <td>
+                <tal:block tal:content="module/module_name"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Domain</th>
+            <td>
+                <tal:block tal:content="module/module_abbr_cd"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Module infomation</th>
+            <td>
+                <p tal:content="module/module_info|''"></p>
+            </td>
+        </tr>
         </tbody>
     </table>
 </div>
@@ -58,19 +55,160 @@
         <tbody>
         <tr>
             <th>Created</th>
-            <td><tal:block tal:condition="archiveSite/created" tal:content="dateformat:archiveSite/created" /></td>
+            <td>
+                <tal:block tal:condition="module/created" tal:content="dateformat:module/created"/>
+            </td>
         </tr>
         <tr>
             <th>Modified</th>
-            <td><tal:block tal:condition="archiveSite/modified" tal:content="dateformat:archiveSite/modified" /></td>
+            <td>
+                <tal:block tal:condition="module/modified" tal:content="dateformat:module/modified"/>
+            </td>
         </tr>
         </tbody>
     </table>
 </div>
 
 <div class="BtnArea" style="text-align: center !important;">
-    <a class="btn btn-default" tal:attributes="href php:this.createUrl('/archivesite/default/delete',array('id'=>archiveSite['id']))">Delete</a>
-    <a class="btn btn-default" tal:attributes="href php:this.createUrl('/archivesite/default/edit',array('id'=>archiveSite['id']))">Edit</a>
+    <a class="btn btn-default"
+       tal:attributes="href php:this.createUrl('/modulemanage/default/delete',array('id'=>module['id']))">Delete</a>
+    <a class="btn btn-default"
+       tal:attributes="href php:this.createUrl('/modulemanage/default/edit',array('id'=>module['id']))">Edit</a>
 </div>
 
+<div class="table-responsive" tal:condition="moduleActions">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th style="width: 3%;">#</th>
+            <th>Controller</th>
+            <th style="width: 13%;">Action name</th>
+            <th style="width:7%">Domain</th>
+            <th style="width:8%">Menu</th>
+            <th style="width:15%">Created</th>
+            <th style="width:15%">Modified</th>
+            <th style="width: 7%;">
+                <a tal:attributes="href php:this.createUrl('/modulemanage/default/view',array('id'=>module['id'], 'actionid' => 'new', 'action' => 'add'))">
+                    <span class="glyphicon glyphicon-plus"></span>
+                </a>
+                Action
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr tal:repeat="action moduleActions">
+            <td>${action/id}</td>
+            <td>${action/controller|''}</td>
+            <td>${action/action_name|''}</td>
+            <td>${action/action_abbr_cd|''}</td>
+            <td>
+                <strong tal:condition="action/is_menu">Yes</strong>
+                <strong tal:condition="not:action/is_menu">No</strong>
+            </td>
+            <td>
+                <tal:block tal:condition="action/created" tal:content="dateformat:action/created"/>
+            </td>
+            <td>
+                <tal:block tal:condition="action/modified" tal:content="dateformat:action/modified"/>
+            </td>
+            <td>
+                <a tal:attributes="href php:this.createUrl('/modulemanage/default/view',array('id'=>module['id'], 'actionid' => action['id'], 'action' => 'view'))">
+                    <span class="glyphicon glyphicon-share-alt"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/modulemanage/default/index',array('id'=>module['id']))">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/modulemanage/default/view',array('id'=>module['id'], 'actionid' => action['id'], 'action' => 'edit'))">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="mBoxitem_listinfo">
+    <p class="pageList_data"><strong>Action count：</strong>${actionCount|'0'}</p>
+</div>
+
+<div class="mBoxitem_listinfo">
+    <ul class="pageList_link" tal:replace="structure php:this.widget('PaginationWidget',array('pages'=>pages),true)">
+        <li class="stay"><strong>1</strong></li>
+        <li><a href="/admin/orders/search?page=2">2</a></li>
+        <li><a href="/admin/orders/search?page=2">≫</a></li>
+    </ul>
+</div>
+
+<form method="post" action="" name="moduleActionEditForm" tal:condition="contentAction">
+    <div class="table-responsive">
+        <input value="${contentAction/id|''}" name="ContentAction[id]" type="hidden"/>
+        <input value="${module/id|''}" name="ContentAction[module_id]" type="hidden"/>
+
+        <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <th>Action name</th>
+                <td>
+                    <tal:block tal:condition="php: action!='view'">
+                        <tal:block
+                                tal:content="structure php:CHtml::error(contentAction, 'action_name', array('class' => 'text-danger'))"/>
+                        <input value="${contentAction/action_name|''}" name="ContentAction[action_name]"
+                               class="form-control"
+                               style="width: 250px;" type="text"/>
+                    </tal:block>
+                    <tal:block tal:condition="php: action=='view'" tal:content="contentAction/action_name|''"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Action domain</th>
+                <td>
+                    <tal:block tal:condition="php: action!='view'">
+                        <tal:block
+                                tal:content="structure php:CHtml::error(contentAction, 'module_abbr_cd', array('class' => 'text-danger'))"/>
+                        <input value="${contentAction/action_abbr_cd|''}" name="ContentAction[action_abbr_cd]"
+                               class="form-control"
+                               style="width: 250px;" type="text"/>
+                    </tal:block>
+                    <tal:block tal:condition="php: action=='view'" tal:content="contentAction/action_abbr_cd|''"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Action controller</th>
+                <td>
+                    <tal:block tal:condition="php: action!='view'">
+                        <tal:block
+                                tal:content="structure php:CHtml::error(contentAction, 'module_info', array('class' => 'text-danger'))"/>
+                        <input value="${contentAction/controller|''}" class="form form-control"
+                               name="ContentAction[controller]" style="width: 250px;"/>
+                    </tal:block>
+                    <tal:block tal:condition="php: action=='view'" tal:content="contentAction/controller|''"/>
+                </td>
+            </tr>
+            <tr>
+                <th>Use as menu</th>
+                <td>
+                    <tal:block tal:condition="php: action=='view'">
+                        <strong tal:condition="contentAction/is_menu">Yes</strong>
+                        <strong tal:condition="not:contentAction/is_menu">No</strong>
+                    </tal:block>
+
+                    <div class="checkbox" tal:condition="php: action!='view'">
+                        <label>
+                            <input tal:attributes="checked php:contentAction['is_menu'] ? 'checked' : ''"
+                                   name="ContentAction[is_menu]" value="1"
+                                   type="checkbox"/> Checked if this action uses as a menu.
+                        </label>
+                    </div>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="BtnArea" style="text-align: center !important;" tal:condition="php: action!='view'">
+        <input class="btn btn-default" title="Cancel" value="Cancel" type="button"/>
+        <input class="btn btn-default" title="Save" value="Save" type="submit"/>
+    </div>
+</form>
 

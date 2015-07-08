@@ -101,6 +101,10 @@ a{
     margin: 20px 35px 0 35px;
 }
 
+#main .BtnArea{
+    margin-bottom: 30px;
+}
+
 #main h1 {
     margin: 10px 20px 20px;
     color: #454545;

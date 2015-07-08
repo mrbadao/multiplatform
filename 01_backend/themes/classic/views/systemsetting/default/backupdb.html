@@ -1,0 +1,52 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1 class="article-title">Config CMS "main.php" file</h1>
+<article>
+    <p>
+        Be carefull when use this action.<br/>
+        Because it can get you into trouble.
+    </p>
+
+    <p class="text-danger" tal:condition="php: message =='success'">
+        You save main.php sccuess.
+    </p>
+</article>
+
+<form method="post" action="" name="databaseBackupForm" tal:condition="databaseList">
+    <div class="table-responsive">
+        <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <th style="width: 30%; vertical-align: middle; text-align: center;">Choose database</th>
+                <td>
+                    <div class="checkbox" tal:repeat="database databaseList">
+                        <label>
+                            <input
+                                    name="Database[${repeat/database/key|''}]" value="1"
+                                    type="checkbox"/> ${repeat/database/key|''}.
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 30%; vertical-align: middle; text-align: center;">File type</th>
+                <td>
+                    <div class="checkbox" tal:repeat="database databaseList">
+                        <label>
+                            <input
+                                    name="Database[${repeat/database/key|''}]" value="1"
+                                    type="checkbox"/> ${repeat/database/key|''}.
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="BtnArea" style="text-align: center !important;">
+        <input class="btn btn-default" title="Cancel" value="Cancel" type="button"/>
+        <input class="btn btn-default" title="Backup" value="Backup" type="submit"/>
+    </div>
+</form>

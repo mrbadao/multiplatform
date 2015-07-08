@@ -226,7 +226,7 @@ class AdministratorModules extends CActiveRecord
                         $moduleAction->save(false);
 
                         $superAdminAccess = AdministratorModuleAccess::model()->findByAttributes(array(
-                            'administrator_id' => '1',
+                            'administrator_id' => isset(Yii::app()->params['super_id']) ? Yii::app()->params['super_id'] : '1',
                             'module_id' => $this->id,
                             'muodule_action_id' => $moduleAction->id,
                         ));
