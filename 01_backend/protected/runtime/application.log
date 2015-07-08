@@ -5167,3 +5167,902 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/themes/classic/assets//js/jquery.min.map
 ---
+2015/07/08 17:08:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\multiplatform\03_framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\multiplatform\03_framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\multiplatform\03_framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\multiplatform\03_framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Administrator))
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\models\Administrator.php(27): CActiveRecord::model('Administrator')
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php(34): Administrator::model()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(282): Controller->init()
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#11 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/07/08 17:08:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/08 17:08:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/08 17:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "syste,setting/backupdb".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('syste,setting/b...')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/syste,setting/backupdb
+---
+2015/07/08 17:09:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\archivesite\controllers\DefaultController.php:69
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionEdit()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('edit')
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/archivesite/de...')
+#6 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/archivesite/edit.php?id=2
+---
+2015/07/08 17:10:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php:87
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/modulemanage/d...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/modulemanage/view.php?id=1
+HTTP_REFERER=http://cms.platform.com/modulemanage/index.php
+---
+2015/07/08 17:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php:87
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/modulemanage/d...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/modulemanage/view.php?id=1
+HTTP_REFERER=http://cms.platform.com/modulemanage/index.php
+---
+2015/07/08 17:15:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/08 17:15:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/08 17:17:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php:87
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/modulemanage/d...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/modulemanage/view.php?id=1
+HTTP_REFERER=http://cms.platform.com/modulemanage/index.php
+---
+2015/07/08 17:18:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php:87
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/modulemanage/d...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/modulemanage/view.php?id=1
+HTTP_REFERER=http://cms.platform.com/modulemanage/index.php
+---
+2015/07/08 17:18:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php:87
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('view')
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('/modulemanage/d...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/modulemanage/view.php?id=1
+HTTP_REFERER=http://cms.platform.com/modulemanage/index.php
+---
+2015/07/08 17:23:50 [error] [php] Undefined index: FileType (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:38)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (38)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:24:47 [warning] [application] Failed to set unsafe attribute "id" of "AdministratorModuleActions".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\modulemanage\controllers\DefaultController.php (122)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:24:55 [warning] [application] Failed to set unsafe attribute "id" of "AdministratorModuleActions".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\modulemanage\controllers\DefaultController.php (122)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:25:02 [error] [php] Undefined index: FileType (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:38)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (38)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:31:20 [error] [php] Illegal string offset 'gz' (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (45)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:40:14 [error] [php] ZipArchive::addFile(): Invalid or uninitialized Zip object (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (56)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:42:38 [error] [php] ZipArchive::addFile(): Invalid or uninitialized Zip object (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:56)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (56)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:51:53 [error] [php] ZipArchive::addFile(): Invalid or uninitialized Zip object (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:61)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (61)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 17:53:44 [error] [php] unlink(C:\xampp\htdocs\multiplatform\01_backend\protected\runtime\backups\dump_Admin_2015-07-08_17_53_44.sql): No such file or directory (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:62)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (62)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 18:05:53 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Attribute 'tal:caonditon' is in 'http://xml.zope.org/namespaces/tal' namespace, but is not a supported PHPTAL attribute' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:26
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(215): PHPTAL_Dom_PHPTALDocumentBuilder->onElementStart('a', Array)
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<nav id="topicP...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(99): CController->render('backupdb', Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#14 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#15 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+---
+2015/07/08 18:06:07 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'key' in current scope' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:26
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(70): PHPTAL_Context->__get('key')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d4a6e_backupdb__kg1_Hz3aNKC8yClYyZEprQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(99): CController->render('backupdb', Array)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#13 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+---
+2015/07/08 18:07:04 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'key' in current scope' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:26
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(69): PHPTAL_Context->__get('key')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d4aa7_backupdb__kg1_Hz3aNKC8yClYyZEprQ(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(99): CController->render('backupdb', Array)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#13 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+---
+2015/07/08 18:08:15 [error] [php] Undefined index: Admin (C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code:72)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(99): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (72)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/08 18:12:10 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Unexpected character 'D' between attributes of < input >' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:25
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(223): PHPTAL_Dom_SaxXmlParser->raiseError('Unexpected char...')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<nav id="topicP...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(99): CController->render('backupdb', Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#14 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#15 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+HTTP_REFERER=http://cms.platform.com/systemsetting/default/backupdb
+---
+2015/07/08 18:12:29 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'filename'' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:29
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'filename', 'filename')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(86): PHPTAL_Context::path(Array, 'filename')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d4beb_backupdb__kg1_Hz3aNKC8yClYyZEprQ(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(99): CController->render('backupdb', Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#14 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+HTTP_REFERER=http://cms.platform.com/systemsetting/default/backupdb
+---
+2015/07/08 18:17:36 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'idx' (in path '.../idx/filename')' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:26
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'idx/filename', 'idx')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(75): PHPTAL_Context::path(Array, 'idx/filename')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d4d1e_backupdb__kg1_Hz3aNKC8yClYyZEprQ(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): CController->render('backupdb', Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#14 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+HTTP_REFERER=http://cms.platform.com/systemsetting/default/backupdb
+---
+2015/07/08 18:17:58 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'repeat' (in path '.../repeat/database/key/filename')' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:26
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'repeat/database...', 'repeat')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(75): PHPTAL_Context::path(Array, 'repeat/database...')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d4d34_backupdb__kg1_Hz3aNKC8yClYyZEprQ(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): CController->render('backupdb', Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#14 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+HTTP_REFERER=http://cms.platform.com/systemsetting/default/backupdb
+---
+2015/07/08 18:20:04 [error] [php] Undefined index: idx (C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code:73)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (73)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/08 18:23:09 [error] [php] Undefined index: Admin (C:\Users\hieun_000\AppData\Local\Temp\tpl_559d4e4b_backupdb__kg1_Hz3aNKC8yClYyZEprQ.php:71)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\Users\hieun_000\AppData\Local\Temp\tpl_559d4e4b_backupdb__kg1_Hz3aNKC8yClYyZEprQ.php (71)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/08 18:29:22 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /td > (opened in line 41) but found < /div >' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:47
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('div')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<nav id="topicP...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#8 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): CController->render('backupdb', Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#14 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#15 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+---
+2015/07/08 18:43:55 [error] [exception.CException] exception 'CException' with message 'Property "CDbConnection.dbName" is not defined.' in C:\xampp\htdocs\multiplatform\03_framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php(37): CComponent->__get('dbName')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(75): SDatabaseDumper->getDump()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#8 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+HTTP_REFERER=http://cms.platform.com/systemsetting/default/backupdb
+---
+2015/07/08 18:46:09 [error] [php] Undefined index: Admin (C:\Users\hieun_000\AppData\Local\Temp\tpl_559d5206_backupdb__kg1_Hz3aNKC8yClYyZEprQ.php:76)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\Users\hieun_000\AppData\Local\Temp\tpl_559d5206_backupdb__kg1_Hz3aNKC8yClYyZEprQ.php (76)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/08 18:47:15 [error] [php] Undefined index: Admin (C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code:77)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (77)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/08 18:47:45 [error] [php] Undefined index: Admin (C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code:73)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code (73)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/08 18:47:49 [error] [php] Undefined index: Admin (C:\Users\hieun_000\AppData\Local\Temp\tpl_559d5430_backupdb__kg1_Hz3aNKC8yClYyZEprQ.php:72)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): DefaultController->renderFile()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): DefaultController->renderPartial()
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(84): DefaultController->render()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\Users\hieun_000\AppData\Local\Temp\tpl_559d5430_backupdb__kg1_Hz3aNKC8yClYyZEprQ.php (72)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php (675)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php (53)
+2015/07/08 19:02:10 [error] [php] Array to string conversion (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:46)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (46)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:04:24 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:05:36 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:06:35 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:39)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (39)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:07:05 [error] [php] Undefined offset: 0 (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:38)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (38)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:07:48 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:08:11 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:08:38 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:08:50 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:09:50 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:10:05 [error] [php] Undefined index: truncate_table (C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php:40)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\SDatabaseDumper.php (40)
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (75)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:11:06 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (45)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:11:24 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (45)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:11:37 [error] [php] Undefined index: create_database (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:45)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/backupdb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (45)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:28:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php:87
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('downloaddatabas...')
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/systemsetting/default/downloaddatabase/filename/dump_Admin_2015-07-08_19_28_29.sql
+HTTP_REFERER=http://cms.platform.com/systemsetting/default/backupdb
+---
+2015/07/08 19:30:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\components\Controller.php:87
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(307): Controller->beforeAction(Object(CInlineAction))
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('downloaddatabas...')
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/systemsetting/default/downloaddatabase
+---
+2015/07/08 19:31:57 [warning] [application] Failed to set unsafe attribute "id" of "AdministratorModuleActions".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\modulemanage\controllers\DefaultController.php (122)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:35:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'File not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:90
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionDownloadDatabase()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('downloaddatabas...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#6 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/systemsetting/default/downloaddatabase
+---
+2015/07/08 19:36:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'File not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:90
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionDownloadDatabase()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('downloaddatabas...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#6 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/systemsetting/default/downloaddatabase
+---
+2015/07/08 19:36:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'File not found.' in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:90
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionDownloadDatabase()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('downloaddatabas...')
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#6 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/systemsetting/default/downloaddatabase
+---
+2015/07/08 19:50:56 [warning] [application] Failed to set unsafe attribute "id" of "AdministratorModuleActions".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\modulemanage\controllers\DefaultController.php (122)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 19:51:04 [warning] [application] Failed to set unsafe attribute "id" of "AdministratorModuleActions".
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\modulemanage\controllers\DefaultController.php (122)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 20:08:00 [error] [php] Undefined variable: m (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:34)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/restoredb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (34)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 20:16:02 [error] [php] DateTime::createFromFormat() expects parameter 2 to be string, object given (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/restoredb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (44)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 20:16:32 [error] [php] DateTime::createFromFormat() expects parameter 2 to be string, array given (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/restoredb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (44)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 20:16:33 [error] [php] DateTime::createFromFormat() expects parameter 2 to be string, array given (C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php:44)
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#2 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/restoredb
+in C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (44)
+in C:\xampp\htdocs\multiplatform\01_backend\index.php (13)
+2015/07/08 20:28:40 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'databaseList' in current scope' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\restoredb.html:16
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(38): PHPTAL_Context->__get('databaseList')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d6bd3_restoredb__GT3Tg_pLiB00474UsWHURA(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('restoredb', Array, true)
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(49): CController->render('restoredb', Array)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionRestoreDb()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('restoredb')
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#13 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/systemsetting/default/restoredb
+HTTP_REFERER=http://cms.platform.com/modulemanage/view.php?id=4&message=success&moduleaction=edit
+---
+2015/07/08 20:28:51 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'moduleList' in current scope' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\restoredb.html:17
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(43): PHPTAL_Context->__get('moduleList')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d6be2_restoredb__GT3Tg_pLiB00474UsWHURA(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('restoredb', Array, true)
+#6 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(49): CController->render('restoredb', Array)
+#7 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionRestoreDb()
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('restoredb')
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#13 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/systemsetting/default/restoredb
+HTTP_REFERER=http://cms.platform.com/modulemanage/view.php?id=4&message=success&moduleaction=edit
+---
+2015/07/08 20:29:05 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Array doesn't have key named 'created'' in C:\xampp\htdocs\multiplatform\01_backend\themes\classic\views\systemsetting\default\restoredb.html:34
+Stack trace:
+#0 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Context.php(428): PHPTAL_Context::pathError(Array, 'created', 'created')
+#1 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(87): PHPTAL_Context::path(Array, 'created')
+#2 C:\xampp\htdocs\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559d6bf0_restoredb__GT3Tg_pLiB00474UsWHURA(Object(PHPTAL), Object(PHPTAL_Context))
+#3 C:\xampp\htdocs\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#4 C:\xampp\htdocs\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('restoredb', Array, true)
+#7 C:\xampp\htdocs\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(49): CController->render('restoredb', Array)
+#8 C:\xampp\htdocs\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionRestoreDb()
+#9 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('restoredb')
+#13 C:\xampp\htdocs\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#14 C:\xampp\htdocs\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\multiplatform\01_backend\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/systemsetting/default/restoredb
+HTTP_REFERER=http://cms.platform.com/modulemanage/view.php?id=4&message=success&moduleaction=edit
+---

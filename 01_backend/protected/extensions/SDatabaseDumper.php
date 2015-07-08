@@ -20,90 +20,119 @@
 class SDatabaseDumper
 {
     private $db;
+    private $option;
 
-    function __construct($db) {
-       $this->db = $db;
+    function __construct($db, $option)
+    {
+        $this->db = $db;
+        $this->option = $option;
     }
 
-	/**
-	 * Dump all tables
-	 * @return string sql structure and data
-	 */
-	public function getDump()
-	{
-		ob_start();
-		echo 'SET FOREIGN_KEY_CHECKS = 0;'.PHP_EOL;
-		foreach($this->getTables() as $key=>$val)
-			$this->dumpTable($key);
-		echo 'SET FOREIGN_KEY_CHECKS = 1;'.PHP_EOL;
-		$result=ob_get_contents();
-		ob_end_clean();
-		return $result;
-	}
+    /**
+     * Dump all tables
+     * @return string sql structure and data
+     */
+    public function getDump()
+    {
+        $dbname  = explode('=', Yii::app()->db->connectionString);
+        $dbname = $dbname[2];
 
-	/**
-	 * Create table dump
-	 * @param $tableName
-	 * @return mixed
-	 */
-	public function dumpTable($tableName)
-	{
-		$pdo = $this->db->getPdoInstance();
-
-		echo '
+        ob_start();
+        echo 'SET FOREIGN_KEY_CHECKS = 0;' . PHP_EOL;
+        echo 'SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";'.PHP_EOL;
+        echo 'SET time_zone = "+07:00";'.PHP_EOL;
+        echo "
 --
--- Structure for table `'.$tableName.'`
+-- Database: `$dbname`
+--".PHP_EOL;
+
+        if(isset($this->option['drop_database']) && $this->option['drop_database']) {
+            echo "DROP DATABASE `$dbname`;".PHP_EOL;
+        }
+
+        if(isset($this->option['create_database']) && $this->option['create_database']) {
+            echo "CREATE DATABASE IF NOT EXISTS `$dbname` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;".PHP_EOL;
+            echo "USE `$dbname`;".PHP_EOL;
+        }
+
+        foreach ($this->getTables() as $key => $val)
+            $this->dumpTable($key);
+        echo 'SET FOREIGN_KEY_CHECKS = 1;' . PHP_EOL;
+        $result = ob_get_contents();
+        ob_end_clean();
+        return $result;
+    }
+
+    /**
+     * Create table dump
+     * @param $tableName
+     * @return mixed
+     */
+    public function dumpTable($tableName)
+    {
+        $pdo = $this->db->getPdoInstance();
+
+        echo '
 --
-'.PHP_EOL;
-		echo 'DROP TABLE IF EXISTS '.$this->db->quoteTableName($tableName).';'.PHP_EOL;
-
-		$q = $this->db->createCommand('SHOW CREATE TABLE '.$this->db->quoteTableName($tableName).';')->queryRow();
-		echo $q['Create Table'].';'.PHP_EOL.PHP_EOL;
-
-		$rows = $this->db->createCommand('SELECT * FROM '.$this->db->quoteTableName($tableName).';')->queryAll();
-
-		if(empty($rows))
-			return;
-
-		echo '
+-- Structure for table `' . $tableName . '`
 --
--- Data for table `'.$tableName.'`
+' . PHP_EOL;
+        echo 'DROP TABLE IF EXISTS ' . $this->db->quoteTableName($tableName) . ';' . PHP_EOL;
+
+        $q = $this->db->createCommand('SHOW CREATE TABLE ' . $this->db->quoteTableName($tableName) . ';')->queryRow();
+        echo $q['Create Table'] . ';' . PHP_EOL . PHP_EOL;
+
+        $rows = $this->db->createCommand('SELECT * FROM ' . $this->db->quoteTableName($tableName) . ';')->queryAll();
+
+        if(isset($this->option['truncate_table']) && $this->option['truncate_table']) {
+            echo "
 --
-'.PHP_EOL;
+-- Truncate table before insert `administrator`
+--" . PHP_EOL;
 
-		$attrs = array_map(array($this->db, 'quoteColumnName'), array_keys($rows[0]));
-		echo 'INSERT INTO '.$this->db->quoteTableName($tableName).''." (", implode(', ', $attrs), ') VALUES'.PHP_EOL;
-		$i=0;
-		$rowsCount = count($rows);
-		foreach($rows AS $row)
-		{
-			// Process row
-			foreach($row AS $key => $value)
-			{
-				if($value === null)
-					$row[$key] = 'NULL';
-				else
-					$row[$key] = $pdo->quote($value);
-			}
+            echo "TRUNCATE TABLE `$tableName`;" . PHP_EOL;
+        }
 
-			echo " (", implode(', ', $row), ')';
-			if($i<$rowsCount-1)
-				echo ',';
-			else
-				echo ';';
-			echo PHP_EOL;
-			$i++;
-		}
-		echo PHP_EOL;
-		echo PHP_EOL;
-	}
+        if (empty($rows))
+            return;
 
-	/**
-	 * Get mysql tables list
-	 * @return array
-	 */
-	public function getTables()
-	{
-		return $this->db->getSchema()->getTables();
-	}
+        echo '
+--
+-- Data for table `' . $tableName . '`
+--
+' . PHP_EOL;
+
+        $attrs = array_map(array($this->db, 'quoteColumnName'), array_keys($rows[0]));
+        echo 'INSERT INTO ' . $this->db->quoteTableName($tableName) . '' . " (", implode(', ', $attrs), ') VALUES' . PHP_EOL;
+        $i = 0;
+        $rowsCount = count($rows);
+        foreach ($rows AS $row) {
+            // Process row
+            foreach ($row AS $key => $value) {
+                if ($value === null)
+                    $row[$key] = 'NULL';
+                else
+                    $row[$key] = $pdo->quote($value);
+            }
+
+            echo " (", implode(', ', $row), ')';
+            if ($i < $rowsCount - 1)
+                echo ',';
+            else
+                echo ';';
+            echo PHP_EOL;
+            $i++;
+        }
+        echo PHP_EOL;
+        echo PHP_EOL;
+    }
+
+    /**
+     * Get mysql tables list
+     * @return array
+     */
+    public function getTables()
+    {
+        return $this->db->getSchema()->getTables();
+    }
 }

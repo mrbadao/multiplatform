@@ -1,0 +1,60 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1 class="article-title">Restore database</h1>
+<article>
+    <p>
+        Restore database(s).<br/>
+        Only admin have permission.
+    </p>
+
+    <p class="text-danger" tal:condition="php: message =='success'">
+        Database(s) have been backuped success.
+    </p>
+</article>
+
+<form method="post" action="" name="databaseBackupForm" tal:condition="items">
+    <div class="table-responsive" tal:condition="items">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th style="width: 3%;">#</th>
+                <th>File name</th>
+                <th style="width:15%">Created</th>
+                <th style="width:10%; vertical-align: middle;" class="text-center">Download</th>
+                <th style="width:10%; vertical-align: middle;" class="text-center">Restore</th>
+                <th style="width:10%; vertical-align: middle;" class="text-center">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr tal:repeat="item items">
+                <td><strong>${repeat/item/number}</strong></td>
+                <td><strong>${item/filename|''}</strong></td>
+                <td>
+                    <tal:block tal:condition="item/date" tal:content="dateformat:item/date"/>
+                </td>
+                <td class="text-center" style="vertical-align: middle;">
+                    <a tal:attributes="href item/link">
+                        <span class="glyphicon glyphicon-download-alt"></span>
+                    </a>
+                </td>
+                <td class="text-center" style="vertical-align: middle;">
+                    <a tal:attributes="href item/link">
+                        <span class="glyphicon glyphicon-import"></span>
+                    </a>
+                </td>
+                <td class="text-center" style="vertical-align: middle;">
+                    <a tal:attributes="href item/link">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="BtnArea" style="text-align: center !important;">
+        <input class="btn btn-default" title="Cancel" value="Cancel" type="button"/>
+        <input class="btn btn-default" title="Backup" value="Backup" type="submit"/>
+    </div>
+</form>

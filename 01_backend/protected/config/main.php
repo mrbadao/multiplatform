@@ -80,6 +80,7 @@ return array(
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
+            'initSQLs'=>array("set time_zone='+07:00';"),
         ),
 
         'db_archive'=>array(
@@ -88,6 +89,7 @@ return array(
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
+            'initSQLs'=>array("set time_zone='+07:00';"),
             'class' => 'CDbConnection',
         ),
 
@@ -97,6 +99,7 @@ return array(
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
+            'initSQLs'=>array("set time_zone='+07:00';"),
             'class' => 'CDbConnection',
         ),
 

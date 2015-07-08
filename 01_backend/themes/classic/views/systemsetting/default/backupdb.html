@@ -1,15 +1,15 @@
 <nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
 <!--breadcrumbs-->
 
-<h1 class="article-title">Config CMS "main.php" file</h1>
+<h1 class="article-title">Backup database</h1>
 <article>
     <p>
-        Be carefull when use this action.<br/>
-        Because it can get you into trouble.
+        Backup database(s).<br/>
+        Only admin have permission.
     </p>
 
     <p class="text-danger" tal:condition="php: message =='success'">
-        You save main.php sccuess.
+        Database(s) have been backuped success.
     </p>
 </article>
 
@@ -22,9 +22,36 @@
                 <td>
                     <div class="checkbox" tal:repeat="database databaseList">
                         <label>
-                            <input
-                                    name="Database[${repeat/database/key|''}]" value="1"
-                                    type="checkbox"/> ${repeat/database/key|''}.
+                            <input checked="checked" name="Database[${repeat/database/key|''}]" value="1"
+                                   type="checkbox"/> ${repeat/database/key|''}.
+                            <tal:block tal:define="idx repeat/database/key" tal:condition="php:isset(filesBackup[idx]['filename'])">
+                                <a style="padding-left: 20px;"
+                                   tal:define="idx repeat/database/key; title php:filesBackup[idx]['filename']"
+                                   tal:attributes="href php:filesBackup[idx]['link']">
+                                    <span class="glyphicon glyphicon-download-alt"></span>
+                                    ${title}
+                                </a>
+                            </tal:block>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 30%; vertical-align: middle; text-align: center;">Option</th>
+                <td>
+                    <div class="checkbox">
+                        <label>
+                            <input name="BackupOption[drop_database]" value="1" type="checkbox"/> Add CROP DATABASE statement.
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input checked="checked" name="BackupOption[create_database]" value="1" type="checkbox"/> Add CREATE DATABASE / USE statement.
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input checked="checked" name="BackupOption[truncate_table]" value="1" type="checkbox"/> Truncate table before insert.
                         </label>
                     </div>
                 </td>
@@ -32,11 +59,10 @@
             <tr>
                 <th style="width: 30%; vertical-align: middle; text-align: center;">File type</th>
                 <td>
-                    <div class="checkbox" tal:repeat="type filetype">
-                        <div class="radio">
-                            <label><input type="radio" name="FileType" value="${repeat/type/key|''}"/>${type|''}</label>
-                        </div>
-                    </div>
+
+                        <select name="FileType" class="form form-control" style="width: 80px;">
+                            <option tal:repeat="type filetype" value="${repeat/type/key|''}">${type|''}</option>
+                        </select>
                 </td>
             </tr>
             </tbody>
