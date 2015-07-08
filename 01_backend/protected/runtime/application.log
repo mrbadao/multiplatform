@@ -5050,3 +5050,120 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/themes/classic/assets//js/jquery.min.map
 ---
+2015/07/08 11:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/08 11:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/08 11:14:45 [warning] [application] Failed to set unsafe attribute "id" of "AdministratorModules".
+in C:\wamp\www\multiplatform\01_backend\protected\modules\modulemanage\controllers\DefaultController.php (63)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/08 11:15:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "backupdb".' in C:\wamp\www\multiplatform\03_framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CController.php(271): CController->missingAction('backupdb')
+#1 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#2 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#3 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+HTTP_REFERER=http://cms.platform.dev/systemsetting/default/cmsmainconfig
+---
+2015/07/08 11:21:26 [error] [exception.PHPTAL_ParserException] exception 'PHPTAL_ParserException' with message 'Tag closure mismatch, expected < /input > (opened in line 37) but found < /label >' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\systemsetting\default\backupdb.html:37
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL\Dom\SaxXmlParser.php(194): PHPTAL_Dom_PHPTALDocumentBuilder->onElementClose('label')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(1113): PHPTAL_Dom_SaxXmlParser->parseString(Object(PHPTAL_Dom_PHPTALDocumentBuilder), '<nav id="topicP...', 'C:\wamp\www\mul...')
+#2 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(834): PHPTAL->parse()
+#3 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(667): PHPTAL->prepare()
+#4 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#5 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\wamp\www\mul...', Array, true)
+#6 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#7 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('backupdb', Array, true)
+#8 C:\wamp\www\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(51): CController->render('backupdb', Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionBackupDb()
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('backupdb')
+#14 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#15 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/systemsetting/default/backupdb
+HTTP_REFERER=http://cms.platform.dev/systemsetting/default/backupdb
+---
+2015/07/08 11:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/08 11:24:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/08 11:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/08 11:24:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/08 11:24:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/08 11:26:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/08 11:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---
+2015/07/08 11:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/assets//js/jquery.min.map".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('themes/classic/...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/themes/classic/assets//js/jquery.min.map
+---

@@ -30,18 +30,25 @@ class DefaultController extends Controller
             'Staff' => Yii::app()->db_staff,
         );
 
+        $filetype = array(
+            'zip' => 'zip',
+            'sql' => 'sql',
+            'gz' => 'gz',
+        );
+        var_dump($_POST['FileType']);
         if (isset($_POST['Database'])) {
-            foreach ($_POST['Database'] as $name => $database) {
-                $dumper = new SDatabaseDumper($database);
-                $file = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']) . DIRECTORY_SEPARATOR . 'dump_' . $name . '_' . date('Y-m-d_H_i_s') . '.sql';
-                if (function_exists('gzencode'))
-                    file_put_contents($file . '.gz', gzencode($dumper->getDump()));
-                else
-                    file_put_contents($file, $dumper->getDump());
-            }
+
+//            foreach ($_POST['Database'] as $name => $database) {
+//                $dumper = new SDatabaseDumper($databaseList[$name]);
+//                $file = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']) . DIRECTORY_SEPARATOR . 'dump_' . $name . '_' . date('Y-m-d_H_i_s') . '.sql';
+//                if (function_exists('gzencode'))
+//                    file_put_contents($file . '.gz', gzencode($dumper->getDump()));
+//                else
+//                    file_put_contents($file, $dumper->getDump());
+//            }
         }
 
 
-        $this->render('backupdb', compact('databaseList', 'message'));
+        $this->render('backupdb', compact('databaseList', 'message', 'filetype'));
     }
 }

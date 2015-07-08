@@ -32,12 +32,10 @@
             <tr>
                 <th style="width: 30%; vertical-align: middle; text-align: center;">File type</th>
                 <td>
-                    <div class="checkbox" tal:repeat="database databaseList">
-                        <label>
-                            <input
-                                    name="Database[${repeat/database/key|''}]" value="1"
-                                    type="checkbox"/> ${repeat/database/key|''}.
-                        </label>
+                    <div class="checkbox" tal:repeat="type filetype">
+                        <div class="radio">
+                            <label><input type="radio" name="FileType" value="${repeat/type/key|''}"/>${type|''}</label>
+                        </div>
                     </div>
                 </td>
             </tr>
