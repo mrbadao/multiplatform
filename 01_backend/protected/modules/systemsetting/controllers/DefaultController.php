@@ -82,7 +82,6 @@ class DefaultController extends Controller
 
         if (file_exists($filename)) {
             $sqlArray = self::_uncompressed($filename, $tempPath);
-            var_dump($sqlArray);
             $cmd = Yii::app()->db_backup->createCommand($sqlArray);
             try {
                 $cmd->execute();
