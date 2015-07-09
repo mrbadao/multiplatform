@@ -103,6 +103,16 @@ return array(
             'class' => 'CDbConnection',
         ),
 
+        'db_backup'=>array(
+            'connectionString' => 'mysql:host=localhost;',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'initSQLs'=>array("set time_zone='+07:00';"),
+            'class' => 'CDbConnection',
+        ),
+
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

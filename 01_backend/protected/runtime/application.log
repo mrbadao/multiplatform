@@ -6114,3 +6114,31 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/systemsetting/default/restoredb/filename/2015-07-09-01-21-19_dump_Admin.sql/action/unlink
 ---
+2015/07/09 12:52:32 [error] [php] opendir(C:\wamp\www\multiplatform\01_backend\protected\runtime\backups,C:\wamp\www\multiplatform\01_backend\protected\runtime\backups) [<a href='function.opendir'>function.opendir</a>]: The system cannot find the file specified. (code: 2) (C:\wamp\www\multiplatform\03_framework\utils\CFileHelper.php:160)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(48): findFiles()
+#1 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionRestoreDb()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#5 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/restoredb
+in C:\wamp\www\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (48)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/09 12:54:14 [error] [php] opendir(C:\wamp\www\multiplatform\01_backend\protected\runtime\backups,C:\wamp\www\multiplatform\01_backend\protected\runtime\backups) [<a href='function.opendir'>function.opendir</a>]: The system cannot find the file specified. (code: 2) (C:\wamp\www\multiplatform\03_framework\utils\CFileHelper.php:160)
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(56): findFiles()
+#1 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionRestoreDb()
+#2 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): DefaultController->runAction()
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#5 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): DefaultController->run()
+#6 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController()
+#7 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\multiplatform\01_backend\index.php(13): CWebApplication->run()
+REQUEST_URI=/systemsetting/default/restoredb
+in C:\wamp\www\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php (56)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)

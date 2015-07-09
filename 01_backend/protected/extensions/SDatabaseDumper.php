@@ -47,7 +47,7 @@ class SDatabaseDumper
 --".PHP_EOL;
 
         if(isset($this->option['drop_database']) && $this->option['drop_database']) {
-            echo "DROP DATABASE `$dbname`;".PHP_EOL;
+            echo "DROP DATABASE IF EXISTS `$dbname`;".PHP_EOL;
         }
 
         if(isset($this->option['create_database']) && $this->option['create_database']) {

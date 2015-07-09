@@ -11,6 +11,11 @@
     <p class="text-danger" tal:condition="php: message =='success' && action == 'unlink'">
         Backup have been remove success.
     </p>
+
+    <p class="text-danger" tal:condition="php: errMessage && action == 'restore'" tal:content="errMessage">
+        Backup have been remove success.
+    </p>
+
 </article>
 
 <!--<form method="post" action="" name="databaseBackupForm" tal:condition="items">-->
