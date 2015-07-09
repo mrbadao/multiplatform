@@ -240,6 +240,7 @@ class AdministratorModules extends CActiveRecord
                         $superAdminAccess->save(false);
                     }
                 }
+                unlink($extractPath);
             }
 
         }
