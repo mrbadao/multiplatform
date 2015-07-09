@@ -8,7 +8,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'CMS Platform',
     'theme'=>'classic',
-
+    'timeZone' => 'Asia/Saigon',
 	// preloading 'log' component
 	'preload'=>array('log'),
 

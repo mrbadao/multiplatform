@@ -6066,3 +6066,51 @@ Stack trace:
 REQUEST_URI=/systemsetting/default/restoredb
 HTTP_REFERER=http://cms.platform.com/modulemanage/view.php?id=4&message=success&moduleaction=edit
 ---
+2015/07/09 01:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "staffmanage/default/index".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('staffmanage/def...')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/staffmanage/default/index
+HTTP_REFERER=http://cms.platform.dev/systemsetting/default/cmsmainconfig
+---
+2015/07/09 01:22:28 [warning] [application] Failed to set unsafe attribute "id" of "AdministratorModuleActions".
+in C:\wamp\www\multiplatform\01_backend\protected\modules\modulemanage\controllers\DefaultController.php (122)
+in C:\wamp\www\multiplatform\01_backend\index.php (13)
+2015/07/09 02:32:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/09 02:32:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/09 09:46:15 [error] [exception.PHPTAL_VariableNotFoundException] exception 'PHPTAL_VariableNotFoundException' with message 'Unable to find variable 'action' in current scope' in C:\wamp\www\multiplatform\01_backend\themes\classic\views\systemsetting\default\restoredb.html:11
+Stack trace:
+#0 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(845) : eval()'d code(28): PHPTAL_Context->__get('action')
+#1 C:\wamp\www\multiplatform\01_backend\protected\vendors\phptal\PHPTAL.php(675): tpl_559de06b_restoredb__zdw1FhiBpVhxvC2Sa9FevA(Object(PHPTAL), Object(PHPTAL_Context))
+#2 C:\wamp\www\multiplatform\01_backend\protected\extensions\PHPTALViewRenderer.php(53): PHPTAL->execute()
+#3 C:\wamp\www\multiplatform\03_framework\web\CBaseController.php(94): PHPTALViewRenderer->renderFile(Object(DefaultController), 'C:\wamp\www\mul...', Array, true)
+#4 C:\wamp\www\multiplatform\03_framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\mul...', Array, true)
+#5 C:\wamp\www\multiplatform\03_framework\web\CController.php(783): CController->renderPartial('restoredb', Array, true)
+#6 C:\wamp\www\multiplatform\01_backend\protected\modules\systemsetting\controllers\DefaultController.php(66): CController->render('restoredb', Array)
+#7 C:\wamp\www\multiplatform\03_framework\web\actions\CInlineAction.php(50): DefaultController->actionRestoreDb()
+#8 C:\wamp\www\multiplatform\03_framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\multiplatform\03_framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\multiplatform\03_framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(283): CController->run('restoredb')
+#12 C:\wamp\www\multiplatform\03_framework\web\CWebApplication.php(142): CWebApplication->runController('systemsetting/d...')
+#13 C:\wamp\www\multiplatform\03_framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\multiplatform\01_backend\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/systemsetting/default/restoredb/filename/2015-07-09-01-21-19_dump_Admin.sql/action/unlink
+---

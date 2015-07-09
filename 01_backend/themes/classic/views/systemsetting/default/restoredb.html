@@ -8,18 +8,19 @@
         Only admin have permission.
     </p>
 
-    <p class="text-danger" tal:condition="php: message =='success'">
-        Database(s) have been backuped success.
+    <p class="text-danger" tal:condition="php: message =='success' && action == 'unlink'">
+        Backup have been remove success.
     </p>
 </article>
 
-<form method="post" action="" name="databaseBackupForm" tal:condition="items">
-    <div class="table-responsive" tal:condition="items">
+<!--<form method="post" action="" name="databaseBackupForm" tal:condition="items">-->
+    <div class="table-responsive">
         <table class="table table-striped">
             <thead>
             <tr>
                 <th style="width: 3%;">#</th>
                 <th>File name</th>
+                <th>Size</th>
                 <th style="width:15%">Created</th>
                 <th style="width:10%; vertical-align: middle;" class="text-center">Download</th>
                 <th style="width:10%; vertical-align: middle;" class="text-center">Restore</th>
@@ -27,24 +28,25 @@
             </tr>
             </thead>
             <tbody>
-            <tr tal:repeat="item items">
+            <tr tal:repeat="item items" tal:condition="items">
                 <td><strong>${repeat/item/number}</strong></td>
                 <td><strong>${item/filename|''}</strong></td>
+                <td><strong>${item/size|''}</strong></td>
                 <td>
                     <tal:block tal:condition="item/date" tal:content="dateformat:item/date"/>
                 </td>
                 <td class="text-center" style="vertical-align: middle;">
-                    <a tal:attributes="href item/link">
+                    <a tal:attributes="href item/downlaodlink">
                         <span class="glyphicon glyphicon-download-alt"></span>
                     </a>
                 </td>
                 <td class="text-center" style="vertical-align: middle;">
-                    <a tal:attributes="href item/link">
+                    <a tal:attributes="href item/restorelink">
                         <span class="glyphicon glyphicon-import"></span>
                     </a>
                 </td>
                 <td class="text-center" style="vertical-align: middle;">
-                    <a tal:attributes="href item/link">
+                    <a tal:attributes="href item/deletelink">
                         <span class="glyphicon glyphicon-trash"></span>
                     </a>
                 </td>
@@ -52,9 +54,4 @@
             </tbody>
         </table>
     </div>
-
-    <div class="BtnArea" style="text-align: center !important;">
-        <input class="btn btn-default" title="Cancel" value="Cancel" type="button"/>
-        <input class="btn btn-default" title="Backup" value="Backup" type="submit"/>
-    </div>
-</form>
+<!--</form>-->
