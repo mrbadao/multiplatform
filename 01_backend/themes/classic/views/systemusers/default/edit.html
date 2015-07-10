@@ -1,0 +1,86 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1 class="article-title" tal:condition="php: !isset(administrator['id'])">Add new user.</h1>
+<h1 class="article-title" tal:condition="php: isset(administrator['id']) && administrator['id']">Edit user.</h1>
+<article>
+    <p>Input info to complete action.</p>
+</article>
+<form method="post" action="" name="archivesiteEditForm">
+    <div class="table-responsive">
+
+        <input value="${administrator/id|''}" name="Administrator[id]" type="hidden"/>
+        <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <th style="width: 15%">Full name</th>
+                <td>
+                    <tal:block
+                            tal:content="structure php:CHtml::error(administrator, 'full_name', array('class' => 'text-danger'))"/>
+                    <input value="${administrator/indentifyInfomation/full_name|''}" name="IndentifyInfomation[full_name]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">Phone number</th>
+                <td>
+                    <tal:block
+                            tal:content="structure php:CHtml::error(administrator, 'phone', array('class' => 'text-danger'))"/>
+                    <input value="${administrator/indentifyInfomation/phone|''}" name="IndentifyInfomation[phone]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">Email address</th>
+                <td>
+                    <tal:block
+                            tal:content="structure php:CHtml::error(administrator, 'email', array('class' => 'text-danger'))"/>
+                    <input value="${administrator/indentifyInfomation/email|''}" name="IndentifyInfomation[email]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="table table-bordered" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <th style="width: 15%">Login id</th>
+                <td>
+                    <tal:block
+                            tal:content="structure php:CHtml::error(administrator, 'login_id', array('class' => 'text-danger'))"/>
+                    <input value="${administrator/login_id|''}" name="Administrator[login_id]" class="form-control"
+                           style="width: 250px;" type="text"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">Password</th>
+                <td>
+                    <tal:block
+                            tal:content="structure php:CHtml::error(administrator, 'password', array('class' => 'text-danger'))"/>
+                    <input value="${administrator/password|''}" name="Administrator[password]" class="form-control"
+                           style="width: 250px;" type="password"/>
+                </td>
+            </tr>
+            <tr>
+                <th style="width: 15%">Role</th>
+                <td>
+                    <div class="checkbox">
+                        <label>
+                            <input tal:attributes="checked php:administrator['role'] ? 'checked' : ''"
+                                   name="Administrator[role]" value="1"
+                                   type="checkbox"/> Checked if this user have a role.
+                        </label>
+                    </div>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="BtnArea" style="text-align: center !important;">
+        <input class="btn btn-default" title="Cancel" value="Cancel" type="button"/>
+        <input class="btn btn-default" title="Save" value="Save" type="submit"/>
+    </div>
+</form>
+

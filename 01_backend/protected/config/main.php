@@ -33,6 +33,7 @@ return array(
         'archivesite',
         'modulemanage',
         'systemsetting',
+        'systemusers',
     ),
 
     // application components
@@ -61,6 +62,9 @@ return array(
                 'gii/<controller:\w+>' => 'gii/<controller>',
                 'gii/<controller:\w+>/<action:\w+>' => 'gii/<controller>/<action>',
 
+                array(
+                    'class' => 'application.components.urlrule.SystemUsersUrlRule',
+                ),
                 array(
                     'class' => 'application.components.urlrule.SiteUrlRule',
                 ),

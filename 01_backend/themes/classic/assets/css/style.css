@@ -105,6 +105,10 @@ a{
     margin-bottom: 30px;
 }
 
+#main table th{
+    vertical-align: middle;
+}
+
 #main h1 {
     margin: 10px 20px 20px;
     color: #454545;

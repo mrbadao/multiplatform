@@ -1,0 +1,95 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1 class="article-title">User Detail</h1>
+<article>
+    <p>This page includes infomation about site.</p>
+
+    <p class="text-danger" tal:condition="php: message =='success' && action =='add'">You have added new user
+        success.</p>
+
+    <p class="text-danger" tal:condition="php: message =='success' && action =='edit'">You have edited user success.</p>
+</article>
+
+<div class="table-responsive">
+    <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <div class="text-left"><h2><strong>Common Infomation</strong></h2></div>
+        </tr>
+        <tr>
+            <th>Full name</th>
+            <td>
+                <tal:block tal:content="administrator/indentifyInfomation/full_name|'phone'"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Phone number</th>
+            <td>
+                <tal:block tal:content="administrator/indentifyInfomation/phone|''"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Email address</th>
+            <td>
+                <tal:block tal:content="administrator/indentifyInfomation/email|''"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Created</th>
+            <td>
+                <tal:block tal:condition="administrator/created" tal:content="dateformat:administrator/created"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Modified</th>
+            <td>
+                <tal:block tal:condition="administrator/modified" tal:content="dateformat:administrator/modified"/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+        <tr>
+            <div class="text-left"><h2><strong>Login Infomation</strong></h2></div>
+        </tr>
+        <tr>
+            <th>Login id</th>
+            <td>
+                <tal:block tal:content="administrator/login_id|''"/>
+            </td>
+        </tr>
+        <tr>
+            <th>Role</th>
+            <td>
+                <tal:block tal:condition="administrator/role">Yes</tal:block>
+                <tal:block tal:condition="not:administrator/role">No</tal:block>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0" tal:condition="customFields">
+        <tbody>
+        <tr>
+            <div class="text-left"><h2><strong>Custom Infomation</strong></h2></div>
+        </tr>
+        <tr tal:repeat="field customFields">
+            <th>${field/filed_name|''}</th>
+            <td>
+                <tal:block tal:content="field/filed_value|''"/>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="BtnArea" style="text-align: center !important;">
+    <a class="btn btn-default"
+       tal:attributes="href php:this.createUrl('/systemusers/default/delete',array('id'=>administrator['id']))">Delete</a>
+    <a class="btn btn-default"
+       tal:attributes="href php:this.createUrl('/systemusers/default/edit',array('id'=>administrator['id']))">Edit</a>
+</div>
+
+

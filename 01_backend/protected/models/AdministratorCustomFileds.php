@@ -101,4 +101,20 @@ class AdministratorCustomFileds extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+    /**
+     * Before save to database action.
+     */
+    public function beforeSave(){
+        $curentDate =  new CDbExpression('NOW()');
+
+        if($this->isNewRecord){
+            $this->created = $curentDate;
+        }
+
+        $this->modified = $curentDate;
+
+        return true;
+    }
+
 }
