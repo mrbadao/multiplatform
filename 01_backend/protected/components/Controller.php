@@ -22,7 +22,6 @@ class Controller extends CController
 
     public function init()
     {
-
         if (!Yii::app()->user->isGuest) {
             $userId = Yii::app()->user->getId();
             $role = Yii::app()->user->role;
@@ -53,6 +52,69 @@ class Controller extends CController
     private function _getNav()
     {
         return $this->renderFile(Yii::app()->getTheme()->getBasePath() . DIRECTORY_SEPARATOR . 'views/components/nav.html', compact('data'), true);
+    }
+
+    public function filters()
+    {
+        return array('accessControl');
+    }
+
+    public function accessRules()
+    {
+        return self::_getModuleAccessRules();
+    }
+
+    private function _getModuleAccessRules()
+    {
+        $module_abbr_cd = $this->getModule($this->route) ? $this->getModule($this->route)->getId() : '';
+
+        if (!$module_abbr_cd) return array(
+            array(
+                'allow',
+                'users' => array('*'),
+                'message'=>'Access Denied.',
+            ),
+        );
+
+        $rule = array();
+        $trace = array();
+
+        $moduleActions = AdministratorModuleActions::model()->with("module")->findAll(
+            "module.module_abbr_cd = :module_abbr_cd ",
+            array(':module_abbr_cd' => $module_abbr_cd)
+        );
+
+        for ($i = 0; $i < count($moduleActions); $i++) {
+            array_push($rule, array(
+                'allow',
+                'actions' => array($moduleActions[$i]->action_abbr_cd),
+                'users' => array(),
+                'message'=>'Access Denied.',
+            ));
+            $trace[] = array('idx' => $i, 'id' => $moduleActions[$i]->id);
+        }
+
+        $DataAccessRule = AdministratorModuleAccess::model()->with("module")->findAll(
+            "module.module_abbr_cd = :module_abbr_cd",
+            array(':module_abbr_cd' => $module_abbr_cd)
+        );
+
+        foreach ($DataAccessRule as $accessRule) {
+            $idx = self::_accessRuleTraceArraySearch($trace, 'id', $accessRule->muodule_action_id);
+            if ($idx > -1)
+                $rule[$idx]['users'][] = $accessRule->account->login_id;
+        }
+
+        $rule[] = array('deny');
+        return $rule;
+    }
+
+    private function _accessRuleTraceArraySearch($trace, $key, $need)
+    {
+        foreach ($trace as $val) {
+            if ($val[$key] == $need) return $val['idx'];
+        }
+        return -1;
     }
 
     public function setTitle($subTitle)

@@ -2,6 +2,7 @@
 
 class DefaultController extends Controller
 {
+
     public function actionCmsMainConfig()
     {
         Yii::app()->CodeMirror->import();
@@ -22,8 +23,7 @@ class DefaultController extends Controller
     public function actionRestoreDb()
     {
         Yii::import('ext.SDatabaseDumper');
-
-        if(!file_exists($backupPath = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']))) @mkdir($backupPath);
+        if (!file_exists($backupPath = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']))) @mkdir($backupPath);
         $action = isset($_GET['action']) ? $_GET['action'] : '';
         $filename = isset($_GET['filename']) ? $_GET['filename'] : '';
         $message = '';
@@ -76,6 +76,97 @@ class DefaultController extends Controller
         $this->render('restoredb', compact('items', 'message', 'filetype', 'filesBackup', 'action', 'errMessage'));
     }
 
+    public function actionBackupDb()
+    {
+        Yii::import('ext.SDatabaseDumper');
+        $filesBackup = array();
+        $backupOption = isset($_POST['BackupOption']) ? $_POST['BackupOption'] : array();
+        $message = '';
+
+        $databaseList = array(
+            'Admin' => Yii::app()->db,
+            'Archive' => Yii::app()->db_archive,
+            'Staff' => Yii::app()->db_staff,
+        );
+
+        $filetype = array(
+            'sql' => 'sql',
+            'zip' => 'zip',
+            'gz' => 'gz',
+        );
+
+        $backupPath = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']);
+        if (!file_exists($backupPath)) {
+            @mkdir($backupPath, 0755, true);
+        }
+
+        if (isset($_POST['Database']) && isset($_POST['FileType'])) {
+            foreach ($_POST['Database'] as $name => $database) {
+                $dumper = new SDatabaseDumper($databaseList[$name], $backupOption);
+                $filename = date('Y-m-d-H-i-s') . '_dump_' . $name . '.sql';
+                $file = $backupPath . DIRECTORY_SEPARATOR . $filename;
+                $filename = self::_compressed($file, $_POST['FileType'], $dumper->getDump());
+                $filesBackup[$name] = array(
+                    'filename' => $filename,
+                    'link' => $this->createUrl("/systemsetting/default/downloaddatabase", array("filename" => $filename)
+                    ));
+            }
+            $message = count($filesBackup) == count($_POST['Database']) ? 'success' : $message;
+        }
+
+        $this->render('backupdb', compact('databaseList', 'message', 'filetype', 'filesBackup'));
+    }
+
+    public function actionDownloadDatabase()
+    {
+        $filename = isset($_GET['filename']) ? $_GET['filename'] : '';
+
+        if (Yii::app()->user->isGuest || Yii::app()->user->getId() != Yii::app()->params['super_id'] || Yii::app()->user->role != '1' || !$filename)
+            throw new CHttpException("404", "File not found.");
+
+        $file = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']) . DIRECTORY_SEPARATOR . $filename;
+
+        if (file_exists($file)) {
+            return Yii::app()->getRequest()->sendFile($filename, @file_get_contents($file));
+        } else throw new CHttpException("404", "File not found.");
+    }
+
+    /**
+     * @decripton Compressed "filename.ext" => "filename.ext.toExtension"          *
+     * @param $filePath
+     * @param $toExtension
+     * @param $content
+     * @param $getFilename [= true] return file name if true
+     * @return string
+     */
+    private function _compressed($filePath, $toExtension, $content, $getFilename = true)
+    {
+        $filename = pathinfo($filePath, PATHINFO_BASENAME);
+        switch ($toExtension) {
+            case 'zip';
+                $zip = new ZipArchive;
+                if ($zip->open($filePath . '.zip', ZipArchive::CREATE)) {
+                    $zip->addFromString($filename, $content);
+                    return $getFilename ? $filename . ".zip" : $filePath . ".zip";
+                }
+                $zip->close();
+                break;
+
+            case 'gz':
+                if (function_exists('gzencode'))
+                    file_put_contents($filePath . '.gz', gzencode($content));
+                return $getFilename ? $filename . ".gz" : $filePath . ".gz";
+                break;
+            default:
+                file_put_contents($filePath, $content);
+                return $getFilename ? $filename : $filePath;
+
+        }
+
+        file_put_contents($filePath, $content);
+        return $getFilename ? $filename : $filePath;
+    }
+
     private function _execSqlFile($filename, $tempPath)
     {
         $message = "success";
@@ -83,6 +174,7 @@ class DefaultController extends Controller
         if (file_exists($filename)) {
             $sqlArray = self::_uncompressed($filename, $tempPath);
             $cmd = Yii::app()->db_backup->createCommand($sqlArray);
+            var_dump($cmd);
             try {
                 $cmd->execute();
             } catch (CDbException $e) {
@@ -140,96 +232,5 @@ class DefaultController extends Controller
         }
 
         return $_result;
-    }
-
-    public function actionBackupDb()
-    {
-        Yii::import('ext.SDatabaseDumper');
-        $filesBackup = array();
-        $backupOption = isset($_POST['BackupOption']) ? $_POST['BackupOption'] : array();
-        $message = '';
-
-        $databaseList = array(
-            'Admin' => Yii::app()->db,
-            'Archive' => Yii::app()->db_archive,
-            'Staff' => Yii::app()->db_staff,
-        );
-
-        $filetype = array(
-            'sql' => 'sql',
-            'zip' => 'zip',
-            'gz' => 'gz',
-        );
-
-        $backupPath = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']);
-        if (!file_exists($backupPath)) {
-            @mkdir($backupPath, 0755, true);
-        }
-
-        if (isset($_POST['Database']) && isset($_POST['FileType'])) {
-            foreach ($_POST['Database'] as $name => $database) {
-                $dumper = new SDatabaseDumper($databaseList[$name], $backupOption);
-                $filename = date('Y-m-d-H-i-s') . '_dump_' . $name . '.sql';
-                $file = $backupPath . DIRECTORY_SEPARATOR . $filename;
-                $filename = self::_compressed($file, $_POST['FileType'], $dumper->getDump());
-                $filesBackup[$name] = array(
-                    'filename' => $filename,
-                    'link' => $this->createUrl("/systemsetting/default/downloaddatabase", array("filename" => $filename)
-                    ));
-            }
-            $message = count($filesBackup) == count($_POST['Database']) ? 'success' : $message;
-        }
-
-        $this->render('backupdb', compact('databaseList', 'message', 'filetype', 'filesBackup'));
-    }
-
-    /**
-     * @decripton Compressed "filename.ext" => "filename.ext.toExtension"          *
-     * @param $filePath
-     * @param $toExtension
-     * @param $content
-     * @param $getFilename [= true] return file name if true
-     * @return string
-     */
-    private function _compressed($filePath, $toExtension, $content, $getFilename = true)
-    {
-        $filename = pathinfo($filePath, PATHINFO_BASENAME);
-        switch ($toExtension) {
-            case 'zip';
-                $zip = new ZipArchive;
-                if ($zip->open($filePath . '.zip', ZipArchive::CREATE)) {
-                    $zip->addFromString($filename, $content);
-                    return $getFilename ? $filename . ".zip" : $filePath . ".zip";
-                }
-                $zip->close();
-                break;
-
-            case 'gz':
-                if (function_exists('gzencode'))
-                    file_put_contents($filePath . '.gz', gzencode($content));
-                return $getFilename ? $filename . ".gz" : $filePath . ".gz";
-                break;
-            default:
-                file_put_contents($filePath, $content);
-                return $getFilename ? $filename : $filePath;
-
-        }
-
-        file_put_contents($filePath, $content);
-        return $getFilename ? $filename : $filePath;
-    }
-
-    public function actionDownloadDatabase()
-    {
-        $filename = isset($_GET['filename']) ? $_GET['filename'] : '';
-
-        if (Yii::app()->user->isGuest || Yii::app()->user->getId() != Yii::app()->params['super_id'] || Yii::app()->user->role != '1' || !$filename)
-            throw new CHttpException("404", "File not found.");
-
-        $file = Yii::getPathOfAlias(Yii::app()->params['DbBackupPath']) . DIRECTORY_SEPARATOR . $filename;
-
-        if (file_exists($file)) {
-            return Yii::app()->getRequest()->sendFile($filename, @file_get_contents($file));
-        } else throw new CHttpException("404", "File not found.");
     }
 }

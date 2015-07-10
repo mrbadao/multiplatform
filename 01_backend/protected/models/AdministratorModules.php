@@ -180,7 +180,7 @@ class AdministratorModules extends CActiveRecord
 
             $extractPath = Yii::getPathOfAlias(Yii::app()->params['module']['tempPath']);
             if(!file_exists($extractPath)){
-                @mkdir($extractPath,0755, true);
+                @mkdir($extractPath,0777, true);
             }
 
             $zip->extractTo($extractPath);
