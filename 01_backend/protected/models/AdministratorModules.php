@@ -12,6 +12,7 @@
  * @property string $idx
  * @property string $created
  * @property string $modified
+ * @property string $moduleActions
  *
  * The followings are the available model relations:
  * @property AdministratorModuleAccess[] $administratorModuleAccesses
@@ -20,6 +21,7 @@
  */
 class AdministratorModules extends CActiveRecord
 {
+    public $moduleActions;
     public $object = '';
 
     private $_allowExt = array(
@@ -274,5 +276,9 @@ class AdministratorModules extends CActiveRecord
             }
         }
         closedir($dir);
+    }
+
+    public function afterFind(){
+        $this->moduleActions = $this->administratorModuleActions;
     }
 }

@@ -1,0 +1,66 @@
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<!--breadcrumbs-->
+
+<h1 class="article-title">User permissions Detail</h1>
+<article>
+    <p>This page includes infomation about site.</p>
+
+    <p class="text-danger" tal:condition="php: message =='success' && action =='add'">You have added new user
+        success.</p>
+
+    <p class="text-danger" tal:condition="php: message =='success' && action =='edit'">You have edited user success.</p>
+</article>
+<form method="post" action="" name="setPermissionsForm">
+    <input tal:condition="not: administratorList" type="hidden" name="AdministratorID" value="${administrator/id|''}"/>
+
+    <div class="table-responsive">
+        <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+            <tr>
+                <div class="text-left"><h2><strong>Basic Infomation</strong></h2></div>
+            </tr>
+            <tr>
+                <th>Login id</th>
+                <td>
+                    <tal:block tal:condition="not:administratorList" tal:content="administrator/login_id|''"/>
+                    <tal:block tal:condition="administratorList">
+                        <select class="form form-control" name="AdministratorID" style="width: 250px;">
+                            <option value="">Choose value...</option>
+                            <option tal:repeat="admin administratorList" value="${admin/id|''}">${admin/login_id|''}</option>
+                        </select>
+                    </tal:block>
+                </td>
+            </tr>
+            <tr tal:condition="not:administratorList">
+                <th>Role</th>
+                <td>
+                    <tal:block tal:condition="administrator/role">Yes</tal:block>
+                    <tal:block tal:condition="not:administrator/role">No</tal:block>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0"
+               tal:condition="customFields">
+            <tbody>
+            <tr>
+                <div class="text-left"><h2><strong>Custom Infomation</strong></h2></div>
+            </tr>
+            <tr tal:repeat="field customFields">
+                <th>${field/filed_name|''}</th>
+                <td>
+                    <tal:block tal:content="field/filed_value|''"/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="BtnArea" style="text-align: center !important;">
+        <a class="btn btn-default"
+           tal:attributes="href php:this.createUrl('/systemusers/default/delete',array('id'=>administrator['id']))">Delete</a>
+        <a class="btn btn-default"
+           tal:attributes="href php:this.createUrl('/systemusers/default/edit',array('id'=>administrator['id']))">Edit</a>
+    </div>
+</form>

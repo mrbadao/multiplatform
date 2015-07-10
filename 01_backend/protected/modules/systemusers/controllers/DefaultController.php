@@ -105,4 +105,26 @@ class DefaultController extends Controller
         )));
     }
 
+    public function actionSetPermissions(){
+        $id = isset($_GET['id']) ? $_GET['id'] : '';
+        $message = isset($_GET['message']) ? $_GET['message'] : '';
+        $action = isset($_GET['action']) ? $_GET['action'] : '';
+        $administrator = '';
+        $customFields ='';
+        $administratorList= '';
+
+        if($id){
+            $administrator = Administrator::model()->findByAttributes(array('id' => $id));
+        }else{
+            $administratorList = Administrator::model()->findAll();
+        }
+
+        $administrator = $administrator ? $administrator : new Administrator();
+//        var_dump($administrator->attributes);die;
+
+        $administratorModules = AdministratorModules::model()->findAll();
+
+        $this->render('setpermissions', compact('administrator', 'message', 'action', 'customFields', 'administratorModules', 'administratorList'));
+    }
+
 }

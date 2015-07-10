@@ -58,7 +58,7 @@
             <th style="width: 10%;">Role</th>
             <th style="width:15%">Created</th>
             <th style="width:15%">Modified</th>
-            <th style="width: 7%;">Action</th>
+            <th style="width: 9%;">Action</th>
         </tr>
         </thead>
         <tbody>
@@ -85,11 +85,14 @@
                 <a tal:attributes="href php:this.createUrl('/systemusers/default/view',array('id'=>administrator['id']))">
                     <span class="glyphicon glyphicon-share-alt"></span>
                 </a>
-                <a tal:attributes="href php:this.createUrl('/systemusers/default/delete',array('id'=>administrator['id']))">
-                    <span class="glyphicon glyphicon-remove"></span>
-                </a>
                 <a tal:attributes="href php:this.createUrl('/systemusers/default/edit',array('id'=>administrator['id']))">
                     <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/systemusers/default/setpermissions',array('id'=>administrator['id']))">
+                    <span class="glyphicon glyphicon-cog"></span>
+                </a>
+                <a tal:attributes="href php:this.createUrl('/systemusers/default/delete',array('id'=>administrator['id']))">
+                    <span class="glyphicon glyphicon-remove"></span>
                 </a>
             </td>
         </tr>

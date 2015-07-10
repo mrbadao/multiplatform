@@ -52,6 +52,19 @@ class SystemUsersUrlRule extends CBaseUrlRule
                     return $url;
                     break;
 
+                case "setpermissions":
+                    $url = "systemusers/setpermissions.php";
+
+                    if(isset($params)){
+                        $url .= "?";
+                        foreach($params as $k => $v){
+                            $url .= sprintf("%s=%s%s", $k, $v, $ampersand);
+                        }
+                        $url = substr($url, 0, strlen($url) - 1);
+                    }
+                    return $url;
+                    break;
+
                 case "delete":
                     $url = "systemusers/delete.php";
                     if(isset($params)){
@@ -81,6 +94,8 @@ class SystemUsersUrlRule extends CBaseUrlRule
         switch($paths[1]){
             case 'edit.php':
                 return '/systemusers/default/edit';
+            case 'setpermissions.php':
+                return '/systemusers/default/setpermissions';
             case 'view.php':
                 if(!isset($_GET['id']) || !is_numeric($_GET['id'])) return false;
                 return '/systemusers/default/view';
