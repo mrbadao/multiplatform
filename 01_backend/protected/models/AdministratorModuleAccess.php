@@ -53,6 +53,7 @@ class AdministratorModuleAccess extends CActiveRecord
             array('administrator_id, module_id, muodule_action_id', 'required'),
             array('administrator_id, module_id, muodule_action_id', 'numerical', 'integerOnly' => true),
             array('created, modified', 'safe'),
+            array('administrator_id', 'UniqueAttributesValidator', 'with'=>'module_id,muodule_action_id'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
             array('id, administrator_id, module_id, muodule_action_id, created, modified', 'safe', 'on' => 'search'),

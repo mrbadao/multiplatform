@@ -1,4 +1,5 @@
-<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"></nav>
+<nav id="topicPath" tal:condition="this/breadcrumbs" tal:content="structure this/breadcrumbs"
+     xmlns="http://www.w3.org/1999/html"></nav>
 <!--breadcrumbs-->
 
 <h1 class="article-title">User permissions Detail</h1>
@@ -22,9 +23,10 @@
             <tr>
                 <th>Login id</th>
                 <td>
+                    <tal:block tal:content="structure php:CHtml::error(administrator, 'id', array('class' => 'text-danger'))"/>
                     <tal:block tal:condition="not:administratorList" tal:content="administrator/login_id|''"/>
                     <tal:block tal:condition="administratorList">
-                        <select class="form form-control" name="AdministratorID" style="width: 250px;">
+                        <select onchange="refreshPage(this, 'id')" class="form form-control" name="AdministratorID" style="width: 250px;">
                             <option value="">Choose value...</option>
                             <option tal:repeat="admin administratorList" value="${admin/id|''}">${admin/login_id|''}</option>
                         </select>
@@ -40,27 +42,66 @@
             </tr>
             </tbody>
         </table>
+    </div>
 
-        <table class="table table-bordered detail" border="0" cellpadding="0" cellspacing="0"
-               tal:condition="customFields">
+    <div class="table-responsive">
+        <table class="table table-bordered module-permisssions" border="0" cellpadding="0" cellspacing="0">
             <tbody>
-            <tr>
-                <div class="text-left"><h2><strong>Custom Infomation</strong></h2></div>
-            </tr>
-            <tr tal:repeat="field customFields">
-                <th>${field/filed_name|''}</th>
-                <td>
-                    <tal:block tal:content="field/filed_value|''"/>
-                </td>
-            </tr>
+            <tal:block tal:condition="administratorModules" tal:repeat="module administratorModules">
+                <tr>
+                    <td colspan="2" class="table-header">
+                        <strong class="pull-left">${module/module_name|''}</strong>
+                        <label class="pull-right" style="padding-right: 8px;">
+                            <input type="checkbox" onclick="checkAll('${module/module_abbr_cd}', this)"/>
+                        </label>
+                    </td>
+                </tr>
+                <tr tal:repeat="action module/moduleActions">
+                    <th>${action/action_name|''}</th>
+                    <td>
+                        <div class="checkbox pull-right">
+                            <label>
+                                <input type="checkbox" module="${module/module_abbr_cd}" value="${action/id}"
+                                       name="ModuleRule[${module/id}][]"
+                                       tal:attributes="checked php:Helpers::checkAdministratorRules(administrator['id'], action['id']) ? 'checked' : ''"/>
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+            </tal:block>
             </tbody>
         </table>
     </div>
 
     <div class="BtnArea" style="text-align: center !important;">
-        <a class="btn btn-default"
-           tal:attributes="href php:this.createUrl('/systemusers/default/delete',array('id'=>administrator['id']))">Delete</a>
-        <a class="btn btn-default"
-           tal:attributes="href php:this.createUrl('/systemusers/default/edit',array('id'=>administrator['id']))">Edit</a>
+        <button class="btn btn-default"
+                >Cancel
+        </button>
+        <button class="btn btn-default"
+                type="submit" name="Save" value="Save">Save
+        </button>
     </div>
 </form>
+
+<script>
+    function refreshPage(self, param){
+        var val = $(self).val();
+        if(!val) return false;
+        var url = window.location.href;
+        if (url.indexOf('?') > -1){
+            url += '&'+param+'=' +val
+        }else{
+            url += '?'+param+'=' +val
+        }
+        window.location.href = url;
+    }
+
+    function checkAll(module, self) {
+        var state = $(self).is(":checked");
+        if(module){
+            $("table.module-permisssions").find("input[module="+ module +"]").each(function(){
+                $(this).prop('checked', state);
+            });
+        }
+    }
+</script>

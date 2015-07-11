@@ -8,4 +8,11 @@
 
 class Helpers
 {
+    public static function checkAdministratorRules($adminId = null, $actionId){
+        if(!$adminId || !$actionId) return false;
+        return AdministratorModuleAccess::model()->findByAttributes(array(
+            'administrator_id' => $adminId,
+            'muodule_action_id' => $actionId
+        )) ? true : false;
+    }
 }
