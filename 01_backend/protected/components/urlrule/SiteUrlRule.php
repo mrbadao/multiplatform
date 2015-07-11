@@ -1,27 +1,32 @@
 <?php
 
-class SiteUrlRule extends CBaseUrlRule {
+class SiteUrlRule extends CBaseUrlRule
+{
 
     public $connectionID = 'db';
 
-    public function createUrl($manager, $route, $params, $ampersand) {
+    public function createUrl($manager, $route, $params, $ampersand)
+    {
 
 
         return false;
     }
 
-    public function parseUrl($manager, $request, $pathInfo, $rawPathInfo) {
+    public function parseUrl($manager, $request, $pathInfo, $rawPathInfo)
+    {
         $paths = explode('/', rtrim($pathInfo, '/'));
 
-        if(!isset($paths[0])) return "/site/index";
+        if (!isset($paths[0])) return "/site/index";
 
-        switch($paths[0]){
-            case 'admin':
-                if(isset($paths[1]) && $paths[1] == 'login.html') return "site/AdminLogin";
-            break;
+        switch ($paths[0]) {
+            case 'login.php':
+                if ($_SERVER['SERVER_NAME'] == Yii::app()->params['CP_DOMAIN']) return "site/MemberLogin";
+                if ($_SERVER['SERVER_NAME'] == Yii::app()->params['CMS_DOMAIN']) return "site/AdminLogin";
+                break;
 
-            case 'logout.html':
+            case 'logout.php':
                 return "site/logout";
+                break;
         }
 
         return FALSE;

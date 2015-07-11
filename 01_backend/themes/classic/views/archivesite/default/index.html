@@ -77,7 +77,7 @@
             </td>
             <td>
                 <a tal:condition="site/site_domain" href="${site/site_domain|''}">${site/site_domain|''}</a>
-                <a tal:condition="not:site/site_domain" href="${params/fe_domain|''}${site/site_abbr_cd|''}">${params/fe_domain|''}${site/site_abbr_cd|''}</a>
+                <a tal:condition="not:site/site_domain" href="http://${params/FRONT_DOMAIN|''}/${site/site_abbr_cd|''}">http://${params/FRONT_DOMAIN|''}/${site/site_abbr_cd|''}</a>
             </td>
             <td>
                 <strong tal:condition="site/use_single_domain">Yes</strong>

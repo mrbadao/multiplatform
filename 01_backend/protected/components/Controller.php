@@ -31,7 +31,7 @@ class Controller extends CController
             switch ($role) {
                 case '1':
                     $administrator = Administrator::model()->findByPk($userId);
-                    $this->menu = self::_getHTMLMenu($administrator->getMenuData(Yii::app()->params['site_domain']));
+                    $this->menu = self::_getHTMLMenu($administrator->getMenuData(Yii::app()->params['CMS_DOMAIN']));
             }
         }
 

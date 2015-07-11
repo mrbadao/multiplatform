@@ -28,7 +28,11 @@ class SiteController extends Controller
     public function actionIndex()
     {
         if (Yii::app()->user->IsGuest) {
-            $this->forward('site/adminlogin');
+            $this->forward(
+                $_SERVER['SERVER_NAME'] == Yii::app()->params['CMS_DOMAIN']
+                ? 'site/adminlogin'
+                : 'site/MemberLogin'
+            );
         }
         $this->render('index');
     }
@@ -72,6 +76,31 @@ class SiteController extends Controller
         // display the login form
         $this->layout = "login";
         $this->render('login', array('model' => $model));
+    }
+
+    public function actionMemberLogin()
+    {
+        $model = new LoginModel;
+        $model->scenario = 'captchaRequired';
+
+        if (!Yii::app()->user->IsGuest) $this->forward('site/index');
+
+        // if it is ajax validation request
+        if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
+            Yii::app()->end();
+        }
+
+        // collect user input data
+        if (isset($_POST['LoginForm'])) {
+            $model->attributes = $_POST['LoginForm'];
+            // validate user input and redirect to the previous page if valid
+            if ($model->validate() && $model->adminLogin())
+                $this->redirect(Yii::app()->user->returnUrl);
+        }
+
+        // display the login form
+        $this->layout = "login";
+        $this->render('memberlogin', array('model' => $model));
     }
 
     /**

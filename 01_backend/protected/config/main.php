@@ -145,8 +145,9 @@ return array(
     // application-level parameters that can be accessed
     'params' => array(
         'DbBackupPath' => "application.runtime.backups",
-        'site_domain' => 'cms.platform.dev/',
-        'fe_domain' => 'http://front.platform.dev/',
+        'CMS_DOMAIN' => 'cms.platform.com',
+        'CP_DOMAIN' => 'cpanel.platform.com',
+        'FRONT_DOMAIN' => 'front.platform.dev',
         'pageCountItems' => '10',
         'super_id' => '1',
 
