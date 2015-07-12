@@ -7,7 +7,17 @@ class SiteUrlRule extends CBaseUrlRule
 
     public function createUrl($manager, $route, $params, $ampersand)
     {
-
+        switch($route){
+            case 'site/logout':
+                return 'logout.php';
+                break;
+            case 'site/MemberLogin';
+                if ($_SERVER['SERVER_NAME'] == Yii::app()->params['CP_DOMAIN']) return 'login.php';
+                break;
+            case 'site/AdminLogin';
+                if ($_SERVER['SERVER_NAME'] == Yii::app()->params['CMS_DOMAIN']) return 'login.php';
+                break;
+        }
 
         return false;
     }

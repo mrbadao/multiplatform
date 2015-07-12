@@ -12,6 +12,7 @@ class SiteController extends Controller
             'captcha' => array(
                 'class' => 'CCaptchaAction',
                 'backColor' => 0xFFFFFF,
+                'testLimit' => '1',
             ),
             // page action renders "static" pages stored under 'protected/views/site/pages'
             // They can be accessed via: index.php?r=site/page&view=FileName
@@ -55,7 +56,7 @@ class SiteController extends Controller
      */
     public function actionAdminLogin()
     {
-        $model = new LoginModel;
+        $model = new AdminLoginModel();
         $model->scenario = 'captchaRequired';
 
         if (!Yii::app()->user->IsGuest) $this->forward('site/index');
@@ -80,8 +81,7 @@ class SiteController extends Controller
 
     public function actionMemberLogin()
     {
-        $model = new LoginModel;
-        $model->scenario = 'captchaRequired';
+        $model = new MemberLoginModel();
 
         if (!Yii::app()->user->IsGuest) $this->forward('site/index');
 
@@ -94,10 +94,9 @@ class SiteController extends Controller
         if (isset($_POST['LoginForm'])) {
             $model->attributes = $_POST['LoginForm'];
             // validate user input and redirect to the previous page if valid
-            if ($model->validate() && $model->adminLogin())
+            if ($model->validate() && $model->memberLogin())
                 $this->redirect(Yii::app()->user->returnUrl);
         }
-
         // display the login form
         $this->layout = "login";
         $this->render('memberlogin', array('model' => $model));
