@@ -25,6 +25,10 @@ a{
     margin-bottom: 0;
 }
 
+#navbar li a:hover, .navbar li a.active {
+    color: #fff;
+}
+
 /*
  * Top navigation
  * Hide default border to remove 1px line.

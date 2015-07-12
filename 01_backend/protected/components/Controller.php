@@ -124,6 +124,8 @@ class Controller extends CController
 
     public function beforeAction()
     {
+//        if(Yii::app()->user->isGuest) $this->redirect("http://cms.platform.com/login.php");
+
         $controller = $this->getId();
         $action = $this->getAction()->getId();
 
