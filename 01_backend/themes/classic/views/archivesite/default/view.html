@@ -39,7 +39,7 @@
                 <th>Site domain</th>
                 <td>
                     <a tal:condition="archiveSite/site_domain" href="${archiveSite/site_domain|''}">${archiveSite/site_domain|''}</a>
-                    <a tal:condition="not:archiveSite/site_domain" href="http://${params/FRONT_DOMAIN|''}/${archiveSite/site_abbr_cd|''}">http://${params/FRONT_DOMAIN|''}/${archiveSite/site_abbr_cd|''}</a>
+                    <a tal:condition="not:archiveSite/site_domain" href="http://${site/site_abbr_cd|''}.${params/FRONT_DOMAIN|''}/">http://${site/site_abbr_cd|''}.${params/FRONT_DOMAIN|''}/</a>
                 </td>
             </tr>
             <tr>

@@ -147,7 +147,7 @@ return array(
         'DbBackupPath' => "application.runtime.backups",
         'CMS_DOMAIN' => 'cms.platform.com',
         'CP_DOMAIN' => 'cpanel.platform.com',
-        'FRONT_DOMAIN' => 'front.platform.dev',
+        'FRONT_DOMAIN' => 'platform.com',
         'pageCountItems' => '10',
         'super_id' => '1',
 
