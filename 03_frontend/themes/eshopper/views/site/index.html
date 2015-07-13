@@ -5,8 +5,8 @@
                 <tal:block tal:content="structure php:this.widget('CategoryWidget', array(), true)"/>
                 <!--/category-products-->
 
-                <div class="brands_products"><!--brands_products-->
-                    <h2>Brands</h2>
+                <div tal:replace="structure php:this.widget('BrandWidget', array(), true)" class="brands_products"><!--brands_products-->
+                    <h2>Brands cate</h2>
 
                     <div class="brands-name">
                         <ul class="nav nav-pills nav-stacked">
