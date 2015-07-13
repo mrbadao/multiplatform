@@ -17,7 +17,7 @@
     <script src="${makeUpPath}/js/html5shiv.js"/>
     <script src="${makeUpPath}/js/respond.min.js"/>
     <![endif]-->
-    <link rel="shortcut icon" href="${makeUpPath}/images/ico/favicon.ico"/>
+    <link rel="icon" type="image/png" href="${makeUpPath}/images/icon/favicon.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="${makeUpPath}/images/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="${makeUpPath}/images/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="${makeUpPath}/images/ico/apple-touch-icon-72-precomposed.png"/>
@@ -59,29 +59,6 @@
                     <div class="logo pull-left">
                         <a href="index.html"><img src="${makeUpPath}/images/home/logo.png" alt="" /></a>
                     </div>
-                    <!--<div class="btn-group pull-right">-->
-                        <!--<div class="btn-group">-->
-                            <!--<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">-->
-                                <!--USA-->
-                                <!--<span class="caret"></span>-->
-                            <!--</button>-->
-                            <!--<ul class="dropdown-menu">-->
-                                <!--<li><a href="#">Canada</a></li>-->
-                                <!--<li><a href="#">UK</a></li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
-
-                        <!--<div class="btn-group">-->
-                            <!--<button type="button" class="btn btn-default dropdown-toggle usa" data-toggle="dropdown">-->
-                                <!--DOLLAR-->
-                                <!--<span class="caret"></span>-->
-                            <!--</button>-->
-                            <!--<ul class="dropdown-menu">-->
-                                <!--<li><a href="#">Canadian Dollar</a></li>-->
-                                <!--<li><a href="#">Pound</a></li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
-                    <!--</div>-->
                 </div>
                 <div class="col-sm-8">
                     <div class="shop-menu pull-right">
@@ -111,7 +88,7 @@
                         </button>
                     </div>
                     <div class="mainmenu pull-left">
-                        <ul class="nav navbar-nav collapse navbar-collapse">
+                        <ul class="nav navbar-nav collapse navbar-collapse" tal:replace="structure php:this.widget('GlobalNavigationMenu', array(), true)">
                             <li><a href="index.html" class="active">Home</a></li>
                             <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
                                 <ul role="menu" class="sub-menu">

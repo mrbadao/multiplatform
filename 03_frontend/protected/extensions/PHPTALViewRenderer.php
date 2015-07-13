@@ -47,7 +47,7 @@ class PHPTALViewRenderer extends CApplicationComponent implements IViewRenderer
 //        $tal->set('SERVER',$_SERVER);
         $tal->set('params',Yii::app()->params);
 //        $tal->set('user',Yii::app()->user);
-        $tal->set('makeUpPath', $this->theme->baseUrl. '/assets/');
+        $tal->set('makeUpPath', $this->theme->baseUrl. '/assets');
         $tal->set('themePath', $this->_basePath.'/views');
 
         $res = $tal->execute();
