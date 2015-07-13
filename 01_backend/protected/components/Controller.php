@@ -44,16 +44,6 @@ class Controller extends CController
         $this->nav = self::_getNav();
     }
 
-    private function _getHTMLMenu($data)
-    {
-        return $this->renderFile(Yii::app()->getTheme()->getBasePath() . DIRECTORY_SEPARATOR . 'views/components/menu.html', compact('data'), true);
-    }
-
-    private function _getNav()
-    {
-        return $this->renderFile(Yii::app()->getTheme()->getBasePath() . DIRECTORY_SEPARATOR . 'views/components/nav.html', compact('data'), true);
-    }
-
     public function filters()
     {
         return array('accessControl');
@@ -61,67 +51,8 @@ class Controller extends CController
 
     public function accessRules()
     {
-//        var_dump(self::_getModuleAccessRules());die;
+//        var_dump(self::_getModuleAccessRules()); die;
         return self::_getModuleAccessRules();
-    }
-
-    public function _getModuleAccessRules()
-    {
-        $module_abbr_cd = $this->getModule($this->route) ? $this->getModule($this->route)->getId() : '';
-
-        if (!$module_abbr_cd) return array(
-            array(
-                'allow',
-                'users' => array('*'),
-                'message'=>'Access Denied.',
-            ),
-        );
-
-        $rule = array();
-        $trace = array();
-
-        $moduleActions = AdministratorModuleActions::model()->with("module")->findAll(
-            "module.module_abbr_cd = :module_abbr_cd ",
-            array(':module_abbr_cd' => $module_abbr_cd)
-        );
-
-        for ($i = 0; $i < count($moduleActions); $i++) {
-            array_push($rule, array(
-                'allow',
-                'actions' => array($moduleActions[$i]->action_abbr_cd),
-                'users' => array(),
-                'deniedCallback' => $this->redirect('/'),
-                'message'=>'Access Denied.',
-            ));
-            $trace[] = array('idx' => $i, 'id' => $moduleActions[$i]->id);
-        }
-
-        $DataAccessRule = AdministratorModuleAccess::model()->with("module")->findAll(
-            "module.module_abbr_cd = :module_abbr_cd",
-            array(':module_abbr_cd' => $module_abbr_cd)
-        );
-
-        foreach ($DataAccessRule as $accessRule) {
-            $idx = self::_accessRuleTraceArraySearch($trace, 'id', $accessRule->muodule_action_id);
-            if ($idx > -1)
-                $rule[$idx]['users'][] = $accessRule->account->login_id;
-        }
-
-        $rule[] = array('deny');
-        return $rule;
-    }
-
-    private function _accessRuleTraceArraySearch($trace, $key, $need)
-    {
-        foreach ($trace as $val) {
-            if ($val[$key] == $need) return $val['idx'];
-        }
-        return -1;
-    }
-
-    public function setTitle($subTitle)
-    {
-        $this->title .= " | $subTitle";
     }
 
     public function beforeAction()
@@ -154,6 +85,75 @@ class Controller extends CController
         $this->breadcrumbs = self::_getBreadcrumbs($this->breadcrumbs);
 
         return true;
+    }
+
+    private function _getHTMLMenu($data)
+    {
+        return $this->renderFile(Yii::app()->getTheme()->getBasePath() . DIRECTORY_SEPARATOR . 'views/components/menu.html', compact('data'), true);
+    }
+
+    private function _getNav()
+    {
+        return $this->renderFile(Yii::app()->getTheme()->getBasePath() . DIRECTORY_SEPARATOR . 'views/components/nav.html', compact('data'), true);
+    }
+
+    public function _getModuleAccessRules()
+    {
+        $module_abbr_cd = $this->getModule($this->route) ? $this->getModule($this->route)->getId() : '';
+
+        if (!$module_abbr_cd) return array(
+            array(
+                'allow',
+                'users' => array('@'),
+                'message'=>'Access Denied.',
+            ),
+        );
+
+        $rule = array();
+        $trace = array();
+
+        $moduleActions = AdministratorModuleActions::model()->with("module")->findAll(
+            "module.module_abbr_cd = :module_abbr_cd ",
+            array(':module_abbr_cd' => $module_abbr_cd)
+        );
+
+        for ($i = 0; $i < count($moduleActions); $i++) {
+            array_push($rule, array(
+                'allow',
+                'actions' => array($moduleActions[$i]->action_abbr_cd),
+                'users' => array(),
+//                'deniedCallback' => $this->redirect('/'),
+                'message'=>'Access Denied.',
+            ));
+            $trace[] = array('idx' => $i, 'id' => $moduleActions[$i]->id);
+        }
+
+        $DataAccessRule = AdministratorModuleAccess::model()->with("module")->findAll(
+            "module.module_abbr_cd = :module_abbr_cd",
+            array(':module_abbr_cd' => $module_abbr_cd)
+        );
+
+        foreach ($DataAccessRule as $accessRule) {
+            $idx = self::_accessRuleTraceArraySearch($trace, 'id', $accessRule->muodule_action_id);
+            if ($idx > -1)
+                $rule[$idx]['users'][] = $accessRule->account->login_id;
+        }
+
+        $rule[] = array('deny');
+        return $rule;
+    }
+
+    private function _accessRuleTraceArraySearch($trace, $key, $need)
+    {
+        foreach ($trace as $val) {
+            if ($val[$key] == $need) return $val['idx'];
+        }
+        return -1;
+    }
+
+    public function setTitle($subTitle)
+    {
+        $this->title .= " | $subTitle";
     }
 
     private function _getBreadcrumbs($breadcrumbs)

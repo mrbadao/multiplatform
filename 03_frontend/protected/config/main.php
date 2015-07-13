@@ -45,19 +45,59 @@ return array(
 		),
 
 		// uncomment the following to enable URLs in path-format
-		/*
+
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
+                array(
+                    'class' => 'application.components.urlrule.SiteUrlRule',
+                ),
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+
 
 		// database settings are configured in database.php
-//		'db'=>require(dirname(__FILE__).'/database.php'),
+        'db' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=sup_admin',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'initSQLs' => array("set time_zone='+07:00';"),
+        ),
+
+        'db_archive' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=sup_archive',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'initSQLs' => array("set time_zone='+07:00';"),
+            'class' => 'CDbConnection',
+        ),
+
+        'db_staff' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=sup_staff',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'initSQLs' => array("set time_zone='+07:00';"),
+            'class' => 'CDbConnection',
+        ),
+
+        'db_backup' => array(
+            'connectionString' => 'mysql:host=localhost;',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'initSQLs' => array("set time_zone='+07:00';"),
+            'class' => 'CDbConnection',
+        ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
@@ -86,6 +126,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'FRONT_DOMAIN' => 'platform.com',
 	),
 );
