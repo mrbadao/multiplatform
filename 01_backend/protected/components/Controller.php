@@ -61,10 +61,11 @@ class Controller extends CController
 
     public function accessRules()
     {
+//        var_dump(self::_getModuleAccessRules());die;
         return self::_getModuleAccessRules();
     }
 
-    private function _getModuleAccessRules()
+    public function _getModuleAccessRules()
     {
         $module_abbr_cd = $this->getModule($this->route) ? $this->getModule($this->route)->getId() : '';
 
@@ -89,6 +90,7 @@ class Controller extends CController
                 'allow',
                 'actions' => array($moduleActions[$i]->action_abbr_cd),
                 'users' => array(),
+                'deniedCallback' => $this->redirect('/'),
                 'message'=>'Access Denied.',
             ));
             $trace[] = array('idx' => $i, 'id' => $moduleActions[$i]->id);
@@ -124,8 +126,6 @@ class Controller extends CController
 
     public function beforeAction()
     {
-//        if(Yii::app()->user->isGuest) $this->redirect("http://cms.platform.com/login.php");
-
         $controller = $this->getId();
         $action = $this->getAction()->getId();
 

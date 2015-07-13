@@ -28,13 +28,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-//        if (Yii::app()->user->IsGuest) {
-//            $this->forward(
-//                $_SERVER['SERVER_NAME'] == Yii::app()->params['CMS_DOMAIN']
-//                ? 'site/adminlogin'
-//                : 'site/MemberLogin'
-//            );
-//        }
+        if (Yii::app()->user->IsGuest) {
+            $this->forward(
+                $_SERVER['SERVER_NAME'] == Yii::app()->params['CMS_DOMAIN']
+                ? 'site/adminlogin'
+                : 'site/MemberLogin'
+            );
+        }
         $this->render('index');
     }
 
