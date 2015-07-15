@@ -49,6 +49,7 @@ return array(
 
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+            'showScriptName' => false,
 			'rules'=>array(
                 array(
                     'class' => 'application.components.urlrule.SiteUrlRule',
