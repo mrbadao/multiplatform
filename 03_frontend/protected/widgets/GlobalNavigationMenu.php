@@ -2,6 +2,7 @@
 
 class GlobalNavigationMenu extends CLinkPager {
     public $menu_abbr_cd;
+    public $view;
     private $_site_id;
     private $_global_menu;
     const SITEID_KEY = 'session_site_id';
@@ -23,8 +24,9 @@ class GlobalNavigationMenu extends CLinkPager {
      */
     public function run()
     {
+        $title = $this->_global_menu ? $this->_global_menu->menu_name : '';
         $menuItems = $this->_global_menu ? $this->_global_menu->archiveMenuItem : '';
         $route = Yii::app()->controller->getRoute();
-       $this->render('global_navigation_menu', compact('menuItems', 'route'));
+       $this->render($this->view, compact('menuItems', 'route', 'title'));
     }
 }

@@ -1,25 +1,28 @@
 <?php
 
 /**
- * This is the model class for table "archive_menu".
+ * This is the model class for table "archive_categories".
  *
- * The followings are the available columns in table 'archive_menu':
+ * The followings are the available columns in table 'archive_categories':
  * @property integer $id
  * @property integer $site_id
- * @property string $menu_name
- * @property string $menu_abbr_cd
+ * @property integer $parent_id
+ * @property integer $page_id
+ * @property string $category_name
+ * @property string $category_abbr_cd
  * @property string $created
  * @property string $modified
  *
  * The followings are the available model relations:
  * @property ArchiveSite $site
+ * @property ArchiveEntries[] $archiveEntries
  */
-class ArchiveMenu extends CActiveRecord
+class ArchiveCategories extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return ArchiveMenu the static model class
+	 * @return ArchiveCategories the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -39,7 +42,7 @@ class ArchiveMenu extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'archive_menu';
+		return 'archive_categories';
 	}
 
 	/**
@@ -50,13 +53,13 @@ class ArchiveMenu extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('site_id, menu_name, menu_abbr_cd', 'required'),
-			array('site_id', 'numerical', 'integerOnly'=>true),
-			array('menu_name, menu_abbr_cd', 'length', 'max'=>128),
+			array('site_id, page_id, category_name, category_abbr_cd', 'required'),
+			array('site_id, parent_id, page_id', 'numerical', 'integerOnly'=>true),
+			array('category_name, category_abbr_cd', 'length', 'max'=>128),
 			array('created, modified', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, site_id, menu_name, menu_abbr_cd, created, modified', 'safe', 'on'=>'search'),
+			array('id, site_id, parent_id, page_id, category_name, category_abbr_cd, created, modified', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,7 +72,7 @@ class ArchiveMenu extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'site' => array(self::BELONGS_TO, 'ArchiveSite', 'site_id'),
-            'archiveMenuItem' => array(self::HAS_MANY, 'ArchiveMenuItem', 'menu_id', 'condition' => 'archiveMenuItem.parent_item_id =-1', 'order' => 'sort_idx ASC'),
+			'archiveEntries' => array(self::HAS_MANY, 'ArchiveEntries', 'category_id'),
 		);
 	}
 
@@ -81,8 +84,10 @@ class ArchiveMenu extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'site_id' => 'Site',
-			'menu_name' => 'Menu Name',
-			'menu_abbr_cd' => 'Menu Abbr Cd',
+			'parent_id' => 'Parent',
+			'page_id' => 'Page',
+			'category_name' => 'Category Name',
+			'category_abbr_cd' => 'Category Abbr Cd',
 			'created' => 'Created',
 			'modified' => 'Modified',
 		);
@@ -101,8 +106,10 @@ class ArchiveMenu extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('site_id',$this->site_id);
-		$criteria->compare('menu_name',$this->menu_name,true);
-		$criteria->compare('menu_abbr_cd',$this->menu_abbr_cd,true);
+		$criteria->compare('parent_id',$this->parent_id);
+		$criteria->compare('page_id',$this->page_id);
+		$criteria->compare('category_name',$this->category_name,true);
+		$criteria->compare('category_abbr_cd',$this->category_abbr_cd,true);
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('modified',$this->modified,true);
 

@@ -1,8 +1,13 @@
 <ul tal:condition="menuItems" tal:repeat="item menuItems" class="nav navbar-nav collapse navbar-collapse">
-    <li>
+    <li tal:define="global subItems php:item.getChildItems()" tal:attributes="class php:subItems ? 'dropdown' :''">
         <a tal:attributes="class php: item['menu_item_abbr_cd'] == route ? 'active' :'';
                                                 href php:Yii::app().createUrl(item['menu_item_abbr_cd'])">
             ${item/title|''}
+            <i tal:condition="subItems" class="fa fa-angle-down"></i>
         </a>
+
+        <ul tal:condition="subItems" role="menu" class="sub-menu">
+            <li tal:repeat="subItem subItems"><a href="${php:Yii::app().createUrl(subItem['menu_item_abbr_cd'])|'#'}">${subItem/title|''}</a></li>
+        </ul>
     </li>
 </ul>

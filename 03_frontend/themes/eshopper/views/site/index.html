@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="left-sidebar">
-                <tal:block tal:content="structure php:this.widget('CategoryWidget', array(), true)"/>
+                <tal:block tal:content="structure php:this.widget('GlobalNavigationMenu', array('menu_abbr_cd'=>'catemenu', 'view' => 'global_category_menu'), true)"/>
                 <!--/category-products-->
 
                 <div tal:replace="structure php:this.widget('BrandWidget', array(), true)" class="brands_products"><!--brands_products-->
