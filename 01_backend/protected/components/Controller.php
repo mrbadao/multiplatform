@@ -51,7 +51,6 @@ class Controller extends CController
 
     public function accessRules()
     {
-//        var_dump(self::_getModuleAccessRules()); die;
         return self::_getModuleAccessRules();
     }
 

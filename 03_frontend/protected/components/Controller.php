@@ -20,4 +20,9 @@ class Controller extends CController
     {
 
     }
+
+    public function beforeAction(){
+        $this->layout = $this->getAction()->getId() ? strtolower($this->getAction()->getId()) : 'default';
+        return true;
+    }
 }

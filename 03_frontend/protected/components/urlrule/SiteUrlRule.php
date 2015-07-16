@@ -28,12 +28,11 @@ class SiteUrlRule extends CBaseUrlRule
 
         $paths = explode('/', rtrim($pathInfo, '/'));
 
-        if (!isset($paths[0]) || $paths[0] == 'index.html') return "/site/index";
+        if (!isset($paths[0]) || $paths[0] == 'index.html') return "site/index";
 
         switch ($paths[0]) {
-            case 'index.php':
-                if ($_SERVER['SERVER_NAME'] == Yii::app()->params['CP_DOMAIN']) return "site/MemberLogin";
-                if ($_SERVER['SERVER_NAME'] == Yii::app()->params['CMS_DOMAIN']) return "site/AdminLogin";
+            case 'contact.html':
+                return "site/contact";
                 break;
 
             case 'logout.php':
