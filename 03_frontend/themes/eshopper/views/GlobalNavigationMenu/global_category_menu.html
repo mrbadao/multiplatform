@@ -1,0 +1,22 @@
+<h2 tal:condition="title" tal:content="title">Category</h2>
+
+<div tal:condition="menuItems" class="panel-group category-products" id="accordian"><!--category-productsr-->
+    <div tal:repeat="item menuItems" class="panel panel-default">
+        <div class="panel-heading" tal:define="global subItems php:item.getChildItems(); global parentHtmlId php:subItems ? 'cate_'.repeat.item.key :''">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordian" tal:attributes="href php:parentHtmlId ? '#'.parentHtmlId : Yii::app().createUrl(item['menu_item_abbr_cd'])">
+                    <span class="badge pull-right" tal:condition="subItems"><i class="fa fa-plus"></i></span>
+                    ${item/title|''}
+                </a>
+            </h4>
+        </div>
+        <div tal:attributes="id php:parentHtmlId ? parentHtmlId : ''"   tal:condition="subItems" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li tal:repeat="subItem subItems"><a href="${php:Yii::app().createUrl(subItem['menu_item_abbr_cd'])|'#'}">${subItem/title|''}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/category-products-->
